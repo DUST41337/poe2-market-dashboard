@@ -2,6 +2,10 @@
 
 PoE2 latest normal league market scout for a small group. The MVP focuses on rare gear demand from `poe.ninja` build statistics.
 
+Canonical app:
+
+https://dust41337.github.io/poe2-market-dashboard/
+
 ## What It Does
 
 - Detects the latest indexed normal PoE2 league.
@@ -12,7 +16,30 @@ PoE2 latest normal league market scout for a small group. The MVP focuses on rar
 
 Rare slot demand and build usage are extracted from `poe.ninja`. Rare mod signatures and craft routes are rule-based recommendations, not direct item-mod exports.
 
-## Local Use
+## GitHub Pages
+
+The dashboard is meant to be used from GitHub Pages, not from a local file path.
+
+- `Deploy GitHub Pages` builds and deploys the Vite app on every push to `main`.
+- `Update poe.ninja Data` runs daily at `01:00 UTC` and supports manual `workflow_dispatch`.
+- The app reads `public/data/market.json` as the single checked-in snapshot.
+- The in-app `Actions更新` button opens the manual update workflow.
+- The in-app `JSON再読込` button only reloads the already-deployed static JSON.
+
+For a private-feeling share, keep the repository or Pages URL known only to your group. GitHub Pages itself is still public unless the repository or plan supports restricted Pages.
+
+## Data Update
+
+Manual update path:
+
+1. Open `Actions更新` from the app, or open the `Update poe.ninja Data` workflow in GitHub.
+2. Run the workflow on `main`.
+3. Wait for the snapshot commit and the following Pages deploy.
+4. Use `JSON再読込` in the app after deploy completes.
+
+## Local Development
+
+Local development still uses the Vite dev server. Direct `file://` preview is intentionally not supported.
 
 ```bash
 npm install
@@ -26,26 +53,4 @@ Windows local shortcut:
 start-local.cmd
 ```
 
-The local URL is fixed to:
-
-```text
-http://127.0.0.1:4174
-```
-
-No-server local preview:
-
-```bash
-npm run build:standalone
-```
-
-Then open `standalone.html` directly in Chrome. This embeds the latest generated `market.json`, so the refresh button reloads the embedded snapshot rather than fetching live data.
-
-## GitHub Pages
-
-This folder is ready to use as a small GitHub Pages repository.
-
-- `Deploy GitHub Pages` builds and deploys the Vite app.
-- `Update poe.ninja Data` runs daily at `01:00 UTC` and also supports manual `workflow_dispatch`.
-- The public app reads `public/data/market.json`.
-
-For a private-feeling share, keep the repository or Pages URL known only to your group. GitHub Pages itself is still public unless the repository or plan supports restricted Pages.
+The development URL is fixed to `http://127.0.0.1:4174`.

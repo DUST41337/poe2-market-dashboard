@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 
 const DATA_URL = `${import.meta.env.BASE_URL}data/market.json`;
+const UPDATE_WORKFLOW_URL = "https://github.com/DUST41337/poe2-market-dashboard/actions/workflows/update-data.yml";
 
 function formatNumber(value) {
   return new Intl.NumberFormat("en-US").format(value ?? 0);
@@ -98,8 +99,11 @@ function Header({ data, reloadData, loading }) {
       </div>
 
       <div className="topbar-actions">
+        <TinyButton icon={ExternalLink} href={UPDATE_WORKFLOW_URL} title="GitHub Actionsでpoe.ninjaデータを更新">
+          Actions更新
+        </TinyButton>
         <TinyButton icon={RefreshCw} onClick={reloadData} title="静的JSONを再読込">
-          {loading ? "更新中" : "再読込"}
+          {loading ? "読込中" : "JSON再読込"}
         </TinyButton>
         <div className="privacy-pill">
           <Lock size={15} />
@@ -449,13 +453,6 @@ export function App() {
     setLoading(true);
     setError("");
     try {
-      if (typeof window !== "undefined" && window.__MARKET_DATA__) {
-        const payload = window.__MARKET_DATA__;
-        setData(payload);
-        setSelectedId((current) => current ?? payload.rare?.opportunities?.[0]?.id ?? null);
-        return;
-      }
-
       const url = cacheBust ? `${DATA_URL}?t=${Date.now()}` : DATA_URL;
       const response = await fetch(url, { cache: "no-store" });
       if (!response.ok) throw new Error(`market.json not found (${response.status})`);
@@ -511,7 +508,12 @@ export function App() {
           <AlertTriangle />
           <h1>データを読めませんでした</h1>
           <p>{error}</p>
-          <code>npm run update:data</code>
+          <code>{DATA_URL}</code>
+          <div className="button-row">
+            <TinyButton icon={ExternalLink} href={UPDATE_WORKFLOW_URL}>
+              Actions更新
+            </TinyButton>
+          </div>
         </div>
       </main>
     );

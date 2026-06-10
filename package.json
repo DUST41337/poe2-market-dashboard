@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4174 --strictPort",
     "build": "vite build",
-    "build:standalone": "npm run build && node scripts/build-standalone.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "update:data": "node scripts/update-data.mjs"
   },
