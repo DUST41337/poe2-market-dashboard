@@ -1,0 +1,2047 @@
+{
+  "generatedAt": "2026-06-10T06:24:07.222Z",
+  "source": {
+    "kind": "poe.ninja",
+    "indexStateUrl": "https://poe.ninja/poe2/api/data/index-state",
+    "searchApi": "https://poe.ninja/poe2/api/builds/{version}/search",
+    "caveat": "Rare slot demand and build usage are extracted from poe.ninja. Rare mod signatures and craft routes are rule-based recommendations, not direct item-mod exports."
+  },
+  "league": {
+    "name": "Runes of Aldur",
+    "url": "runesofaldur",
+    "displayName": "Runes of Aldur",
+    "snapshotName": "runes-of-aldur",
+    "snapshotVersion": "0448-20260610-12345",
+    "totalCharacters": 124162
+  },
+  "classes": [
+    {
+      "name": "Martial Artist",
+      "count": 30638,
+      "percentage": 24.68
+    },
+    {
+      "name": "Spirit Walker",
+      "count": 23212,
+      "percentage": 18.69
+    },
+    {
+      "name": "Deadeye",
+      "count": 16185,
+      "percentage": 13.04
+    },
+    {
+      "name": "Oracle",
+      "count": 6668,
+      "percentage": 5.37
+    },
+    {
+      "name": "Disciple of Varashta",
+      "count": 5107,
+      "percentage": 4.11
+    },
+    {
+      "name": "Tactician",
+      "count": 4582,
+      "percentage": 3.69
+    },
+    {
+      "name": "Gemling Legionnaire",
+      "count": 4131,
+      "percentage": 3.33
+    },
+    {
+      "name": "Stormweaver",
+      "count": 4128,
+      "percentage": 3.32
+    }
+  ],
+  "rare": {
+    "opportunities": [
+      {
+        "id": "rare-ring",
+        "itemName": "Rare Ring",
+        "baseLabel": "Ring",
+        "slot": "Ring",
+        "adoptionCount": 119957,
+        "adoptionPct": 96.61,
+        "score": 96,
+        "verdict": "High",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Martial Artist",
+            "count": 30532,
+            "percentage": 99.65,
+            "classShare": 24.68
+          },
+          {
+            "className": "Deadeye",
+            "count": 16112,
+            "percentage": 99.55,
+            "classShare": 13.04
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 22833,
+            "percentage": 98.37,
+            "classShare": 18.69
+          },
+          {
+            "className": "Oracle",
+            "count": 6557,
+            "percentage": 98.34,
+            "classShare": 5.37
+          }
+        ],
+        "topClass": "Martial Artist",
+        "archetype": "attack",
+        "modSignature": [
+          "+# to maximum Life or Mana",
+          "+#% to Elemental Resistances",
+          "Damage, Accuracy, or Cast Speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "供給が多く価格競争になりやすい",
+          "耐性だけの品は差別化しにくい"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Ring\n+# to maximum Life or Mana\n+#% to Elemental Resistances\nDamage, Accuracy, or Cast Speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Ring"
+      },
+      {
+        "id": "rare-amulet",
+        "itemName": "Rare Amulet",
+        "baseLabel": "Amulet",
+        "slot": "Amulet",
+        "adoptionCount": 107988,
+        "adoptionPct": 86.97,
+        "score": 94,
+        "verdict": "High",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Disciple of Varashta",
+            "count": 5039,
+            "percentage": 98.67,
+            "classShare": 4.11
+          },
+          {
+            "className": "Deadeye",
+            "count": 15428,
+            "percentage": 95.32,
+            "classShare": 13.04
+          },
+          {
+            "className": "Oracle",
+            "count": 6248,
+            "percentage": 93.7,
+            "classShare": 5.37
+          },
+          {
+            "className": "Tactician",
+            "count": 4165,
+            "percentage": 90.9,
+            "classShare": 3.69
+          }
+        ],
+        "topClass": "Disciple of Varashta",
+        "archetype": "attack",
+        "modSignature": [
+          "+1 to Level of all Attack Skills",
+          "+# to Dexterity or Strength",
+          "+#% to Global Critical Multiplier"
+        ],
+        "craftPlan": [
+          "Essence start",
+          "Omen-assisted refine",
+          "Stop at 2-3 sellable key mods"
+        ],
+        "riskFlags": [
+          "高tier要求で失敗品が増えやすい",
+          "完成条件を広げすぎると売れ残る"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Amulet\n+1 to Level of all Attack Skills\n+# to Dexterity or Strength\n+#% to Global Critical Multiplier"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Amulet"
+      },
+      {
+        "id": "rare-boots",
+        "itemName": "Rare Boots",
+        "baseLabel": "Boots",
+        "slot": "Boots",
+        "adoptionCount": 114816,
+        "adoptionPct": 92.47,
+        "score": 92,
+        "verdict": "High",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Deadeye",
+            "count": 15968,
+            "percentage": 98.66,
+            "classShare": 13.04
+          },
+          {
+            "className": "Tactician",
+            "count": 4503,
+            "percentage": 98.28,
+            "classShare": 3.69
+          },
+          {
+            "className": "Oracle",
+            "count": 6538,
+            "percentage": 98.05,
+            "classShare": 5.37
+          },
+          {
+            "className": "Martial Artist",
+            "count": 28884,
+            "percentage": 94.28,
+            "classShare": 24.68
+          }
+        ],
+        "topClass": "Deadeye",
+        "archetype": "ranged",
+        "modSignature": [
+          "+#% increased Movement Speed",
+          "+# to maximum Life",
+          "+#% to Elemental Resistances"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "供給が多く価格競争になりやすい",
+          "耐性だけの品は差別化しにくい"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Boots\n+#% increased Movement Speed\n+# to maximum Life\n+#% to Elemental Resistances"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Boots"
+      },
+      {
+        "id": "rare-jewel",
+        "itemName": "Rare Jewel",
+        "baseLabel": "Jewel",
+        "slot": "Jewel",
+        "adoptionCount": 117523,
+        "adoptionPct": 94.65,
+        "score": 90,
+        "verdict": "High",
+        "budget": "要確認",
+        "craftScope": "Manual review",
+        "classFits": [
+          {
+            "className": "Deadeye",
+            "count": 15702,
+            "percentage": 97.02,
+            "classShare": 13.04
+          },
+          {
+            "className": "Disciple of Varashta",
+            "count": 4953,
+            "percentage": 96.98,
+            "classShare": 4.11
+          },
+          {
+            "className": "Martial Artist",
+            "count": 29603,
+            "percentage": 96.62,
+            "classShare": 24.68
+          },
+          {
+            "className": "Oracle",
+            "count": 6365,
+            "percentage": 95.46,
+            "classShare": 5.37
+          }
+        ],
+        "topClass": "Deadeye",
+        "archetype": "ranged",
+        "modSignature": [
+          "build-specific damage mod",
+          "defensive or attribute mod",
+          "corrupted or high-tier roll watch"
+        ],
+        "craftPlan": [
+          "Filter by build-specific rolls",
+          "Avoid generic low-tier rolls",
+          "Price-check manually"
+        ],
+        "riskFlags": [
+          "mod価値の判定が手動寄り",
+          "似た低価格品が多い"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Jewel\nbuild-specific damage mod\ndefensive or attribute mod\ncorrupted or high-tier roll watch"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Jewel"
+      },
+      {
+        "id": "rare-helmet",
+        "itemName": "Rare Helmet",
+        "baseLabel": "Helmet",
+        "slot": "Helmet",
+        "adoptionCount": 95203,
+        "adoptionPct": 76.68,
+        "score": 84,
+        "verdict": "High",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Disciple of Varashta",
+            "count": 4999,
+            "percentage": 97.89,
+            "classShare": 4.11
+          },
+          {
+            "className": "Deadeye",
+            "count": 15726,
+            "percentage": 97.16,
+            "classShare": 13.04
+          },
+          {
+            "className": "Oracle",
+            "count": 5945,
+            "percentage": 89.16,
+            "classShare": 5.37
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 19947,
+            "percentage": 85.93,
+            "classShare": 18.69
+          }
+        ],
+        "topClass": "Disciple of Varashta",
+        "archetype": "attack",
+        "modSignature": [
+          "+# to maximum Life or Energy Shield",
+          "+#% to Elemental Resistances",
+          "reservation, attribute, or skill utility suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "供給が多く価格競争になりやすい",
+          "耐性だけの品は差別化しにくい"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Helmet\n+# to maximum Life or Energy Shield\n+#% to Elemental Resistances\nreservation, attribute, or skill utility suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Helmet"
+      },
+      {
+        "id": "rare-gloves",
+        "itemName": "Rare Gloves",
+        "baseLabel": "Gloves",
+        "slot": "Gloves",
+        "adoptionCount": 87260,
+        "adoptionPct": 70.28,
+        "score": 84,
+        "verdict": "High",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Spirit Walker",
+            "count": 22215,
+            "percentage": 95.7,
+            "classShare": 18.69
+          },
+          {
+            "className": "Deadeye",
+            "count": 15445,
+            "percentage": 95.43,
+            "classShare": 13.04
+          },
+          {
+            "className": "Disciple of Varashta",
+            "count": 4421,
+            "percentage": 86.57,
+            "classShare": 4.11
+          },
+          {
+            "className": "Oracle",
+            "count": 4866,
+            "percentage": 72.98,
+            "classShare": 5.37
+          }
+        ],
+        "topClass": "Spirit Walker",
+        "archetype": "hybrid",
+        "modSignature": [
+          "+#% to Attack or Cast Speed",
+          "+# to maximum Life",
+          "+#% to Elemental Resistances"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Gloves\n+#% to Attack or Cast Speed\n+# to maximum Life\n+#% to Elemental Resistances"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Gloves"
+      },
+      {
+        "id": "rare-body-armour",
+        "itemName": "Rare Body Armour",
+        "baseLabel": "Body Armour",
+        "slot": "Body Armour",
+        "adoptionCount": 87009,
+        "adoptionPct": 70.08,
+        "score": 80,
+        "verdict": "High",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Oracle",
+            "count": 5828,
+            "percentage": 87.4,
+            "classShare": 5.37
+          },
+          {
+            "className": "Deadeye",
+            "count": 13806,
+            "percentage": 85.3,
+            "classShare": 13.04
+          },
+          {
+            "className": "Martial Artist",
+            "count": 24003,
+            "percentage": 78.34,
+            "classShare": 24.68
+          },
+          {
+            "className": "Disciple of Varashta",
+            "count": 3979,
+            "percentage": 77.91,
+            "classShare": 4.11
+          }
+        ],
+        "topClass": "Oracle",
+        "archetype": "caster",
+        "modSignature": [
+          "+# to Armour/Evasion/Energy Shield",
+          "+# to maximum Life",
+          "+#% to Elemental or Chaos Resistance"
+        ],
+        "craftPlan": [
+          "Defence base first",
+          "Essence or Regal into core defence",
+          "Omen refine only if prefixes land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Body Armour\n+# to Armour/Evasion/Energy Shield\n+# to maximum Life\n+#% to Elemental or Chaos Resistance"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Body%20Armour"
+      },
+      {
+        "id": "rare-belt",
+        "itemName": "Rare Belt",
+        "baseLabel": "Belt",
+        "slot": "Belt",
+        "adoptionCount": 77538,
+        "adoptionPct": 62.45,
+        "score": 69,
+        "verdict": "Watch",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Disciple of Varashta",
+            "count": 3882,
+            "percentage": 76.01,
+            "classShare": 4.11
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 16487,
+            "percentage": 71.03,
+            "classShare": 18.69
+          },
+          {
+            "className": "Deadeye",
+            "count": 11243,
+            "percentage": 69.47,
+            "classShare": 13.04
+          },
+          {
+            "className": "Oracle",
+            "count": 4048,
+            "percentage": 60.71,
+            "classShare": 5.37
+          }
+        ],
+        "topClass": "Disciple of Varashta",
+        "archetype": "attack",
+        "modSignature": [
+          "+# to maximum Life",
+          "+#% to Elemental Resistances",
+          "+# to Strength or Flask/Charm utility"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "供給が多く価格競争になりやすい",
+          "耐性だけの品は差別化しにくい"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Belt\n+# to maximum Life\n+#% to Elemental Resistances\n+# to Strength or Flask/Charm utility"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Belt"
+      },
+      {
+        "id": "rare-focus",
+        "itemName": "Rare Focus",
+        "baseLabel": "Focus",
+        "slot": "Focus",
+        "adoptionCount": 10956,
+        "adoptionPct": 8.82,
+        "score": 56,
+        "verdict": "Watch",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Disciple of Varashta",
+            "count": 4719,
+            "percentage": 92.4,
+            "classShare": 4.11
+          },
+          {
+            "className": "Oracle",
+            "count": 1334,
+            "percentage": 20.01,
+            "classShare": 5.37
+          },
+          {
+            "className": "Tactician",
+            "count": 45,
+            "percentage": 0.98,
+            "classShare": 3.69
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 81,
+            "percentage": 0.35,
+            "classShare": 18.69
+          }
+        ],
+        "topClass": "Disciple of Varashta",
+        "archetype": "attack",
+        "modSignature": [
+          "+#% increased Physical Damage",
+          "+#% to Attack Speed",
+          "Adds # to # Elemental Damage"
+        ],
+        "craftPlan": [
+          "Essence start",
+          "Omen-assisted refine",
+          "Stop at 2-3 sellable key mods"
+        ],
+        "riskFlags": [
+          "高tier要求で失敗品が増えやすい",
+          "完成条件を広げすぎると売れ残る"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Focus\n+#% increased Physical Damage\n+#% to Attack Speed\nAdds # to # Elemental Damage"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Focus"
+      },
+      {
+        "id": "rare-sceptre",
+        "itemName": "Rare Sceptre",
+        "baseLabel": "Sceptre",
+        "slot": "Weapon",
+        "adoptionCount": 19425,
+        "adoptionPct": 15.64,
+        "score": 53,
+        "verdict": "Avoid",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Disciple of Varashta",
+            "count": 3976,
+            "percentage": 77.85,
+            "classShare": 4.11
+          },
+          {
+            "className": "Oracle",
+            "count": 3352,
+            "percentage": 50.27,
+            "classShare": 5.37
+          },
+          {
+            "className": "Tactician",
+            "count": 900,
+            "percentage": 19.64,
+            "classShare": 3.69
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 4262,
+            "percentage": 18.36,
+            "classShare": 18.69
+          }
+        ],
+        "topClass": "Disciple of Varashta",
+        "archetype": "attack",
+        "modSignature": [
+          "+#% increased Physical Damage",
+          "+#% to Attack Speed",
+          "Adds # to # Elemental Damage"
+        ],
+        "craftPlan": [
+          "Essence start",
+          "Omen-assisted refine",
+          "Stop at 2-3 sellable key mods"
+        ],
+        "riskFlags": [
+          "高tier要求で失敗品が増えやすい",
+          "完成条件を広げすぎると売れ残る"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Sceptre\n+#% increased Physical Damage\n+#% to Attack Speed\nAdds # to # Elemental Damage"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Sceptre"
+      },
+      {
+        "id": "rare-bow",
+        "itemName": "Rare Bow",
+        "baseLabel": "Bow",
+        "slot": "Weapon",
+        "adoptionCount": 16453,
+        "adoptionPct": 13.25,
+        "score": 52,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Deadeye",
+            "count": 14363,
+            "percentage": 88.74,
+            "classShare": 13.04
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 264,
+            "percentage": 1.14,
+            "classShare": 18.69
+          },
+          {
+            "className": "Martial Artist",
+            "count": 170,
+            "percentage": 0.55,
+            "classShare": 24.68
+          },
+          {
+            "className": "Tactician",
+            "count": 20,
+            "percentage": 0.44,
+            "classShare": 3.69
+          }
+        ],
+        "topClass": "Deadeye",
+        "archetype": "ranged",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Bow\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Bow"
+      },
+      {
+        "id": "rare-quarterstaff",
+        "itemName": "Rare Quarterstaff",
+        "baseLabel": "Quarterstaff",
+        "slot": "Weapon",
+        "adoptionCount": 23350,
+        "adoptionPct": 18.81,
+        "score": 51,
+        "verdict": "Avoid",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Martial Artist",
+            "count": 21452,
+            "percentage": 70.02,
+            "classShare": 24.68
+          },
+          {
+            "className": "Oracle",
+            "count": 13,
+            "percentage": 0.19,
+            "classShare": 5.37
+          },
+          {
+            "className": "Deadeye",
+            "count": 30,
+            "percentage": 0.19,
+            "classShare": 13.04
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 41,
+            "percentage": 0.18,
+            "classShare": 18.69
+          }
+        ],
+        "topClass": "Martial Artist",
+        "archetype": "attack",
+        "modSignature": [
+          "+#% increased Physical Damage",
+          "+#% to Attack Speed",
+          "Adds # to # Elemental Damage"
+        ],
+        "craftPlan": [
+          "Essence start",
+          "Omen-assisted refine",
+          "Stop at 2-3 sellable key mods"
+        ],
+        "riskFlags": [
+          "高tier要求で失敗品が増えやすい",
+          "完成条件を広げすぎると売れ残る"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Quarterstaff\n+#% increased Physical Damage\n+#% to Attack Speed\nAdds # to # Elemental Damage"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Quarterstaff"
+      },
+      {
+        "id": "rare-wand",
+        "itemName": "Rare Wand",
+        "baseLabel": "Wand",
+        "slot": "Weapon",
+        "adoptionCount": 10816,
+        "adoptionPct": 8.71,
+        "score": 46,
+        "verdict": "Avoid",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Oracle",
+            "count": 4550,
+            "percentage": 68.24,
+            "classShare": 5.37
+          },
+          {
+            "className": "Disciple of Varashta",
+            "count": 56,
+            "percentage": 1.1,
+            "classShare": 4.11
+          },
+          {
+            "className": "Tactician",
+            "count": 10,
+            "percentage": 0.22,
+            "classShare": 3.69
+          },
+          {
+            "className": "Martial Artist",
+            "count": 49,
+            "percentage": 0.16,
+            "classShare": 24.68
+          }
+        ],
+        "topClass": "Oracle",
+        "archetype": "caster",
+        "modSignature": [
+          "+2 to Level of all Spell Skills",
+          "+#% increased Spell Damage",
+          "+#% to Cast Speed"
+        ],
+        "craftPlan": [
+          "Essence start",
+          "Omen-assisted refine",
+          "Stop at 2-3 sellable key mods"
+        ],
+        "riskFlags": [
+          "高tier要求で失敗品が増えやすい",
+          "完成条件を広げすぎると売れ残る"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Wand\n+2 to Level of all Spell Skills\n+#% increased Spell Damage\n+#% to Cast Speed"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Wand"
+      },
+      {
+        "id": "rare-crossbow",
+        "itemName": "Rare Crossbow",
+        "baseLabel": "Crossbow",
+        "slot": "Weapon",
+        "adoptionCount": 9366,
+        "adoptionPct": 7.54,
+        "score": 37,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Tactician",
+            "count": 2579,
+            "percentage": 56.29,
+            "classShare": 3.69
+          },
+          {
+            "className": "Deadeye",
+            "count": 293,
+            "percentage": 1.81,
+            "classShare": 13.04
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 171,
+            "percentage": 0.74,
+            "classShare": 18.69
+          },
+          {
+            "className": "Oracle",
+            "count": 10,
+            "percentage": 0.15,
+            "classShare": 5.37
+          }
+        ],
+        "topClass": "Tactician",
+        "archetype": "ranged",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Crossbow\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Crossbow"
+      },
+      {
+        "id": "rare-staff",
+        "itemName": "Rare Staff",
+        "baseLabel": "Staff",
+        "slot": "Weapon",
+        "adoptionCount": 14223,
+        "adoptionPct": 11.46,
+        "score": 33,
+        "verdict": "Avoid",
+        "budget": "5-20 div",
+        "craftScope": "Omen tier",
+        "classFits": [
+          {
+            "className": "Oracle",
+            "count": 2216,
+            "percentage": 33.23,
+            "classShare": 5.37
+          },
+          {
+            "className": "Disciple of Varashta",
+            "count": 1366,
+            "percentage": 26.75,
+            "classShare": 4.11
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 148,
+            "percentage": 0.64,
+            "classShare": 18.69
+          },
+          {
+            "className": "Tactician",
+            "count": 16,
+            "percentage": 0.35,
+            "classShare": 3.69
+          }
+        ],
+        "topClass": "Oracle",
+        "archetype": "caster",
+        "modSignature": [
+          "+2 to Level of all Spell Skills",
+          "+#% increased Spell Damage",
+          "+#% to Cast Speed"
+        ],
+        "craftPlan": [
+          "Essence start",
+          "Omen-assisted refine",
+          "Stop at 2-3 sellable key mods"
+        ],
+        "riskFlags": [
+          "高tier要求で失敗品が増えやすい",
+          "完成条件を広げすぎると売れ残る"
+        ],
+        "targetSlot": true,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Staff\n+2 to Level of all Spell Skills\n+#% increased Spell Damage\n+#% to Cast Speed"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Staff"
+      },
+      {
+        "id": "rare-spear",
+        "itemName": "Rare Spear",
+        "baseLabel": "Spear",
+        "slot": "Weapon",
+        "adoptionCount": 9615,
+        "adoptionPct": 7.74,
+        "score": 25,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Spirit Walker",
+            "count": 6315,
+            "percentage": 27.21,
+            "classShare": 18.69
+          },
+          {
+            "className": "Deadeye",
+            "count": 512,
+            "percentage": 3.16,
+            "classShare": 13.04
+          },
+          {
+            "className": "Martial Artist",
+            "count": 453,
+            "percentage": 1.48,
+            "classShare": 24.68
+          },
+          {
+            "className": "Tactician",
+            "count": 51,
+            "percentage": 1.11,
+            "classShare": 3.69
+          }
+        ],
+        "topClass": "Spirit Walker",
+        "archetype": "hybrid",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Spear\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Spear"
+      },
+      {
+        "id": "rare-quiver",
+        "itemName": "Rare Quiver",
+        "baseLabel": "Quiver",
+        "slot": "Quiver",
+        "adoptionCount": 5805,
+        "adoptionPct": 4.68,
+        "score": 24,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Deadeye",
+            "count": 4606,
+            "percentage": 28.46,
+            "classShare": 13.04
+          },
+          {
+            "className": "Tactician",
+            "count": 20,
+            "percentage": 0.44,
+            "classShare": 3.69
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 84,
+            "percentage": 0.36,
+            "classShare": 18.69
+          },
+          {
+            "className": "Martial Artist",
+            "count": 64,
+            "percentage": 0.21,
+            "classShare": 24.68
+          }
+        ],
+        "topClass": "Deadeye",
+        "archetype": "ranged",
+        "modSignature": [
+          "Adds # to # damage to attacks",
+          "+#% to Attack Speed",
+          "+# to Accuracy Rating"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Quiver\nAdds # to # damage to attacks\n+#% to Attack Speed\n+# to Accuracy Rating"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Quiver"
+      },
+      {
+        "id": "rare-talisman",
+        "itemName": "Rare Talisman",
+        "baseLabel": "Talisman",
+        "slot": "Weapon",
+        "adoptionCount": 9901,
+        "adoptionPct": 7.97,
+        "score": 20,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Martial Artist",
+            "count": 5517,
+            "percentage": 18.01,
+            "classShare": 24.68
+          },
+          {
+            "className": "Oracle",
+            "count": 639,
+            "percentage": 9.58,
+            "classShare": 5.37
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 1262,
+            "percentage": 5.44,
+            "classShare": 18.69
+          },
+          {
+            "className": "Disciple of Varashta",
+            "count": 203,
+            "percentage": 3.97,
+            "classShare": 4.11
+          }
+        ],
+        "topClass": "Martial Artist",
+        "archetype": "attack",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Talisman\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Talisman"
+      },
+      {
+        "id": "rare-shield",
+        "itemName": "Rare Shield",
+        "baseLabel": "Shield",
+        "slot": "Shield",
+        "adoptionCount": 2772,
+        "adoptionPct": 2.23,
+        "score": 13,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Disciple of Varashta",
+            "count": 146,
+            "percentage": 2.86,
+            "classShare": 4.11
+          },
+          {
+            "className": "Tactician",
+            "count": 60,
+            "percentage": 1.31,
+            "classShare": 3.69
+          },
+          {
+            "className": "Oracle",
+            "count": 45,
+            "percentage": 0.67,
+            "classShare": 5.37
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 146,
+            "percentage": 0.63,
+            "classShare": 18.69
+          }
+        ],
+        "topClass": "Disciple of Varashta",
+        "archetype": "attack",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Shield\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Shield"
+      },
+      {
+        "id": "rare-one-handed-mace",
+        "itemName": "Rare One Handed Mace",
+        "baseLabel": "One Handed Mace",
+        "slot": "Weapon",
+        "adoptionCount": 1473,
+        "adoptionPct": 1.19,
+        "score": 10,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Martial Artist",
+            "count": 106,
+            "percentage": 0.35,
+            "classShare": 24.68
+          },
+          {
+            "className": "Tactician",
+            "count": 14,
+            "percentage": 0.31,
+            "classShare": 3.69
+          },
+          {
+            "className": "Oracle",
+            "count": 14,
+            "percentage": 0.21,
+            "classShare": 5.37
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 12,
+            "percentage": 0.05,
+            "classShare": 18.69
+          }
+        ],
+        "topClass": "Martial Artist",
+        "archetype": "attack",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "One Handed Mace\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20One%20Handed%20Mace"
+      },
+      {
+        "id": "rare-two-handed-mace",
+        "itemName": "Rare Two Handed Mace",
+        "baseLabel": "Two Handed Mace",
+        "slot": "Weapon",
+        "adoptionCount": 1165,
+        "adoptionPct": 0.94,
+        "score": 10,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Tactician",
+            "count": 51,
+            "percentage": 1.11,
+            "classShare": 3.69
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 47,
+            "percentage": 0.2,
+            "classShare": 18.69
+          },
+          {
+            "className": "Oracle",
+            "count": 12,
+            "percentage": 0.18,
+            "classShare": 5.37
+          },
+          {
+            "className": "Martial Artist",
+            "count": 19,
+            "percentage": 0.06,
+            "classShare": 24.68
+          }
+        ],
+        "topClass": "Tactician",
+        "archetype": "ranged",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Two Handed Mace\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Two%20Handed%20Mace"
+      },
+      {
+        "id": "rare-buckler",
+        "itemName": "Rare Buckler",
+        "baseLabel": "Buckler",
+        "slot": "Buckler",
+        "adoptionCount": 679,
+        "adoptionPct": 0.55,
+        "score": 10,
+        "verdict": "Avoid",
+        "budget": "1-5 div",
+        "craftScope": "Essence/Omen",
+        "classFits": [
+          {
+            "className": "Spirit Walker",
+            "count": 343,
+            "percentage": 1.48,
+            "classShare": 18.69
+          },
+          {
+            "className": "Martial Artist",
+            "count": 18,
+            "percentage": 0.06,
+            "classShare": 24.68
+          },
+          {
+            "className": "Deadeye",
+            "count": 8,
+            "percentage": 0.05,
+            "classShare": 13.04
+          },
+          {
+            "className": "Oracle",
+            "count": 2,
+            "percentage": 0.03,
+            "classShare": 5.37
+          }
+        ],
+        "topClass": "Spirit Walker",
+        "archetype": "hybrid",
+        "modSignature": [
+          "primary damage prefix",
+          "life or defensive prefix",
+          "resistance or speed suffix"
+        ],
+        "craftPlan": [
+          "Good base + Essence",
+          "Regal/Augment for missing suffix",
+          "Omen refine if two key mods land"
+        ],
+        "riskFlags": [
+          "需要元ビルドの変化に注意"
+        ],
+        "targetSlot": false,
+        "trade": {
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
+          "query": "Buckler\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+        },
+        "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Buckler"
+      }
+    ],
+    "targetSlots": 9
+  },
+  "unique": [
+    {
+      "name": "Heart of the Well",
+      "type": "Jewel",
+      "adoptionCount": 65904,
+      "adoptionPct": 53.08,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Heart%20of%20the%20Well"
+    },
+    {
+      "name": "Lavianga's Spirits",
+      "type": "Flask",
+      "adoptionCount": 56259,
+      "adoptionPct": 45.31,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Lavianga's%20Spirits"
+    },
+    {
+      "name": "Nascent Hope",
+      "type": "Charm",
+      "adoptionCount": 55773,
+      "adoptionPct": 44.92,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Nascent%20Hope"
+    },
+    {
+      "name": "The Fall of the Axe",
+      "type": "Unknown",
+      "adoptionCount": 33539,
+      "adoptionPct": 27.01,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Fall%20of%20the%20Axe"
+    },
+    {
+      "name": "Beira's Anguish",
+      "type": "Unknown",
+      "adoptionCount": 25336,
+      "adoptionPct": 20.41,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Beira's%20Anguish"
+    },
+    {
+      "name": "From Nothing",
+      "type": "Jewel",
+      "adoptionCount": 18283,
+      "adoptionPct": 14.73,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=From%20Nothing"
+    },
+    {
+      "name": "Rite of Passage",
+      "type": "Charm",
+      "adoptionCount": 16591,
+      "adoptionPct": 13.36,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rite%20of%20Passage"
+    },
+    {
+      "name": "Lochtonial Caress",
+      "type": "Gloves",
+      "adoptionCount": 16342,
+      "adoptionPct": 13.16,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Lochtonial%20Caress"
+    },
+    {
+      "name": "The Taming",
+      "type": "Ring",
+      "adoptionCount": 14572,
+      "adoptionPct": 11.74,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Taming"
+    },
+    {
+      "name": "Amor Mandragora",
+      "type": "Unknown",
+      "adoptionCount": 13817,
+      "adoptionPct": 11.13,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Amor%20Mandragora"
+    },
+    {
+      "name": "Ingenuity",
+      "type": "Belt",
+      "adoptionCount": 13610,
+      "adoptionPct": 10.96,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Ingenuity"
+    },
+    {
+      "name": "Prism of Belief",
+      "type": "Jewel",
+      "adoptionCount": 13449,
+      "adoptionPct": 10.83,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Prism%20of%20Belief"
+    },
+    {
+      "name": "Arakaali's Gift",
+      "type": "Unknown",
+      "adoptionCount": 12791,
+      "adoptionPct": 10.3,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Arakaali's%20Gift"
+    },
+    {
+      "name": "Cadiro's Gambit",
+      "type": "Quiver",
+      "adoptionCount": 12377,
+      "adoptionPct": 9.97,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Cadiro's%20Gambit"
+    },
+    {
+      "name": "Skysliver",
+      "type": "Weapon",
+      "adoptionCount": 12215,
+      "adoptionPct": 9.84,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Skysliver"
+    },
+    {
+      "name": "Sanguis Heroum",
+      "type": "Charm",
+      "adoptionCount": 11508,
+      "adoptionPct": 9.27,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sanguis%20Heroum"
+    },
+    {
+      "name": "Forgotten Warden",
+      "type": "Body Armour",
+      "adoptionCount": 10957,
+      "adoptionPct": 8.82,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Forgotten%20Warden"
+    },
+    {
+      "name": "The Ordained",
+      "type": "Weapon",
+      "adoptionCount": 9104,
+      "adoptionPct": 7.33,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Ordained"
+    },
+    {
+      "name": "Headhunter",
+      "type": "Belt",
+      "adoptionCount": 8744,
+      "adoptionPct": 7.04,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Headhunter"
+    },
+    {
+      "name": "Sacred Flame",
+      "type": "Weapon",
+      "adoptionCount": 8349,
+      "adoptionPct": 6.72,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sacred%20Flame"
+    },
+    {
+      "name": "Normal Charm",
+      "type": "Charm",
+      "adoptionCount": 8246,
+      "adoptionPct": 6.64,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Normal%20Charm"
+    },
+    {
+      "name": "Blood of the Warrior",
+      "type": "Flask",
+      "adoptionCount": 8243,
+      "adoptionPct": 6.64,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Blood%20of%20the%20Warrior"
+    },
+    {
+      "name": "Against the Darkness",
+      "type": "Jewel",
+      "adoptionCount": 8084,
+      "adoptionPct": 6.51,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Against%20the%20Darkness"
+    },
+    {
+      "name": "Mageblood",
+      "type": "Belt",
+      "adoptionCount": 8049,
+      "adoptionPct": 6.48,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Mageblood"
+    },
+    {
+      "name": "Sylvan's Effigy",
+      "type": "Weapon",
+      "adoptionCount": 7171,
+      "adoptionPct": 5.78,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sylvan's%20Effigy"
+    },
+    {
+      "name": "For Utopia",
+      "type": "Charm",
+      "adoptionCount": 7166,
+      "adoptionPct": 5.77,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=For%20Utopia"
+    },
+    {
+      "name": "Shavronne's Satchel",
+      "type": "Belt",
+      "adoptionCount": 7080,
+      "adoptionPct": 5.7,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Shavronne's%20Satchel"
+    },
+    {
+      "name": "Alpha's Howl",
+      "type": "Helmet",
+      "adoptionCount": 6743,
+      "adoptionPct": 5.43,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Alpha's%20Howl"
+    },
+    {
+      "name": "Constricting Command",
+      "type": "Unknown",
+      "adoptionCount": 6551,
+      "adoptionPct": 5.28,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Constricting%20Command"
+    },
+    {
+      "name": "Kalandra's Touch",
+      "type": "Ring",
+      "adoptionCount": 6502,
+      "adoptionPct": 5.24,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Kalandra's%20Touch"
+    },
+    {
+      "name": "Ngamahu's Chosen",
+      "type": "Charm",
+      "adoptionCount": 6436,
+      "adoptionPct": 5.18,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Ngamahu's%20Chosen"
+    },
+    {
+      "name": "Maligaro's Virtuosity",
+      "type": "Gloves",
+      "adoptionCount": 5927,
+      "adoptionPct": 4.77,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Maligaro's%20Virtuosity"
+    },
+    {
+      "name": "Morior Invictus",
+      "type": "Body Armour",
+      "adoptionCount": 5864,
+      "adoptionPct": 4.72,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Morior%20Invictus"
+    },
+    {
+      "name": "Hyrri's Ire",
+      "type": "Body Armour",
+      "adoptionCount": 5784,
+      "adoptionPct": 4.66,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Hyrri's%20Ire"
+    },
+    {
+      "name": "Tyranny's Grip",
+      "type": "Unknown",
+      "adoptionCount": 5375,
+      "adoptionPct": 4.33,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Tyranny's%20Grip"
+    },
+    {
+      "name": "Duality",
+      "type": "Unknown",
+      "adoptionCount": 5355,
+      "adoptionPct": 4.31,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Duality"
+    },
+    {
+      "name": "Guiding Palm of the Eye",
+      "type": "Weapon",
+      "adoptionCount": 5294,
+      "adoptionPct": 4.26,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Guiding%20Palm%20of%20the%20Eye"
+    },
+    {
+      "name": "Breath of the Mountains",
+      "type": "Charm",
+      "adoptionCount": 5279,
+      "adoptionPct": 4.25,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Breath%20of%20the%20Mountains"
+    },
+    {
+      "name": "Valako's Roar",
+      "type": "Charm",
+      "adoptionCount": 5040,
+      "adoptionPct": 4.06,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Valako's%20Roar"
+    },
+    {
+      "name": "Darkness Enthroned",
+      "type": "Belt",
+      "adoptionCount": 4919,
+      "adoptionPct": 3.96,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Darkness%20Enthroned"
+    }
+  ],
+  "gems": [
+    {
+      "name": "Magnified Area II",
+      "adoptionCount": 108456,
+      "adoptionPct": 87.35,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Magnified%20Area%20II"
+    },
+    {
+      "name": "Prolonged Duration II",
+      "adoptionCount": 104210,
+      "adoptionPct": 83.93,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Prolonged%20Duration%20II"
+    },
+    {
+      "name": "Cooldown Recovery II",
+      "adoptionCount": 97924,
+      "adoptionPct": 78.87,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cooldown%20Recovery%20II"
+    },
+    {
+      "name": "Elemental Armament II",
+      "adoptionCount": 66223,
+      "adoptionPct": 53.34,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Elemental%20Armament%20II"
+    },
+    {
+      "name": "Rapid Casting II",
+      "adoptionCount": 64718,
+      "adoptionPct": 52.12,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rapid%20Casting%20II"
+    },
+    {
+      "name": "Rage III",
+      "adoptionCount": 56172,
+      "adoptionPct": 45.24,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rage%20III"
+    },
+    {
+      "name": "Rapid Attacks II",
+      "adoptionCount": 55342,
+      "adoptionPct": 44.57,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rapid%20Attacks%20II"
+    },
+    {
+      "name": "Blind II",
+      "adoptionCount": 54469,
+      "adoptionPct": 43.87,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blind%20II"
+    },
+    {
+      "name": "Efficiency II",
+      "adoptionCount": 50503,
+      "adoptionPct": 40.68,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Efficiency%20II"
+    },
+    {
+      "name": "Wind Dancer",
+      "adoptionCount": 47089,
+      "adoptionPct": 37.93,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wind%20Dancer"
+    },
+    {
+      "name": "Elemental Focus",
+      "adoptionCount": 45229,
+      "adoptionPct": 36.43,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Elemental%20Focus"
+    },
+    {
+      "name": "Charge Profusion II",
+      "adoptionCount": 44856,
+      "adoptionPct": 36.13,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charge%20Profusion%20II"
+    },
+    {
+      "name": "Perpetual Charge",
+      "adoptionCount": 44364,
+      "adoptionPct": 35.73,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Perpetual%20Charge"
+    },
+    {
+      "name": "Concentrated Area",
+      "adoptionCount": 43234,
+      "adoptionPct": 34.82,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Concentrated%20Area"
+    },
+    {
+      "name": "Ghost Dance",
+      "adoptionCount": 41804,
+      "adoptionPct": 33.67,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ghost%20Dance"
+    },
+    {
+      "name": "Herald of Ice",
+      "adoptionCount": 40024,
+      "adoptionPct": 32.24,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Ice"
+    },
+    {
+      "name": "Rapid Attacks III",
+      "adoptionCount": 39003,
+      "adoptionPct": 31.41,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rapid%20Attacks%20III"
+    },
+    {
+      "name": "Charged Mark",
+      "adoptionCount": 36970,
+      "adoptionPct": 29.78,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charged%20Mark"
+    },
+    {
+      "name": "Charge Regulation",
+      "adoptionCount": 35873,
+      "adoptionPct": 28.89,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charge%20Regulation"
+    },
+    {
+      "name": "Blazing Critical",
+      "adoptionCount": 35817,
+      "adoptionPct": 28.85,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blazing%20Critical"
+    },
+    {
+      "name": "Close Combat II",
+      "adoptionCount": 34551,
+      "adoptionPct": 27.83,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Close%20Combat%20II"
+    },
+    {
+      "name": "Heightened Charges",
+      "adoptionCount": 33984,
+      "adoptionPct": 27.37,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Heightened%20Charges"
+    },
+    {
+      "name": "Deliberation",
+      "adoptionCount": 33971,
+      "adoptionPct": 27.36,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Deliberation"
+    },
+    {
+      "name": "Freezing Mark",
+      "adoptionCount": 32334,
+      "adoptionPct": 26.04,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Freezing%20Mark"
+    },
+    {
+      "name": "Longshot II",
+      "adoptionCount": 32045,
+      "adoptionPct": 25.81,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Longshot%20II"
+    },
+    {
+      "name": "Barrage",
+      "adoptionCount": 31951,
+      "adoptionPct": 25.73,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Barrage"
+    },
+    {
+      "name": "Eternal Mark",
+      "adoptionCount": 31202,
+      "adoptionPct": 25.13,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Eternal%20Mark"
+    },
+    {
+      "name": "Maim",
+      "adoptionCount": 30784,
+      "adoptionPct": 24.79,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Maim"
+    },
+    {
+      "name": "Pinpoint Critical",
+      "adoptionCount": 28831,
+      "adoptionPct": 23.22,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Pinpoint%20Critical"
+    },
+    {
+      "name": "Overabundance II",
+      "adoptionCount": 28224,
+      "adoptionPct": 22.73,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Overabundance%20II"
+    },
+    {
+      "name": "Knockback",
+      "adoptionCount": 27457,
+      "adoptionPct": 22.11,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Knockback"
+    },
+    {
+      "name": "Culling Strike II",
+      "adoptionCount": 27163,
+      "adoptionPct": 21.88,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Culling%20Strike%20II"
+    },
+    {
+      "name": "Hollow Focus",
+      "adoptionCount": 26643,
+      "adoptionPct": 21.46,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Hollow%20Focus"
+    },
+    {
+      "name": "Cold Mastery",
+      "adoptionCount": 26050,
+      "adoptionPct": 20.98,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cold%20Mastery"
+    },
+    {
+      "name": "Projectile Acceleration III",
+      "adoptionCount": 25358,
+      "adoptionPct": 20.42,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Projectile%20Acceleration%20III"
+    },
+    {
+      "name": "Blindside",
+      "adoptionCount": 25224,
+      "adoptionPct": 20.32,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blindside"
+    },
+    {
+      "name": "Romira's Requital",
+      "adoptionCount": 24907,
+      "adoptionPct": 20.06,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Romira's%20Requital"
+    },
+    {
+      "name": "Whirling Assault",
+      "adoptionCount": 24801,
+      "adoptionPct": 19.97,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Whirling%20Assault"
+    },
+    {
+      "name": "Hulking Minions",
+      "adoptionCount": 24680,
+      "adoptionPct": 19.88,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Hulking%20Minions"
+    },
+    {
+      "name": "Armour Break III",
+      "adoptionCount": 24548,
+      "adoptionPct": 19.77,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Armour%20Break%20III"
+    },
+    {
+      "name": "Clarity II",
+      "adoptionCount": 24448,
+      "adoptionPct": 19.69,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Clarity%20II"
+    },
+    {
+      "name": "Heft",
+      "adoptionCount": 24376,
+      "adoptionPct": 19.63,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Heft"
+    },
+    {
+      "name": "Meat Shield II",
+      "adoptionCount": 24245,
+      "adoptionPct": 19.53,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Meat%20Shield%20II"
+    },
+    {
+      "name": "Mark of Siphoning II",
+      "adoptionCount": 24201,
+      "adoptionPct": 19.49,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Mark%20of%20Siphoning%20II"
+    },
+    {
+      "name": "Shock",
+      "adoptionCount": 23802,
+      "adoptionPct": 19.17,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Shock"
+    },
+    {
+      "name": "Living Lightning II",
+      "adoptionCount": 23778,
+      "adoptionPct": 19.15,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Living%20Lightning%20II"
+    },
+    {
+      "name": "Blasphemy",
+      "adoptionCount": 23508,
+      "adoptionPct": 18.93,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blasphemy"
+    },
+    {
+      "name": "Cold Attunement",
+      "adoptionCount": 23376,
+      "adoptionPct": 18.83,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cold%20Attunement"
+    },
+    {
+      "name": "Clarity I",
+      "adoptionCount": 23114,
+      "adoptionPct": 18.62,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Clarity%20I"
+    },
+    {
+      "name": "Wild Protector",
+      "adoptionCount": 23008,
+      "adoptionPct": 18.53,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wild%20Protector"
+    }
+  ]
+}
