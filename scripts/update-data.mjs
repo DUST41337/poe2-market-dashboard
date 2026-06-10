@@ -281,10 +281,191 @@ function riskFlagsFor(itemName, type) {
   return ["需要元ビルドの変化に注意"];
 }
 
+function statLine(label, target, why) {
+  return { label, target, why };
+}
+
+function tradeCategoryFor(opportunity) {
+  const label = `${opportunity.baseLabel} ${opportunity.slot}`;
+  if (/Amulet|Talisman/i.test(label)) return "Accessory / Amulet";
+  if (/Ring/i.test(label)) return "Accessory / Ring";
+  if (/Belt/i.test(label)) return "Accessory / Belt";
+  if (/Boots/i.test(label)) return "Armour / Boots";
+  if (/Gloves/i.test(label)) return "Armour / Gloves";
+  if (/Helmet/i.test(label)) return "Armour / Helmet";
+  if (/Body Armour/i.test(label)) return "Armour / Body Armour";
+  if (/Quiver/i.test(label)) return "Off-hand / Quiver";
+  if (/Shield|Buckler|Focus/i.test(label)) return "Off-hand";
+  if (/Jewel/i.test(label)) return "Jewel";
+  if (/Bow|Crossbow|Quarterstaff|Sceptre|Staff|Wand|Spear|Mace/i.test(label)) return "Weapon";
+  return opportunity.slot || "Item";
+}
+
+function minimumTargetsFor(opportunity) {
+  const label = `${opportunity.baseLabel} ${opportunity.slot}`;
+  const archetype = opportunity.archetype;
+
+  if (/Boots/i.test(label)) {
+    return [
+      statLine("Movement Speed", "25%+ preferred", "speed is the easiest buyer-side filter"),
+      statLine("Life or ES", "mid/high tier", "avoid pure resistance boots unless very cheap"),
+      statLine("Total useful resists", "60%+ if no premium mod", "keeps the listing from blending into bulk supply"),
+    ];
+  }
+
+  if (/Ring/i.test(label)) {
+    return [
+      statLine("Life/Mana/ES", "one strong prefix", "rings without a core resource roll are hard to price up"),
+      statLine("Total useful resists", "70%+ target", "resist rings are common, total value needs to be obvious"),
+      statLine("Damage/speed suffix", "one build-facing suffix", "separates the item from generic fixer rings"),
+    ];
+  }
+
+  if (/Amulet|Talisman/i.test(label)) {
+    return [
+      statLine("+Level", "+1 minimum, +2 watchlist", "most buyers start with a level filter"),
+      statLine("Attributes or resource", "one strong support roll", "makes attribute-starved builds easier to fit"),
+      statLine("Damage multiplier", "high tier if present", "premium upside for finished listings"),
+    ];
+  }
+
+  if (/Quarterstaff|Sceptre|Staff|Wand/i.test(label)) {
+    if (archetype === "caster") {
+      return [
+        statLine("+Spell level", "+2 target, +1 budget", "caster weapons are usually filtered by gem level first"),
+        statLine("Spell damage", "80%+ target", "keeps low-roll caster weapons out"),
+        statLine("Cast speed", "10%+ if available", "important second-pass buyer filter"),
+      ];
+    }
+    return [
+      statLine("Physical or elemental DPS", "clear high roll", "attack weapons need visible damage"),
+      statLine("Attack speed", "10%+ target", "buyers filter speed aggressively"),
+      statLine("Accuracy or crit", "one useful suffix", "helps justify price above essence failures"),
+    ];
+  }
+
+  if (/Focus/i.test(label)) {
+    return [
+      statLine("+Spell level or spell damage", "one premium caster prefix", "focus buyers need a reason over shields"),
+      statLine("Energy Shield or Mana", "one strong defense/resource roll", "keeps the item usable"),
+      statLine("Cast speed / crit / res", "one useful suffix", "turns a stat stick into a sellable piece"),
+    ];
+  }
+
+  if (/Gloves/i.test(label)) {
+    return [
+      statLine("Attack or Cast Speed", "10%+ target", "main reason to search gloves specifically"),
+      statLine("Life or ES", "mid/high tier", "defensive floor for non-unique gloves"),
+      statLine("Resists or attributes", "one strong suffix", "fit pressure sells"),
+    ];
+  }
+
+  if (/Body Armour/i.test(label)) {
+    return [
+      statLine("Base defence", "high local defence", "buyers compare armour by defence first"),
+      statLine("Life or ES", "high tier", "required for rare armour to beat cheap alternatives"),
+      statLine("Resistance", "one strong suffix", "keeps it easy to equip"),
+    ];
+  }
+
+  if (/Helmet/i.test(label)) {
+    return [
+      statLine("Life or ES", "mid/high tier", "generic helmets need a defensive floor"),
+      statLine("Resists", "two useful suffixes or one premium suffix", "common buyer filter"),
+      statLine("Utility suffix", "reservation, attribute, or skill utility", "the differentiator"),
+    ];
+  }
+
+  if (/Belt/i.test(label)) {
+    return [
+      statLine("Life", "high tier", "belts are usually life-first searches"),
+      statLine("Resists", "60%+ total target", "common fit pressure"),
+      statLine("Strength or charm/flask utility", "one useful extra", "helps avoid bulk-pricing"),
+    ];
+  }
+
+  if (/Jewel/i.test(label)) {
+    return [
+      statLine("Build-specific damage", "two relevant lines", "jewels are bought by exact build fit"),
+      statLine("Defense or attribute", "one useful support line", "raises floor value"),
+      statLine("Corruption/high tier", "manual watch", "automated pricing is intentionally deferred"),
+    ];
+  }
+
+  if (/Quiver/i.test(label)) {
+    return [
+      statLine("Added damage", "high roll", "ranged builds filter damage first"),
+      statLine("Attack speed", "10%+ target", "premium suffix"),
+      statLine("Accuracy or crit", "one useful suffix", "keeps it build-facing"),
+    ];
+  }
+
+  return [
+    statLine("Primary damage/defense roll", "high enough to notice", "sets the first search filter"),
+    statLine("Life/resource or resistance", "one defensive anchor", "keeps the item wearable"),
+    statLine("Build-facing suffix", "one useful suffix", "avoids generic low-value rares"),
+  ];
+}
+
+function avoidTradeFiltersFor(opportunity) {
+  const label = `${opportunity.baseLabel} ${opportunity.slot}`;
+  const avoid = ["offline listings for manual checks", "low-tier single-mod rares"];
+  if (/Ring|Boots|Belt|Helmet/i.test(label)) avoid.push("resistance-only items with no life/resource/damage hook");
+  if (/Amulet|Quarterstaff|Sceptre|Staff|Wand|Focus/i.test(label)) avoid.push("items missing the premium first filter");
+  if (/Jewel/i.test(label)) avoid.push("generic damage jewels with no exact build fit");
+  return avoid;
+}
+
+function buildTradeProfile(opportunity, leagueName) {
+  const required = opportunity.modSignature.slice(0, 2).map((mod, index) =>
+    statLine(mod, index === 0 ? "main filter" : "second filter", index === 0 ? "start here when filtering" : "use Count >= 2 if supply is thin"),
+  );
+  const preferred = opportunity.modSignature.slice(2).map((mod) => statLine(mod, "nice to have", "raise price if the first filters hit"));
+  const minimums = minimumTargetsFor(opportunity);
+  const profile = {
+    league: leagueName,
+    status: "Online only",
+    rarity: "Rare",
+    category: tradeCategoryFor(opportunity),
+    baseHint: opportunity.baseLabel,
+    required,
+    preferred,
+    minimums,
+    avoid: avoidTradeFiltersFor(opportunity),
+    searchMode: opportunity.craftScope === "Manual review" ? "Manual stat search" : "Stat filters + Count group",
+  };
+
+  const lines = [
+    "PoE2 trade search recipe",
+    `League: ${profile.league}`,
+    `Status: ${profile.status}`,
+    `Rarity: ${profile.rarity}`,
+    `Category: ${profile.category}`,
+    `Base/type hint: ${profile.baseHint}`,
+    `Mode: ${profile.searchMode}`,
+    "",
+    "[Required filters]",
+    ...profile.required.map((item) => `- ${item.label} (${item.target})`),
+    "",
+    "[Minimum targets]",
+    ...profile.minimums.map((item) => `- ${item.label}: ${item.target}`),
+    "",
+    "[Preferred filters]",
+    ...profile.preferred.map((item) => `- ${item.label} (${item.target})`),
+    "",
+    "[Avoid]",
+    ...profile.avoid.map((item) => `- ${item}`),
+  ];
+
+  return { ...profile, copyText: lines.join("\n") };
+}
+
 function buildTradeSearch(leagueName, opportunity) {
+  const profile = buildTradeProfile(opportunity, leagueName);
   return {
     url: `https://www.pathofexile.com/trade2/search/poe2/${encodeURIComponent(leagueName)}`,
-    query: [opportunity.baseLabel, ...opportunity.modSignature].join("\n"),
+    query: profile.copyText,
+    profile,
   };
 }
 

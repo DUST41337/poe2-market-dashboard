@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T06:24:07.222Z",
+  "generatedAt": "2026-06-10T07:27:53.053Z",
   "source": {
     "kind": "poe.ninja",
     "indexStateUrl": "https://poe.ninja/poe2/api/data/index-state",
@@ -114,7 +114,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Ring\n+# to maximum Life or Mana\n+#% to Elemental Resistances\nDamage, Accuracy, or Cast Speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Mana (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life/Mana/ES: one strong prefix\n- Total useful resists: 70%+ target\n- Damage/speed suffix: one build-facing suffix\n\n[Preferred filters]\n- Damage, Accuracy, or Cast Speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Accessory / Ring",
+            "baseHint": "Ring",
+            "required": [
+              {
+                "label": "+# to maximum Life or Mana",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Elemental Resistances",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "Damage, Accuracy, or Cast Speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Life/Mana/ES",
+                "target": "one strong prefix",
+                "why": "rings without a core resource roll are hard to price up"
+              },
+              {
+                "label": "Total useful resists",
+                "target": "70%+ target",
+                "why": "resist rings are common, total value needs to be obvious"
+              },
+              {
+                "label": "Damage/speed suffix",
+                "target": "one build-facing suffix",
+                "why": "separates the item from generic fixer rings"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "resistance-only items with no life/resource/damage hook"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Mana (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life/Mana/ES: one strong prefix\n- Total useful resists: 70%+ target\n- Damage/speed suffix: one build-facing suffix\n\n[Preferred filters]\n- Damage, Accuracy, or Cast Speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Ring"
       },
@@ -174,7 +224,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Amulet\n+1 to Level of all Attack Skills\n+# to Dexterity or Strength\n+#% to Global Critical Multiplier"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nMode: Stat filters + Count group\n\n[Required filters]\n- +1 to Level of all Attack Skills (main filter)\n- +# to Dexterity or Strength (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- +#% to Global Critical Multiplier (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Accessory / Amulet",
+            "baseHint": "Amulet",
+            "required": [
+              {
+                "label": "+1 to Level of all Attack Skills",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+# to Dexterity or Strength",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+#% to Global Critical Multiplier",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "+Level",
+                "target": "+1 minimum, +2 watchlist",
+                "why": "most buyers start with a level filter"
+              },
+              {
+                "label": "Attributes or resource",
+                "target": "one strong support roll",
+                "why": "makes attribute-starved builds easier to fit"
+              },
+              {
+                "label": "Damage multiplier",
+                "target": "high tier if present",
+                "why": "premium upside for finished listings"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "items missing the premium first filter"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nMode: Stat filters + Count group\n\n[Required filters]\n- +1 to Level of all Attack Skills (main filter)\n- +# to Dexterity or Strength (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- +#% to Global Critical Multiplier (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Amulet"
       },
@@ -234,7 +334,57 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Boots\n+#% increased Movement Speed\n+# to maximum Life\n+#% to Elemental Resistances"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Movement Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Movement Speed: 25%+ preferred\n- Life or ES: mid/high tier\n- Total useful resists: 60%+ if no premium mod\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Armour / Boots",
+            "baseHint": "Boots",
+            "required": [
+              {
+                "label": "+#% increased Movement Speed",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+# to maximum Life",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+#% to Elemental Resistances",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Movement Speed",
+                "target": "25%+ preferred",
+                "why": "speed is the easiest buyer-side filter"
+              },
+              {
+                "label": "Life or ES",
+                "target": "mid/high tier",
+                "why": "avoid pure resistance boots unless very cheap"
+              },
+              {
+                "label": "Total useful resists",
+                "target": "60%+ if no premium mod",
+                "why": "keeps the listing from blending into bulk supply"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "resistance-only items with no life/resource/damage hook"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Movement Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Movement Speed: 25%+ preferred\n- Life or ES: mid/high tier\n- Total useful resists: 60%+ if no premium mod\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Boots"
       },
@@ -294,7 +444,57 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Jewel\nbuild-specific damage mod\ndefensive or attribute mod\ncorrupted or high-tier roll watch"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nMode: Manual stat search\n\n[Required filters]\n- build-specific damage mod (main filter)\n- defensive or attribute mod (second filter)\n\n[Minimum targets]\n- Build-specific damage: two relevant lines\n- Defense or attribute: one useful support line\n- Corruption/high tier: manual watch\n\n[Preferred filters]\n- corrupted or high-tier roll watch (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Jewel",
+            "baseHint": "Jewel",
+            "required": [
+              {
+                "label": "build-specific damage mod",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "defensive or attribute mod",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "corrupted or high-tier roll watch",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Build-specific damage",
+                "target": "two relevant lines",
+                "why": "jewels are bought by exact build fit"
+              },
+              {
+                "label": "Defense or attribute",
+                "target": "one useful support line",
+                "why": "raises floor value"
+              },
+              {
+                "label": "Corruption/high tier",
+                "target": "manual watch",
+                "why": "automated pricing is intentionally deferred"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "generic damage jewels with no exact build fit"
+            ],
+            "searchMode": "Manual stat search",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nMode: Manual stat search\n\n[Required filters]\n- build-specific damage mod (main filter)\n- defensive or attribute mod (second filter)\n\n[Minimum targets]\n- Build-specific damage: two relevant lines\n- Defense or attribute: one useful support line\n- Corruption/high tier: manual watch\n\n[Preferred filters]\n- corrupted or high-tier roll watch (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Jewel"
       },
@@ -354,7 +554,57 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Helmet\n+# to maximum Life or Energy Shield\n+#% to Elemental Resistances\nreservation, attribute, or skill utility suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Energy Shield (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life or ES: mid/high tier\n- Resists: two useful suffixes or one premium suffix\n- Utility suffix: reservation, attribute, or skill utility\n\n[Preferred filters]\n- reservation, attribute, or skill utility suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Armour / Helmet",
+            "baseHint": "Helmet",
+            "required": [
+              {
+                "label": "+# to maximum Life or Energy Shield",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Elemental Resistances",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "reservation, attribute, or skill utility suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Life or ES",
+                "target": "mid/high tier",
+                "why": "generic helmets need a defensive floor"
+              },
+              {
+                "label": "Resists",
+                "target": "two useful suffixes or one premium suffix",
+                "why": "common buyer filter"
+              },
+              {
+                "label": "Utility suffix",
+                "target": "reservation, attribute, or skill utility",
+                "why": "the differentiator"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "resistance-only items with no life/resource/damage hook"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Energy Shield (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life or ES: mid/high tier\n- Resists: two useful suffixes or one premium suffix\n- Utility suffix: reservation, attribute, or skill utility\n\n[Preferred filters]\n- reservation, attribute, or skill utility suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Helmet"
       },
@@ -413,7 +663,56 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Gloves\n+#% to Attack or Cast Speed\n+# to maximum Life\n+#% to Elemental Resistances"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% to Attack or Cast Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Attack or Cast Speed: 10%+ target\n- Life or ES: mid/high tier\n- Resists or attributes: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Armour / Gloves",
+            "baseHint": "Gloves",
+            "required": [
+              {
+                "label": "+#% to Attack or Cast Speed",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+# to maximum Life",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+#% to Elemental Resistances",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Attack or Cast Speed",
+                "target": "10%+ target",
+                "why": "main reason to search gloves specifically"
+              },
+              {
+                "label": "Life or ES",
+                "target": "mid/high tier",
+                "why": "defensive floor for non-unique gloves"
+              },
+              {
+                "label": "Resists or attributes",
+                "target": "one strong suffix",
+                "why": "fit pressure sells"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% to Attack or Cast Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Attack or Cast Speed: 10%+ target\n- Life or ES: mid/high tier\n- Resists or attributes: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Gloves"
       },
@@ -472,7 +771,56 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Body Armour\n+# to Armour/Evasion/Energy Shield\n+# to maximum Life\n+#% to Elemental or Chaos Resistance"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to Armour/Evasion/Energy Shield (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Base defence: high local defence\n- Life or ES: high tier\n- Resistance: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental or Chaos Resistance (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Armour / Body Armour",
+            "baseHint": "Body Armour",
+            "required": [
+              {
+                "label": "+# to Armour/Evasion/Energy Shield",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+# to maximum Life",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+#% to Elemental or Chaos Resistance",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Base defence",
+                "target": "high local defence",
+                "why": "buyers compare armour by defence first"
+              },
+              {
+                "label": "Life or ES",
+                "target": "high tier",
+                "why": "required for rare armour to beat cheap alternatives"
+              },
+              {
+                "label": "Resistance",
+                "target": "one strong suffix",
+                "why": "keeps it easy to equip"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to Armour/Evasion/Energy Shield (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Base defence: high local defence\n- Life or ES: high tier\n- Resistance: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental or Chaos Resistance (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Body%20Armour"
       },
@@ -532,7 +880,57 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Belt\n+# to maximum Life\n+#% to Elemental Resistances\n+# to Strength or Flask/Charm utility"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life: high tier\n- Resists: 60%+ total target\n- Strength or charm/flask utility: one useful extra\n\n[Preferred filters]\n- +# to Strength or Flask/Charm utility (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Accessory / Belt",
+            "baseHint": "Belt",
+            "required": [
+              {
+                "label": "+# to maximum Life",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Elemental Resistances",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+# to Strength or Flask/Charm utility",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Life",
+                "target": "high tier",
+                "why": "belts are usually life-first searches"
+              },
+              {
+                "label": "Resists",
+                "target": "60%+ total target",
+                "why": "common fit pressure"
+              },
+              {
+                "label": "Strength or charm/flask utility",
+                "target": "one useful extra",
+                "why": "helps avoid bulk-pricing"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "resistance-only items with no life/resource/damage hook"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life: high tier\n- Resists: 60%+ total target\n- Strength or charm/flask utility: one useful extra\n\n[Preferred filters]\n- +# to Strength or Flask/Charm utility (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Belt"
       },
@@ -592,7 +990,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Focus\n+#% increased Physical Damage\n+#% to Attack Speed\nAdds # to # Elemental Damage"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- +Spell level or spell damage: one premium caster prefix\n- Energy Shield or Mana: one strong defense/resource roll\n- Cast speed / crit / res: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Off-hand",
+            "baseHint": "Focus",
+            "required": [
+              {
+                "label": "+#% increased Physical Damage",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Attack Speed",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "Adds # to # Elemental Damage",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "+Spell level or spell damage",
+                "target": "one premium caster prefix",
+                "why": "focus buyers need a reason over shields"
+              },
+              {
+                "label": "Energy Shield or Mana",
+                "target": "one strong defense/resource roll",
+                "why": "keeps the item usable"
+              },
+              {
+                "label": "Cast speed / crit / res",
+                "target": "one useful suffix",
+                "why": "turns a stat stick into a sellable piece"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "items missing the premium first filter"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- +Spell level or spell damage: one premium caster prefix\n- Energy Shield or Mana: one strong defense/resource roll\n- Cast speed / crit / res: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Focus"
       },
@@ -652,7 +1100,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Sceptre\n+#% increased Physical Damage\n+#% to Attack Speed\nAdds # to # Elemental Damage"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Sceptre",
+            "required": [
+              {
+                "label": "+#% increased Physical Damage",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Attack Speed",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "Adds # to # Elemental Damage",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Physical or elemental DPS",
+                "target": "clear high roll",
+                "why": "attack weapons need visible damage"
+              },
+              {
+                "label": "Attack speed",
+                "target": "10%+ target",
+                "why": "buyers filter speed aggressively"
+              },
+              {
+                "label": "Accuracy or crit",
+                "target": "one useful suffix",
+                "why": "helps justify price above essence failures"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "items missing the premium first filter"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Sceptre"
       },
@@ -711,7 +1209,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Bow\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Bow",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Bow"
       },
@@ -771,7 +1318,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Quarterstaff\n+#% increased Physical Damage\n+#% to Attack Speed\nAdds # to # Elemental Damage"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Quarterstaff",
+            "required": [
+              {
+                "label": "+#% increased Physical Damage",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Attack Speed",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "Adds # to # Elemental Damage",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Physical or elemental DPS",
+                "target": "clear high roll",
+                "why": "attack weapons need visible damage"
+              },
+              {
+                "label": "Attack speed",
+                "target": "10%+ target",
+                "why": "buyers filter speed aggressively"
+              },
+              {
+                "label": "Accuracy or crit",
+                "target": "one useful suffix",
+                "why": "helps justify price above essence failures"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "items missing the premium first filter"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Quarterstaff"
       },
@@ -831,7 +1428,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Wand\n+2 to Level of all Spell Skills\n+#% increased Spell Damage\n+#% to Cast Speed"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Wand",
+            "required": [
+              {
+                "label": "+2 to Level of all Spell Skills",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% increased Spell Damage",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+#% to Cast Speed",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "+Spell level",
+                "target": "+2 target, +1 budget",
+                "why": "caster weapons are usually filtered by gem level first"
+              },
+              {
+                "label": "Spell damage",
+                "target": "80%+ target",
+                "why": "keeps low-roll caster weapons out"
+              },
+              {
+                "label": "Cast speed",
+                "target": "10%+ if available",
+                "why": "important second-pass buyer filter"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "items missing the premium first filter"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Wand"
       },
@@ -890,7 +1537,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Crossbow\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Crossbow",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Crossbow"
       },
@@ -950,7 +1646,57 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Staff\n+2 to Level of all Spell Skills\n+#% increased Spell Damage\n+#% to Cast Speed"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Staff",
+            "required": [
+              {
+                "label": "+2 to Level of all Spell Skills",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% increased Spell Damage",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+#% to Cast Speed",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "+Spell level",
+                "target": "+2 target, +1 budget",
+                "why": "caster weapons are usually filtered by gem level first"
+              },
+              {
+                "label": "Spell damage",
+                "target": "80%+ target",
+                "why": "keeps low-roll caster weapons out"
+              },
+              {
+                "label": "Cast speed",
+                "target": "10%+ if available",
+                "why": "important second-pass buyer filter"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares",
+              "items missing the premium first filter"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Staff"
       },
@@ -1009,7 +1755,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Spear\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Spear",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Spear"
       },
@@ -1068,7 +1863,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Quiver\nAdds # to # damage to attacks\n+#% to Attack Speed\n+# to Accuracy Rating"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nMode: Stat filters + Count group\n\n[Required filters]\n- Adds # to # damage to attacks (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Added damage: high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- +# to Accuracy Rating (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Off-hand / Quiver",
+            "baseHint": "Quiver",
+            "required": [
+              {
+                "label": "Adds # to # damage to attacks",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "+#% to Attack Speed",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "+# to Accuracy Rating",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Added damage",
+                "target": "high roll",
+                "why": "ranged builds filter damage first"
+              },
+              {
+                "label": "Attack speed",
+                "target": "10%+ target",
+                "why": "premium suffix"
+              },
+              {
+                "label": "Accuracy or crit",
+                "target": "one useful suffix",
+                "why": "keeps it build-facing"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nMode: Stat filters + Count group\n\n[Required filters]\n- Adds # to # damage to attacks (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Added damage: high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- +# to Accuracy Rating (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Quiver"
       },
@@ -1127,7 +1971,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Talisman\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Accessory / Amulet",
+            "baseHint": "Talisman",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "+Level",
+                "target": "+1 minimum, +2 watchlist",
+                "why": "most buyers start with a level filter"
+              },
+              {
+                "label": "Attributes or resource",
+                "target": "one strong support roll",
+                "why": "makes attribute-starved builds easier to fit"
+              },
+              {
+                "label": "Damage multiplier",
+                "target": "high tier if present",
+                "why": "premium upside for finished listings"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Talisman"
       },
@@ -1186,7 +2079,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Shield\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Off-hand",
+            "baseHint": "Shield",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Shield"
       },
@@ -1245,7 +2187,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "One Handed Mace\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "One Handed Mace",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20One%20Handed%20Mace"
       },
@@ -1304,7 +2295,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Two Handed Mace\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Weapon",
+            "baseHint": "Two Handed Mace",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Two%20Handed%20Mace"
       },
@@ -1363,7 +2403,56 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "Buckler\nprimary damage prefix\nlife or defensive prefix\nresistance or speed suffix"
+          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "profile": {
+            "league": "Runes of Aldur",
+            "status": "Online only",
+            "rarity": "Rare",
+            "category": "Off-hand",
+            "baseHint": "Buckler",
+            "required": [
+              {
+                "label": "primary damage prefix",
+                "target": "main filter",
+                "why": "start here when filtering"
+              },
+              {
+                "label": "life or defensive prefix",
+                "target": "second filter",
+                "why": "use Count >= 2 if supply is thin"
+              }
+            ],
+            "preferred": [
+              {
+                "label": "resistance or speed suffix",
+                "target": "nice to have",
+                "why": "raise price if the first filters hit"
+              }
+            ],
+            "minimums": [
+              {
+                "label": "Primary damage/defense roll",
+                "target": "high enough to notice",
+                "why": "sets the first search filter"
+              },
+              {
+                "label": "Life/resource or resistance",
+                "target": "one defensive anchor",
+                "why": "keeps the item wearable"
+              },
+              {
+                "label": "Build-facing suffix",
+                "target": "one useful suffix",
+                "why": "avoids generic low-value rares"
+              }
+            ],
+            "avoid": [
+              "offline listings for manual checks",
+              "low-tier single-mod rares"
+            ],
+            "searchMode": "Stat filters + Count group",
+            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          }
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Buckler"
       }

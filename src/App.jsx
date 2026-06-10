@@ -3,7 +3,6 @@ import {
   AlertTriangle,
   ArrowUpDown,
   BarChart3,
-  CheckCircle2,
   Copy,
   Database,
   ExternalLink,
@@ -273,6 +272,7 @@ function RareTable({ items, selected, onSelect }) {
                 <a className="icon-link" href={item.trade.url} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
                   Search <ExternalLink size={14} />
                 </a>
+                <small>{item.trade.profile?.searchMode ?? "Trade search"}</small>
               </td>
               <td>
                 <VerdictBadge verdict={item.verdict} />
@@ -285,6 +285,25 @@ function RareTable({ items, selected, onSelect }) {
   );
 }
 
+function SearchStatList({ title, items }) {
+  if (!items?.length) return null;
+
+  return (
+    <div className="trade-stat-group">
+      <h4>{title}</h4>
+      <ul>
+        {items.map((item) => (
+          <li key={`${title}-${item.label}-${item.target}`}>
+            <strong>{item.label}</strong>
+            <span>{item.target}</span>
+            {item.why ? <small>{item.why}</small> : null}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function SideDetail({ selected, copyText }) {
   if (!selected) {
     return (
@@ -293,6 +312,20 @@ function SideDetail({ selected, copyText }) {
       </aside>
     );
   }
+
+  const tradeProfile = selected.trade.profile ?? {
+    category: selected.slot,
+    baseHint: selected.baseLabel,
+    rarity: "Rare",
+    status: "Online only",
+    searchMode: "Manual stat search",
+    required: selected.modSignature.map((mod) => ({ label: mod, target: "filter", why: "" })),
+    preferred: [],
+    minimums: [],
+    avoid: selected.riskFlags.map((risk) => ({ label: risk, target: "", why: "" })),
+    copyText: selected.trade.query,
+  };
+  const tradeCopyText = tradeProfile.copyText ?? selected.trade.query;
 
   return (
     <aside className="detail-pane">
@@ -336,15 +369,24 @@ function SideDetail({ selected, copyText }) {
       </section>
 
       <section className="detail-section">
-        <h3>推奨mod</h3>
-        <ul className="check-list">
-          {selected.modSignature.map((mod) => (
-            <li key={mod}>
-              <CheckCircle2 size={16} />
-              {mod}
-            </li>
-          ))}
-        </ul>
+        <h3>Trade検索条件</h3>
+        <div className="trade-profile-grid">
+          <div>
+            <span>Category</span>
+            <strong>{tradeProfile.category}</strong>
+          </div>
+          <div>
+            <span>Base</span>
+            <strong>{tradeProfile.baseHint}</strong>
+          </div>
+          <div>
+            <span>Mode</span>
+            <strong>{tradeProfile.searchMode}</strong>
+          </div>
+        </div>
+        <SearchStatList title="必須フィルター" items={tradeProfile.required} />
+        <SearchStatList title="最低目安" items={tradeProfile.minimums} />
+        <SearchStatList title="加点フィルター" items={tradeProfile.preferred} />
       </section>
 
       <section className="detail-section">
@@ -359,18 +401,18 @@ function SideDetail({ selected, copyText }) {
       <section className="detail-section warning">
         <h3>
           <AlertTriangle size={16} />
-          避ける理由
+          避ける検索
         </h3>
         <ul>
-          {selected.riskFlags.map((risk) => (
-            <li key={risk}>{risk}</li>
+          {tradeProfile.avoid.map((risk) => (
+            <li key={typeof risk === "string" ? risk : risk.label}>{typeof risk === "string" ? risk : risk.label}</li>
           ))}
         </ul>
       </section>
 
       <section className="detail-section">
-        <h3>生成された検索</h3>
-        <div className="trade-query">{selected.trade.query}</div>
+        <h3>コピー用レシピ</h3>
+        <div className="trade-query">{tradeCopyText}</div>
         <div className="button-row">
           <TinyButton href={selected.trade.url} icon={ExternalLink}>
             Trade
@@ -378,8 +420,8 @@ function SideDetail({ selected, copyText }) {
           <TinyButton href={selected.poeNinjaUrl} icon={ExternalLink}>
             poe.ninja
           </TinyButton>
-          <TinyButton icon={Copy} onClick={() => copyText(selected.trade.query)}>
-            Query
+          <TinyButton icon={Copy} onClick={() => copyText(tradeCopyText)}>
+            Recipe
           </TinyButton>
         </div>
       </section>
