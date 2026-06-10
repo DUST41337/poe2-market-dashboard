@@ -270,9 +270,9 @@ function RareTable({ items, selected, onSelect }) {
               </td>
               <td>
                 <a className="icon-link" href={item.trade.url} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
-                  Search <ExternalLink size={14} />
+                  {item.trade.linkStatus === "filtered" ? "Filtered" : "Manual"} <ExternalLink size={14} />
                 </a>
-                <small>{item.trade.profile?.searchMode ?? "Trade search"}</small>
+                <small>{item.trade.linkStatus === "filtered" ? item.trade.profile?.searchMode ?? "Trade search" : "条件は右ペイン参照"}</small>
               </td>
               <td>
                 <VerdictBadge verdict={item.verdict} />
@@ -319,6 +319,7 @@ function SideDetail({ selected, copyText }) {
     rarity: "Rare",
     status: "Online only",
     searchMode: "Manual stat search",
+    applied: [],
     required: selected.modSignature.map((mod) => ({ label: mod, target: "filter", why: "" })),
     preferred: [],
     minimums: [],
@@ -383,10 +384,15 @@ function SideDetail({ selected, copyText }) {
             <span>Mode</span>
             <strong>{tradeProfile.searchMode}</strong>
           </div>
+          <div>
+            <span>Link</span>
+            <strong>{selected.trade.linkStatus === "filtered" ? "条件付きURL" : "手動検索"}</strong>
+          </div>
         </div>
-        <SearchStatList title="必須フィルター" items={tradeProfile.required} />
+        <SearchStatList title={selected.trade.linkStatus === "filtered" ? "URLに入っている条件" : "手動で入れる条件"} items={tradeProfile.applied} />
+        <SearchStatList title="手動で締める条件" items={tradeProfile.required} />
         <SearchStatList title="最低目安" items={tradeProfile.minimums} />
-        <SearchStatList title="加点フィルター" items={tradeProfile.preferred} />
+        <SearchStatList title="加点条件" items={tradeProfile.preferred} />
       </section>
 
       <section className="detail-section">
@@ -411,7 +417,7 @@ function SideDetail({ selected, copyText }) {
       </section>
 
       <section className="detail-section">
-        <h3>コピー用レシピ</h3>
+        <h3>共有/調整メモ</h3>
         <div className="trade-query">{tradeCopyText}</div>
         <div className="button-row">
           <TinyButton href={selected.trade.url} icon={ExternalLink}>
@@ -421,7 +427,7 @@ function SideDetail({ selected, copyText }) {
             poe.ninja
           </TinyButton>
           <TinyButton icon={Copy} onClick={() => copyText(tradeCopyText)}>
-            Recipe
+            Memo
           </TinyButton>
         </div>
       </section>

@@ -18,6 +18,9 @@ jobs:
           node-version: 24
       - run: npm ci
       - run: npm run update:data
+        env:
+          TRADE_LINK_LIMIT: 5
+          TRADE_RETRY_MAX_WAIT_MS: 15000
       - name: Commit updated snapshot
         run: |
           if git diff --quiet -- public/data/market.json; then

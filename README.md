@@ -28,6 +28,14 @@ The dashboard is meant to be used from GitHub Pages, not from a local file path.
 
 For a private-feeling share, keep the repository or Pages URL known only to your group. GitHub Pages itself is still public unless the repository or plan supports restricted Pages.
 
+## Trade Links
+
+Official PoE Trade filtered URLs require creating a search id through the official trade API. That endpoint is rate-limited, so the data update only creates filtered URLs for the highest-priority rare candidates by default.
+
+- `Filtered` opens a generated official Trade URL with rarity, category, and stat filters.
+- `Manual` opens the league Trade page; use the detail pane's filters as the manual checklist.
+- Set `TRADE_LINK_LIMIT` during data update to change how many filtered URLs are generated.
+
 ## Data Update
 
 Manual update path:

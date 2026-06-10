@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T07:27:53.053Z",
+  "generatedAt": "2026-06-10T18:20:31.105Z",
   "source": {
     "kind": "poe.ninja",
     "indexStateUrl": "https://poe.ninja/poe2/api/data/index-state",
@@ -11,49 +11,49 @@
     "url": "runesofaldur",
     "displayName": "Runes of Aldur",
     "snapshotName": "runes-of-aldur",
-    "snapshotVersion": "0448-20260610-12345",
-    "totalCharacters": 124162
+    "snapshotVersion": "1644-20260610-17174",
+    "totalCharacters": 124193
   },
   "classes": [
     {
       "name": "Martial Artist",
-      "count": 30638,
-      "percentage": 24.68
+      "count": 30640,
+      "percentage": 24.67
     },
     {
       "name": "Spirit Walker",
-      "count": 23212,
-      "percentage": 18.69
+      "count": 23376,
+      "percentage": 18.82
     },
     {
       "name": "Deadeye",
-      "count": 16185,
-      "percentage": 13.04
+      "count": 16049,
+      "percentage": 12.92
     },
     {
       "name": "Oracle",
-      "count": 6668,
-      "percentage": 5.37
+      "count": 6630,
+      "percentage": 5.34
     },
     {
       "name": "Disciple of Varashta",
-      "count": 5107,
-      "percentage": 4.11
+      "count": 5087,
+      "percentage": 4.1
     },
     {
       "name": "Tactician",
-      "count": 4582,
-      "percentage": 3.69
+      "count": 4521,
+      "percentage": 3.64
     },
     {
       "name": "Gemling Legionnaire",
-      "count": 4131,
-      "percentage": 3.33
+      "count": 4203,
+      "percentage": 3.38
     },
     {
       "name": "Stormweaver",
-      "count": 4128,
-      "percentage": 3.32
+      "count": 4178,
+      "percentage": 3.36
     }
   ],
   "rare": {
@@ -63,8 +63,8 @@
         "itemName": "Rare Ring",
         "baseLabel": "Ring",
         "slot": "Ring",
-        "adoptionCount": 119957,
-        "adoptionPct": 96.61,
+        "adoptionCount": 119939,
+        "adoptionPct": 96.57,
         "score": 96,
         "verdict": "High",
         "budget": "1-5 div",
@@ -72,27 +72,27 @@
         "classFits": [
           {
             "className": "Martial Artist",
-            "count": 30532,
-            "percentage": 99.65,
-            "classShare": 24.68
+            "count": 30528,
+            "percentage": 99.63,
+            "classShare": 24.67
           },
           {
             "className": "Deadeye",
-            "count": 16112,
+            "count": 15976,
             "percentage": 99.55,
-            "classShare": 13.04
-          },
-          {
-            "className": "Spirit Walker",
-            "count": 22833,
-            "percentage": 98.37,
-            "classShare": 18.69
+            "classShare": 12.92
           },
           {
             "className": "Oracle",
-            "count": 6557,
-            "percentage": 98.34,
-            "classShare": 5.37
+            "count": 6525,
+            "percentage": 98.42,
+            "classShare": 5.34
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 23004,
+            "percentage": 98.41,
+            "classShare": 18.82
           }
         ],
         "topClass": "Martial Artist",
@@ -113,14 +113,37 @@
         ],
         "targetSlot": true,
         "trade": {
-          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Mana (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life/Mana/ES: one strong prefix\n- Total useful resists: 70%+ target\n- Damage/speed suffix: one build-facing suffix\n\n[Preferred filters]\n- Damage, Accuracy, or Cast Speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/glGZGYzPIQ",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Mana 50+\n- Total elemental resistance 60+\n- Attack speed 8%+\n\n[Tighten first]\n- +# to maximum Life or Mana (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Manual target rolls]\n- Life/Mana/ES: one strong prefix\n- Total useful resists: 70%+ target\n- Damage/speed suffix: one build-facing suffix\n\n[Optional upside]\n- Damage, Accuracy, or Cast Speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Accessory / Ring",
+            "officialCategory": "accessory.ring",
             "baseHint": "Ring",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Mana 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 60+",
+                "target": "60+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+# to maximum Life or Mana",
@@ -162,9 +185,11 @@
               "low-tier single-mod rares",
               "resistance-only items with no life/resource/damage hook"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Mana (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life/Mana/ES: one strong prefix\n- Total useful resists: 70%+ target\n- Damage/speed suffix: one build-facing suffix\n\n[Preferred filters]\n- Damage, Accuracy, or Cast Speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Mana 50+\n- Total elemental resistance 60+\n- Attack speed 8%+\n\n[Tighten first]\n- +# to maximum Life or Mana (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Manual target rolls]\n- Life/Mana/ES: one strong prefix\n- Total useful resists: 70%+ target\n- Damage/speed suffix: one build-facing suffix\n\n[Optional upside]\n- Damage, Accuracy, or Cast Speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          },
+          "searchId": "glGZGYzPIQ",
+          "linkStatus": "filtered"
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Ring"
       },
@@ -173,8 +198,8 @@
         "itemName": "Rare Amulet",
         "baseLabel": "Amulet",
         "slot": "Amulet",
-        "adoptionCount": 107988,
-        "adoptionPct": 86.97,
+        "adoptionCount": 107983,
+        "adoptionPct": 86.95,
         "score": 94,
         "verdict": "High",
         "budget": "5-20 div",
@@ -182,27 +207,27 @@
         "classFits": [
           {
             "className": "Disciple of Varashta",
-            "count": 5039,
-            "percentage": 98.67,
-            "classShare": 4.11
+            "count": 5020,
+            "percentage": 98.68,
+            "classShare": 4.1
           },
           {
             "className": "Deadeye",
-            "count": 15428,
-            "percentage": 95.32,
-            "classShare": 13.04
+            "count": 15299,
+            "percentage": 95.33,
+            "classShare": 12.92
           },
           {
             "className": "Oracle",
-            "count": 6248,
-            "percentage": 93.7,
-            "classShare": 5.37
+            "count": 6210,
+            "percentage": 93.67,
+            "classShare": 5.34
           },
           {
             "className": "Tactician",
-            "count": 4165,
-            "percentage": 90.9,
-            "classShare": 3.69
+            "count": 4111,
+            "percentage": 90.93,
+            "classShare": 3.64
           }
         ],
         "topClass": "Disciple of Varashta",
@@ -223,14 +248,42 @@
         ],
         "targetSlot": true,
         "trade": {
-          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nMode: Stat filters + Count group\n\n[Required filters]\n- +1 to Level of all Attack Skills (main filter)\n- +# to Dexterity or Strength (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- +#% to Global Critical Multiplier (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/5nPLPE6jSa",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 attack skills\n- Life 50+\n- Mana 50+\n- Critical damage 20%+\n- Dexterity 30+\n\n[Tighten first]\n- +1 to Level of all Attack Skills (main filter)\n- +# to Dexterity or Strength (second filter)\n\n[Manual target rolls]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Optional upside]\n- +#% to Global Critical Multiplier (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Accessory / Amulet",
+            "officialCategory": "accessory.amulet",
             "baseHint": "Amulet",
+            "applied": [
+              {
+                "label": "+1 attack skills",
+                "target": "1+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Mana 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Critical damage 20%+",
+                "target": "20+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Dexterity 30+",
+                "target": "30+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+1 to Level of all Attack Skills",
@@ -272,9 +325,11 @@
               "low-tier single-mod rares",
               "items missing the premium first filter"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nMode: Stat filters + Count group\n\n[Required filters]\n- +1 to Level of all Attack Skills (main filter)\n- +# to Dexterity or Strength (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- +#% to Global Critical Multiplier (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 attack skills\n- Life 50+\n- Mana 50+\n- Critical damage 20%+\n- Dexterity 30+\n\n[Tighten first]\n- +1 to Level of all Attack Skills (main filter)\n- +# to Dexterity or Strength (second filter)\n\n[Manual target rolls]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Optional upside]\n- +#% to Global Critical Multiplier (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          },
+          "searchId": "5nPLPE6jSa",
+          "linkStatus": "filtered"
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Amulet"
       },
@@ -283,8 +338,8 @@
         "itemName": "Rare Boots",
         "baseLabel": "Boots",
         "slot": "Boots",
-        "adoptionCount": 114816,
-        "adoptionPct": 92.47,
+        "adoptionCount": 114863,
+        "adoptionPct": 92.49,
         "score": 92,
         "verdict": "High",
         "budget": "1-5 div",
@@ -292,27 +347,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 15968,
-            "percentage": 98.66,
-            "classShare": 13.04
+            "count": 15847,
+            "percentage": 98.74,
+            "classShare": 12.92
           },
           {
             "className": "Tactician",
-            "count": 4503,
-            "percentage": 98.28,
-            "classShare": 3.69
+            "count": 4437,
+            "percentage": 98.14,
+            "classShare": 3.64
           },
           {
             "className": "Oracle",
-            "count": 6538,
+            "count": 6501,
             "percentage": 98.05,
-            "classShare": 5.37
+            "classShare": 5.34
           },
           {
             "className": "Martial Artist",
-            "count": 28884,
-            "percentage": 94.28,
-            "classShare": 24.68
+            "count": 28872,
+            "percentage": 94.23,
+            "classShare": 24.67
           }
         ],
         "topClass": "Deadeye",
@@ -333,14 +388,32 @@
         ],
         "targetSlot": false,
         "trade": {
-          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Movement Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Movement Speed: 25%+ preferred\n- Life or ES: mid/high tier\n- Total useful resists: 60%+ if no premium mod\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/Wv363QvDfm",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Movement speed 25%+\n- Life 50+\n- Total elemental resistance 50+\n\n[Tighten first]\n- +#% increased Movement Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Manual target rolls]\n- Movement Speed: 25%+ preferred\n- Life or ES: mid/high tier\n- Total useful resists: 60%+ if no premium mod\n\n[Optional upside]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Armour / Boots",
+            "officialCategory": "armour.boots",
             "baseHint": "Boots",
+            "applied": [
+              {
+                "label": "Movement speed 25%+",
+                "target": "25+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+#% increased Movement Speed",
@@ -382,9 +455,11 @@
               "low-tier single-mod rares",
               "resistance-only items with no life/resource/damage hook"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Movement Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Movement Speed: 25%+ preferred\n- Life or ES: mid/high tier\n- Total useful resists: 60%+ if no premium mod\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Movement speed 25%+\n- Life 50+\n- Total elemental resistance 50+\n\n[Tighten first]\n- +#% increased Movement Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Manual target rolls]\n- Movement Speed: 25%+ preferred\n- Life or ES: mid/high tier\n- Total useful resists: 60%+ if no premium mod\n\n[Optional upside]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          },
+          "searchId": "Wv363QvDfm",
+          "linkStatus": "filtered"
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Boots"
       },
@@ -393,8 +468,8 @@
         "itemName": "Rare Jewel",
         "baseLabel": "Jewel",
         "slot": "Jewel",
-        "adoptionCount": 117523,
-        "adoptionPct": 94.65,
+        "adoptionCount": 117575,
+        "adoptionPct": 94.67,
         "score": 90,
         "verdict": "High",
         "budget": "要確認",
@@ -402,27 +477,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 15702,
-            "percentage": 97.02,
-            "classShare": 13.04
+            "count": 15591,
+            "percentage": 97.15,
+            "classShare": 12.92
           },
           {
             "className": "Disciple of Varashta",
-            "count": 4953,
-            "percentage": 96.98,
-            "classShare": 4.11
+            "count": 4937,
+            "percentage": 97.05,
+            "classShare": 4.1
           },
           {
             "className": "Martial Artist",
-            "count": 29603,
-            "percentage": 96.62,
-            "classShare": 24.68
+            "count": 29640,
+            "percentage": 96.74,
+            "classShare": 24.67
           },
           {
             "className": "Oracle",
-            "count": 6365,
-            "percentage": 95.46,
-            "classShare": 5.37
+            "count": 6332,
+            "percentage": 95.51,
+            "classShare": 5.34
           }
         ],
         "topClass": "Deadeye",
@@ -443,14 +518,32 @@
         ],
         "targetSlot": false,
         "trade": {
-          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nMode: Manual stat search\n\n[Required filters]\n- build-specific damage mod (main filter)\n- defensive or attribute mod (second filter)\n\n[Minimum targets]\n- Build-specific damage: two relevant lines\n- Defense or attribute: one useful support line\n- Corruption/high tier: manual watch\n\n[Preferred filters]\n- corrupted or high-tier roll watch (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit",
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/nr6R6lkJt0",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nURL filters: Official URL / Count >= 1\n\n[Trade filters]\n- Critical damage 15%+\n- Attack speed 5%+\n- Cast speed 5%+\n\n[Tighten first]\n- build-specific damage mod (main filter)\n- defensive or attribute mod (second filter)\n\n[Manual target rolls]\n- Build-specific damage: two relevant lines\n- Defense or attribute: one useful support line\n- Corruption/high tier: manual watch\n\n[Optional upside]\n- corrupted or high-tier roll watch (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Jewel",
+            "officialCategory": "jewel",
             "baseHint": "Jewel",
+            "applied": [
+              {
+                "label": "Critical damage 15%+",
+                "target": "15+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 5%+",
+                "target": "5+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 5%+",
+                "target": "5+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "build-specific damage mod",
@@ -492,9 +585,11 @@
               "low-tier single-mod rares",
               "generic damage jewels with no exact build fit"
             ],
-            "searchMode": "Manual stat search",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nMode: Manual stat search\n\n[Required filters]\n- build-specific damage mod (main filter)\n- defensive or attribute mod (second filter)\n\n[Minimum targets]\n- Build-specific damage: two relevant lines\n- Defense or attribute: one useful support line\n- Corruption/high tier: manual watch\n\n[Preferred filters]\n- corrupted or high-tier roll watch (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit"
-          }
+            "searchMode": "Official URL / Count >= 1",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nURL filters: Official URL / Count >= 1\n\n[Trade filters]\n- Critical damage 15%+\n- Attack speed 5%+\n- Cast speed 5%+\n\n[Tighten first]\n- build-specific damage mod (main filter)\n- defensive or attribute mod (second filter)\n\n[Manual target rolls]\n- Build-specific damage: two relevant lines\n- Defense or attribute: one useful support line\n- Corruption/high tier: manual watch\n\n[Optional upside]\n- corrupted or high-tier roll watch (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit"
+          },
+          "searchId": "nr6R6lkJt0",
+          "linkStatus": "filtered"
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Jewel"
       },
@@ -503,8 +598,8 @@
         "itemName": "Rare Helmet",
         "baseLabel": "Helmet",
         "slot": "Helmet",
-        "adoptionCount": 95203,
-        "adoptionPct": 76.68,
+        "adoptionCount": 95206,
+        "adoptionPct": 76.66,
         "score": 84,
         "verdict": "High",
         "budget": "1-5 div",
@@ -512,27 +607,27 @@
         "classFits": [
           {
             "className": "Disciple of Varashta",
-            "count": 4999,
-            "percentage": 97.89,
-            "classShare": 4.11
+            "count": 4981,
+            "percentage": 97.92,
+            "classShare": 4.1
           },
           {
             "className": "Deadeye",
-            "count": 15726,
-            "percentage": 97.16,
-            "classShare": 13.04
+            "count": 15584,
+            "percentage": 97.1,
+            "classShare": 12.92
           },
           {
             "className": "Oracle",
-            "count": 5945,
+            "count": 5911,
             "percentage": 89.16,
-            "classShare": 5.37
+            "classShare": 5.34
           },
           {
             "className": "Spirit Walker",
-            "count": 19947,
-            "percentage": 85.93,
-            "classShare": 18.69
+            "count": 20126,
+            "percentage": 86.1,
+            "classShare": 18.82
           }
         ],
         "topClass": "Disciple of Varashta",
@@ -553,14 +648,37 @@
         ],
         "targetSlot": false,
         "trade": {
-          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Energy Shield (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life or ES: mid/high tier\n- Resists: two useful suffixes or one premium suffix\n- Utility suffix: reservation, attribute, or skill utility\n\n[Preferred filters]\n- reservation, attribute, or skill utility suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/BgR4R3owI8",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Energy Shield 50+\n- Total elemental resistance 50+\n- Intelligence 25+\n\n[Tighten first]\n- +# to maximum Life or Energy Shield (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Manual target rolls]\n- Life or ES: mid/high tier\n- Resists: two useful suffixes or one premium suffix\n- Utility suffix: reservation, attribute, or skill utility\n\n[Optional upside]\n- reservation, attribute, or skill utility suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Armour / Helmet",
+            "officialCategory": "armour.helmet",
             "baseHint": "Helmet",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Energy Shield 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Intelligence 25+",
+                "target": "25+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+# to maximum Life or Energy Shield",
@@ -602,9 +720,11 @@
               "low-tier single-mod rares",
               "resistance-only items with no life/resource/damage hook"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life or Energy Shield (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life or ES: mid/high tier\n- Resists: two useful suffixes or one premium suffix\n- Utility suffix: reservation, attribute, or skill utility\n\n[Preferred filters]\n- reservation, attribute, or skill utility suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Energy Shield 50+\n- Total elemental resistance 50+\n- Intelligence 25+\n\n[Tighten first]\n- +# to maximum Life or Energy Shield (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Manual target rolls]\n- Life or ES: mid/high tier\n- Resists: two useful suffixes or one premium suffix\n- Utility suffix: reservation, attribute, or skill utility\n\n[Optional upside]\n- reservation, attribute, or skill utility suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          },
+          "searchId": "BgR4R3owI8",
+          "linkStatus": "filtered"
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Helmet"
       },
@@ -613,8 +733,8 @@
         "itemName": "Rare Gloves",
         "baseLabel": "Gloves",
         "slot": "Gloves",
-        "adoptionCount": 87260,
-        "adoptionPct": 70.28,
+        "adoptionCount": 87539,
+        "adoptionPct": 70.49,
         "score": 84,
         "verdict": "High",
         "budget": "1-5 div",
@@ -622,27 +742,27 @@
         "classFits": [
           {
             "className": "Spirit Walker",
-            "count": 22215,
-            "percentage": 95.7,
-            "classShare": 18.69
+            "count": 22356,
+            "percentage": 95.64,
+            "classShare": 18.82
           },
           {
             "className": "Deadeye",
-            "count": 15445,
-            "percentage": 95.43,
-            "classShare": 13.04
+            "count": 15324,
+            "percentage": 95.48,
+            "classShare": 12.92
           },
           {
             "className": "Disciple of Varashta",
-            "count": 4421,
-            "percentage": 86.57,
-            "classShare": 4.11
+            "count": 4427,
+            "percentage": 87.03,
+            "classShare": 4.1
           },
           {
             "className": "Oracle",
-            "count": 4866,
-            "percentage": 72.98,
-            "classShare": 5.37
+            "count": 4894,
+            "percentage": 73.82,
+            "classShare": 5.34
           }
         ],
         "topClass": "Spirit Walker",
@@ -663,13 +783,31 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% to Attack or Cast Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Attack or Cast Speed: 10%+ target\n- Life or ES: mid/high tier\n- Resists or attributes: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Attack speed 8%+\n- Life 50+\n- Total elemental resistance 50+\n\n[Tighten first]\n- +#% to Attack or Cast Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Manual target rolls]\n- Attack or Cast Speed: 10%+ target\n- Life or ES: mid/high tier\n- Resists or attributes: one strong suffix\n\n[Optional upside]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Armour / Gloves",
+            "officialCategory": "armour.gloves",
             "baseHint": "Gloves",
+            "applied": [
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+#% to Attack or Cast Speed",
@@ -710,9 +848,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% to Attack or Cast Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Attack or Cast Speed: 10%+ target\n- Life or ES: mid/high tier\n- Resists or attributes: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Attack speed 8%+\n- Life 50+\n- Total elemental resistance 50+\n\n[Tighten first]\n- +#% to Attack or Cast Speed (main filter)\n- +# to maximum Life (second filter)\n\n[Manual target rolls]\n- Attack or Cast Speed: 10%+ target\n- Life or ES: mid/high tier\n- Resists or attributes: one strong suffix\n\n[Optional upside]\n- +#% to Elemental Resistances (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Gloves"
       },
@@ -721,8 +861,8 @@
         "itemName": "Rare Body Armour",
         "baseLabel": "Body Armour",
         "slot": "Body Armour",
-        "adoptionCount": 87009,
-        "adoptionPct": 70.08,
+        "adoptionCount": 86114,
+        "adoptionPct": 69.34,
         "score": 80,
         "verdict": "High",
         "budget": "5-20 div",
@@ -730,27 +870,27 @@
         "classFits": [
           {
             "className": "Oracle",
-            "count": 5828,
-            "percentage": 87.4,
-            "classShare": 5.37
+            "count": 5777,
+            "percentage": 87.13,
+            "classShare": 5.34
           },
           {
             "className": "Deadeye",
-            "count": 13806,
-            "percentage": 85.3,
-            "classShare": 13.04
-          },
-          {
-            "className": "Martial Artist",
-            "count": 24003,
-            "percentage": 78.34,
-            "classShare": 24.68
+            "count": 13650,
+            "percentage": 85.05,
+            "classShare": 12.92
           },
           {
             "className": "Disciple of Varashta",
-            "count": 3979,
-            "percentage": 77.91,
-            "classShare": 4.11
+            "count": 3949,
+            "percentage": 77.63,
+            "classShare": 4.1
+          },
+          {
+            "className": "Martial Artist",
+            "count": 23667,
+            "percentage": 77.24,
+            "classShare": 24.67
           }
         ],
         "topClass": "Oracle",
@@ -771,13 +911,41 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to Armour/Evasion/Energy Shield (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Base defence: high local defence\n- Life or ES: high tier\n- Resistance: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental or Chaos Resistance (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 70+\n- Energy Shield 80+\n- Armour 150+\n- Evasion 150+\n- Total elemental resistance 40+\n\n[Tighten first]\n- +# to Armour/Evasion/Energy Shield (main filter)\n- +# to maximum Life (second filter)\n\n[Manual target rolls]\n- Base defence: high local defence\n- Life or ES: high tier\n- Resistance: one strong suffix\n\n[Optional upside]\n- +#% to Elemental or Chaos Resistance (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Armour / Body Armour",
+            "officialCategory": "armour.chest",
             "baseHint": "Body Armour",
+            "applied": [
+              {
+                "label": "Life 70+",
+                "target": "70+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Energy Shield 80+",
+                "target": "80+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Armour 150+",
+                "target": "150+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Evasion 150+",
+                "target": "150+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 40+",
+                "target": "40+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+# to Armour/Evasion/Energy Shield",
@@ -818,9 +986,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to Armour/Evasion/Energy Shield (main filter)\n- +# to maximum Life (second filter)\n\n[Minimum targets]\n- Base defence: high local defence\n- Life or ES: high tier\n- Resistance: one strong suffix\n\n[Preferred filters]\n- +#% to Elemental or Chaos Resistance (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 70+\n- Energy Shield 80+\n- Armour 150+\n- Evasion 150+\n- Total elemental resistance 40+\n\n[Tighten first]\n- +# to Armour/Evasion/Energy Shield (main filter)\n- +# to maximum Life (second filter)\n\n[Manual target rolls]\n- Base defence: high local defence\n- Life or ES: high tier\n- Resistance: one strong suffix\n\n[Optional upside]\n- +#% to Elemental or Chaos Resistance (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Body%20Armour"
       },
@@ -829,8 +999,8 @@
         "itemName": "Rare Belt",
         "baseLabel": "Belt",
         "slot": "Belt",
-        "adoptionCount": 77538,
-        "adoptionPct": 62.45,
+        "adoptionCount": 76318,
+        "adoptionPct": 61.45,
         "score": 69,
         "verdict": "Watch",
         "budget": "1-5 div",
@@ -838,27 +1008,27 @@
         "classFits": [
           {
             "className": "Disciple of Varashta",
-            "count": 3882,
-            "percentage": 76.01,
-            "classShare": 4.11
+            "count": 3839,
+            "percentage": 75.47,
+            "classShare": 4.1
           },
           {
             "className": "Spirit Walker",
-            "count": 16487,
-            "percentage": 71.03,
-            "classShare": 18.69
+            "count": 16434,
+            "percentage": 70.3,
+            "classShare": 18.82
           },
           {
             "className": "Deadeye",
-            "count": 11243,
-            "percentage": 69.47,
-            "classShare": 13.04
+            "count": 10988,
+            "percentage": 68.47,
+            "classShare": 12.92
           },
           {
             "className": "Oracle",
-            "count": 4048,
-            "percentage": 60.71,
-            "classShare": 5.37
+            "count": 3934,
+            "percentage": 59.34,
+            "classShare": 5.34
           }
         ],
         "topClass": "Disciple of Varashta",
@@ -880,13 +1050,31 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life: high tier\n- Resists: 60%+ total target\n- Strength or charm/flask utility: one useful extra\n\n[Preferred filters]\n- +# to Strength or Flask/Charm utility (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 70+\n- Total elemental resistance 60+\n- Strength 30+\n\n[Tighten first]\n- +# to maximum Life (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Manual target rolls]\n- Life: high tier\n- Resists: 60%+ total target\n- Strength or charm/flask utility: one useful extra\n\n[Optional upside]\n- +# to Strength or Flask/Charm utility (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Accessory / Belt",
+            "officialCategory": "accessory.belt",
             "baseHint": "Belt",
+            "applied": [
+              {
+                "label": "Life 70+",
+                "target": "70+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 60+",
+                "target": "60+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Strength 30+",
+                "target": "30+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+# to maximum Life",
@@ -928,9 +1116,11 @@
               "low-tier single-mod rares",
               "resistance-only items with no life/resource/damage hook"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nMode: Stat filters + Count group\n\n[Required filters]\n- +# to maximum Life (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Minimum targets]\n- Life: high tier\n- Resists: 60%+ total target\n- Strength or charm/flask utility: one useful extra\n\n[Preferred filters]\n- +# to Strength or Flask/Charm utility (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 70+\n- Total elemental resistance 60+\n- Strength 30+\n\n[Tighten first]\n- +# to maximum Life (main filter)\n- +#% to Elemental Resistances (second filter)\n\n[Manual target rolls]\n- Life: high tier\n- Resists: 60%+ total target\n- Strength or charm/flask utility: one useful extra\n\n[Optional upside]\n- +# to Strength or Flask/Charm utility (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Belt"
       },
@@ -939,8 +1129,8 @@
         "itemName": "Rare Focus",
         "baseLabel": "Focus",
         "slot": "Focus",
-        "adoptionCount": 10956,
-        "adoptionPct": 8.82,
+        "adoptionCount": 10973,
+        "adoptionPct": 8.84,
         "score": 56,
         "verdict": "Watch",
         "budget": "5-20 div",
@@ -948,27 +1138,27 @@
         "classFits": [
           {
             "className": "Disciple of Varashta",
-            "count": 4719,
-            "percentage": 92.4,
-            "classShare": 4.11
+            "count": 4729,
+            "percentage": 92.96,
+            "classShare": 4.1
           },
           {
             "className": "Oracle",
-            "count": 1334,
-            "percentage": 20.01,
-            "classShare": 5.37
+            "count": 1296,
+            "percentage": 19.55,
+            "classShare": 5.34
           },
           {
             "className": "Tactician",
-            "count": 45,
-            "percentage": 0.98,
-            "classShare": 3.69
+            "count": 49,
+            "percentage": 1.08,
+            "classShare": 3.64
           },
           {
             "className": "Spirit Walker",
-            "count": 81,
-            "percentage": 0.35,
-            "classShare": 18.69
+            "count": 88,
+            "percentage": 0.38,
+            "classShare": 18.82
           }
         ],
         "topClass": "Disciple of Varashta",
@@ -990,13 +1180,36 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- +Spell level or spell damage: one premium caster prefix\n- Energy Shield or Mana: one strong defense/resource roll\n- Cast speed / crit / res: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 spell skills\n- Spell damage 60%+\n- Energy Shield 50+\n- Cast speed 8%+\n\n[Tighten first]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- +Spell level or spell damage: one premium caster prefix\n- Energy Shield or Mana: one strong defense/resource roll\n- Cast speed / crit / res: one useful suffix\n\n[Optional upside]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Off-hand",
+            "officialCategory": "armour.focus",
             "baseHint": "Focus",
+            "applied": [
+              {
+                "label": "+1 spell skills",
+                "target": "1+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Spell damage 60%+",
+                "target": "60+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Energy Shield 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+#% increased Physical Damage",
@@ -1038,9 +1251,11 @@
               "low-tier single-mod rares",
               "items missing the premium first filter"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- +Spell level or spell damage: one premium caster prefix\n- Energy Shield or Mana: one strong defense/resource roll\n- Cast speed / crit / res: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 spell skills\n- Spell damage 60%+\n- Energy Shield 50+\n- Cast speed 8%+\n\n[Tighten first]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- +Spell level or spell damage: one premium caster prefix\n- Energy Shield or Mana: one strong defense/resource roll\n- Cast speed / crit / res: one useful suffix\n\n[Optional upside]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Focus"
       },
@@ -1049,8 +1264,8 @@
         "itemName": "Rare Sceptre",
         "baseLabel": "Sceptre",
         "slot": "Weapon",
-        "adoptionCount": 19425,
-        "adoptionPct": 15.64,
+        "adoptionCount": 19270,
+        "adoptionPct": 15.52,
         "score": 53,
         "verdict": "Avoid",
         "budget": "5-20 div",
@@ -1058,27 +1273,27 @@
         "classFits": [
           {
             "className": "Disciple of Varashta",
-            "count": 3976,
-            "percentage": 77.85,
-            "classShare": 4.11
+            "count": 3970,
+            "percentage": 78.04,
+            "classShare": 4.1
           },
           {
             "className": "Oracle",
-            "count": 3352,
-            "percentage": 50.27,
-            "classShare": 5.37
+            "count": 3369,
+            "percentage": 50.81,
+            "classShare": 5.34
           },
           {
             "className": "Tactician",
-            "count": 900,
-            "percentage": 19.64,
-            "classShare": 3.69
+            "count": 913,
+            "percentage": 20.19,
+            "classShare": 3.64
           },
           {
             "className": "Spirit Walker",
-            "count": 4262,
-            "percentage": 18.36,
-            "classShare": 18.69
+            "count": 4098,
+            "percentage": 17.53,
+            "classShare": 18.82
           }
         ],
         "topClass": "Disciple of Varashta",
@@ -1100,13 +1315,36 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Physical damage 80%+\n- Local attack speed 10%+\n- Accuracy 100+\n- Critical chance 40%+\n\n[Tighten first]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Optional upside]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.sceptre",
             "baseHint": "Sceptre",
+            "applied": [
+              {
+                "label": "Physical damage 80%+",
+                "target": "80+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Local attack speed 10%+",
+                "target": "10+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Accuracy 100+",
+                "target": "100+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Critical chance 40%+",
+                "target": "40+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+#% increased Physical Damage",
@@ -1148,9 +1386,11 @@
               "low-tier single-mod rares",
               "items missing the premium first filter"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Physical damage 80%+\n- Local attack speed 10%+\n- Accuracy 100+\n- Critical chance 40%+\n\n[Tighten first]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Optional upside]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Sceptre"
       },
@@ -1159,8 +1399,8 @@
         "itemName": "Rare Bow",
         "baseLabel": "Bow",
         "slot": "Weapon",
-        "adoptionCount": 16453,
-        "adoptionPct": 13.25,
+        "adoptionCount": 16354,
+        "adoptionPct": 13.17,
         "score": 52,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1168,27 +1408,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 14363,
-            "percentage": 88.74,
-            "classShare": 13.04
+            "count": 14220,
+            "percentage": 88.6,
+            "classShare": 12.92
           },
           {
             "className": "Spirit Walker",
-            "count": 264,
-            "percentage": 1.14,
-            "classShare": 18.69
+            "count": 253,
+            "percentage": 1.08,
+            "classShare": 18.82
           },
           {
             "className": "Martial Artist",
-            "count": 170,
-            "percentage": 0.55,
-            "classShare": 24.68
+            "count": 171,
+            "percentage": 0.56,
+            "classShare": 24.67
           },
           {
             "className": "Tactician",
             "count": 20,
             "percentage": 0.44,
-            "classShare": 3.69
+            "classShare": 3.64
           }
         ],
         "topClass": "Deadeye",
@@ -1209,13 +1449,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.bow",
             "baseHint": "Bow",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -1256,9 +1519,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Bow"
       },
@@ -1267,8 +1532,8 @@
         "itemName": "Rare Quarterstaff",
         "baseLabel": "Quarterstaff",
         "slot": "Weapon",
-        "adoptionCount": 23350,
-        "adoptionPct": 18.81,
+        "adoptionCount": 23320,
+        "adoptionPct": 18.78,
         "score": 51,
         "verdict": "Avoid",
         "budget": "5-20 div",
@@ -1276,27 +1541,27 @@
         "classFits": [
           {
             "className": "Martial Artist",
-            "count": 21452,
-            "percentage": 70.02,
-            "classShare": 24.68
+            "count": 21431,
+            "percentage": 69.94,
+            "classShare": 24.67
           },
           {
             "className": "Oracle",
-            "count": 13,
-            "percentage": 0.19,
-            "classShare": 5.37
-          },
-          {
-            "className": "Deadeye",
-            "count": 30,
-            "percentage": 0.19,
-            "classShare": 13.04
+            "count": 16,
+            "percentage": 0.24,
+            "classShare": 5.34
           },
           {
             "className": "Spirit Walker",
-            "count": 41,
-            "percentage": 0.18,
-            "classShare": 18.69
+            "count": 38,
+            "percentage": 0.16,
+            "classShare": 18.82
+          },
+          {
+            "className": "Deadeye",
+            "count": 26,
+            "percentage": 0.16,
+            "classShare": 12.92
           }
         ],
         "topClass": "Martial Artist",
@@ -1318,13 +1583,36 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Physical damage 80%+\n- Local attack speed 10%+\n- Accuracy 100+\n- Critical chance 40%+\n\n[Tighten first]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Optional upside]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.warstaff",
             "baseHint": "Quarterstaff",
+            "applied": [
+              {
+                "label": "Physical damage 80%+",
+                "target": "80+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Local attack speed 10%+",
+                "target": "10+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Accuracy 100+",
+                "target": "100+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Critical chance 40%+",
+                "target": "40+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+#% increased Physical Damage",
@@ -1366,9 +1654,11 @@
               "low-tier single-mod rares",
               "items missing the premium first filter"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nMode: Stat filters + Count group\n\n[Required filters]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Physical damage 80%+\n- Local attack speed 10%+\n- Accuracy 100+\n- Critical chance 40%+\n\n[Tighten first]\n- +#% increased Physical Damage (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- Physical or elemental DPS: clear high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Optional upside]\n- Adds # to # Elemental Damage (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Quarterstaff"
       },
@@ -1377,8 +1667,8 @@
         "itemName": "Rare Wand",
         "baseLabel": "Wand",
         "slot": "Weapon",
-        "adoptionCount": 10816,
-        "adoptionPct": 8.71,
+        "adoptionCount": 10852,
+        "adoptionPct": 8.74,
         "score": 46,
         "verdict": "Avoid",
         "budget": "5-20 div",
@@ -1386,27 +1676,27 @@
         "classFits": [
           {
             "className": "Oracle",
-            "count": 4550,
-            "percentage": 68.24,
-            "classShare": 5.37
+            "count": 4536,
+            "percentage": 68.42,
+            "classShare": 5.34
           },
           {
             "className": "Disciple of Varashta",
-            "count": 56,
-            "percentage": 1.1,
-            "classShare": 4.11
+            "count": 60,
+            "percentage": 1.18,
+            "classShare": 4.1
           },
           {
             "className": "Tactician",
-            "count": 10,
-            "percentage": 0.22,
-            "classShare": 3.69
+            "count": 12,
+            "percentage": 0.27,
+            "classShare": 3.64
           },
           {
             "className": "Martial Artist",
-            "count": 49,
-            "percentage": 0.16,
-            "classShare": 24.68
+            "count": 61,
+            "percentage": 0.2,
+            "classShare": 24.67
           }
         ],
         "topClass": "Oracle",
@@ -1428,13 +1718,36 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 spell skills\n- Spell damage 70%+\n- Cast speed 8%+\n- Mana 50+\n\n[Tighten first]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Manual target rolls]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Optional upside]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.wand",
             "baseHint": "Wand",
+            "applied": [
+              {
+                "label": "+1 spell skills",
+                "target": "1+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Spell damage 70%+",
+                "target": "70+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Mana 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+2 to Level of all Spell Skills",
@@ -1476,9 +1789,11 @@
               "low-tier single-mod rares",
               "items missing the premium first filter"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 spell skills\n- Spell damage 70%+\n- Cast speed 8%+\n- Mana 50+\n\n[Tighten first]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Manual target rolls]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Optional upside]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Wand"
       },
@@ -1487,36 +1802,36 @@
         "itemName": "Rare Crossbow",
         "baseLabel": "Crossbow",
         "slot": "Weapon",
-        "adoptionCount": 9366,
-        "adoptionPct": 7.54,
-        "score": 37,
+        "adoptionCount": 9185,
+        "adoptionPct": 7.4,
+        "score": 36,
         "verdict": "Avoid",
         "budget": "1-5 div",
         "craftScope": "Essence/Omen",
         "classFits": [
           {
             "className": "Tactician",
-            "count": 2579,
-            "percentage": 56.29,
-            "classShare": 3.69
+            "count": 2514,
+            "percentage": 55.61,
+            "classShare": 3.64
           },
           {
             "className": "Deadeye",
-            "count": 293,
-            "percentage": 1.81,
-            "classShare": 13.04
+            "count": 283,
+            "percentage": 1.76,
+            "classShare": 12.92
           },
           {
             "className": "Spirit Walker",
-            "count": 171,
-            "percentage": 0.74,
-            "classShare": 18.69
+            "count": 163,
+            "percentage": 0.7,
+            "classShare": 18.82
           },
           {
             "className": "Oracle",
-            "count": 10,
-            "percentage": 0.15,
-            "classShare": 5.37
+            "count": 8,
+            "percentage": 0.12,
+            "classShare": 5.34
           }
         ],
         "topClass": "Tactician",
@@ -1537,13 +1852,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.bow",
             "baseHint": "Crossbow",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -1584,9 +1922,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Crossbow"
       },
@@ -1595,8 +1935,8 @@
         "itemName": "Rare Staff",
         "baseLabel": "Staff",
         "slot": "Weapon",
-        "adoptionCount": 14223,
-        "adoptionPct": 11.46,
+        "adoptionCount": 14197,
+        "adoptionPct": 11.43,
         "score": 33,
         "verdict": "Avoid",
         "budget": "5-20 div",
@@ -1604,27 +1944,27 @@
         "classFits": [
           {
             "className": "Oracle",
-            "count": 2216,
-            "percentage": 33.23,
-            "classShare": 5.37
+            "count": 2197,
+            "percentage": 33.14,
+            "classShare": 5.34
           },
           {
             "className": "Disciple of Varashta",
-            "count": 1366,
-            "percentage": 26.75,
-            "classShare": 4.11
+            "count": 1341,
+            "percentage": 26.36,
+            "classShare": 4.1
           },
           {
             "className": "Spirit Walker",
-            "count": 148,
-            "percentage": 0.64,
-            "classShare": 18.69
+            "count": 144,
+            "percentage": 0.62,
+            "classShare": 18.82
           },
           {
             "className": "Tactician",
             "count": 16,
             "percentage": 0.35,
-            "classShare": 3.69
+            "classShare": 3.64
           }
         ],
         "topClass": "Oracle",
@@ -1646,13 +1986,36 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 spell skills\n- Spell damage 70%+\n- Cast speed 8%+\n- Mana 50+\n\n[Tighten first]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Manual target rolls]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Optional upside]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.staff",
             "baseHint": "Staff",
+            "applied": [
+              {
+                "label": "+1 spell skills",
+                "target": "1+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Spell damage 70%+",
+                "target": "70+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Mana 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "+2 to Level of all Spell Skills",
@@ -1694,9 +2057,11 @@
               "low-tier single-mod rares",
               "items missing the premium first filter"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nMode: Stat filters + Count group\n\n[Required filters]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Minimum targets]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Preferred filters]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 spell skills\n- Spell damage 70%+\n- Cast speed 8%+\n- Mana 50+\n\n[Tighten first]\n- +2 to Level of all Spell Skills (main filter)\n- +#% increased Spell Damage (second filter)\n\n[Manual target rolls]\n- +Spell level: +2 target, +1 budget\n- Spell damage: 80%+ target\n- Cast speed: 10%+ if available\n\n[Optional upside]\n- +#% to Cast Speed (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Staff"
       },
@@ -1705,8 +2070,8 @@
         "itemName": "Rare Spear",
         "baseLabel": "Spear",
         "slot": "Weapon",
-        "adoptionCount": 9615,
-        "adoptionPct": 7.74,
+        "adoptionCount": 9520,
+        "adoptionPct": 7.67,
         "score": 25,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1714,27 +2079,27 @@
         "classFits": [
           {
             "className": "Spirit Walker",
-            "count": 6315,
-            "percentage": 27.21,
-            "classShare": 18.69
+            "count": 6222,
+            "percentage": 26.62,
+            "classShare": 18.82
           },
           {
             "className": "Deadeye",
-            "count": 512,
-            "percentage": 3.16,
-            "classShare": 13.04
+            "count": 510,
+            "percentage": 3.18,
+            "classShare": 12.92
           },
           {
             "className": "Martial Artist",
-            "count": 453,
-            "percentage": 1.48,
-            "classShare": 24.68
+            "count": 457,
+            "percentage": 1.49,
+            "classShare": 24.67
           },
           {
             "className": "Tactician",
-            "count": 51,
-            "percentage": 1.11,
-            "classShare": 3.69
+            "count": 49,
+            "percentage": 1.08,
+            "classShare": 3.64
           }
         ],
         "topClass": "Spirit Walker",
@@ -1755,13 +2120,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.spear",
             "baseHint": "Spear",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -1802,9 +2190,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Spear"
       },
@@ -1813,8 +2203,8 @@
         "itemName": "Rare Quiver",
         "baseLabel": "Quiver",
         "slot": "Quiver",
-        "adoptionCount": 5805,
-        "adoptionPct": 4.68,
+        "adoptionCount": 5546,
+        "adoptionPct": 4.47,
         "score": 24,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1822,27 +2212,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 4606,
-            "percentage": 28.46,
-            "classShare": 13.04
+            "count": 4370,
+            "percentage": 27.23,
+            "classShare": 12.92
           },
           {
             "className": "Tactician",
             "count": 20,
             "percentage": 0.44,
-            "classShare": 3.69
+            "classShare": 3.64
           },
           {
             "className": "Spirit Walker",
-            "count": 84,
-            "percentage": 0.36,
-            "classShare": 18.69
+            "count": 77,
+            "percentage": 0.33,
+            "classShare": 18.82
           },
           {
             "className": "Martial Artist",
-            "count": 64,
+            "count": 63,
             "percentage": 0.21,
-            "classShare": 24.68
+            "classShare": 24.67
           }
         ],
         "topClass": "Deadeye",
@@ -1863,13 +2253,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nMode: Stat filters + Count group\n\n[Required filters]\n- Adds # to # damage to attacks (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Added damage: high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- +# to Accuracy Rating (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Attack speed 8%+\n- Accuracy 100+\n- Critical chance 30%+\n- Elemental attack damage 30%+\n\n[Tighten first]\n- Adds # to # damage to attacks (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- Added damage: high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Optional upside]\n- +# to Accuracy Rating (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Off-hand / Quiver",
+            "officialCategory": "armour.quiver",
             "baseHint": "Quiver",
+            "applied": [
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Accuracy 100+",
+                "target": "100+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Critical chance 30%+",
+                "target": "30+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Elemental attack damage 30%+",
+                "target": "30+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "Adds # to # damage to attacks",
@@ -1910,9 +2323,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nMode: Stat filters + Count group\n\n[Required filters]\n- Adds # to # damage to attacks (main filter)\n- +#% to Attack Speed (second filter)\n\n[Minimum targets]\n- Added damage: high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Preferred filters]\n- +# to Accuracy Rating (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Attack speed 8%+\n- Accuracy 100+\n- Critical chance 30%+\n- Elemental attack damage 30%+\n\n[Tighten first]\n- Adds # to # damage to attacks (main filter)\n- +#% to Attack Speed (second filter)\n\n[Manual target rolls]\n- Added damage: high roll\n- Attack speed: 10%+ target\n- Accuracy or crit: one useful suffix\n\n[Optional upside]\n- +# to Accuracy Rating (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Quiver"
       },
@@ -1921,8 +2336,8 @@
         "itemName": "Rare Talisman",
         "baseLabel": "Talisman",
         "slot": "Weapon",
-        "adoptionCount": 9901,
-        "adoptionPct": 7.97,
+        "adoptionCount": 9767,
+        "adoptionPct": 7.86,
         "score": 20,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1930,27 +2345,27 @@
         "classFits": [
           {
             "className": "Martial Artist",
-            "count": 5517,
-            "percentage": 18.01,
-            "classShare": 24.68
+            "count": 5425,
+            "percentage": 17.71,
+            "classShare": 24.67
           },
           {
             "className": "Oracle",
-            "count": 639,
-            "percentage": 9.58,
-            "classShare": 5.37
+            "count": 613,
+            "percentage": 9.25,
+            "classShare": 5.34
           },
           {
             "className": "Spirit Walker",
-            "count": 1262,
-            "percentage": 5.44,
-            "classShare": 18.69
+            "count": 1264,
+            "percentage": 5.41,
+            "classShare": 18.82
           },
           {
             "className": "Disciple of Varashta",
-            "count": 203,
-            "percentage": 3.97,
-            "classShare": 4.11
+            "count": 197,
+            "percentage": 3.87,
+            "classShare": 4.1
           }
         ],
         "topClass": "Martial Artist",
@@ -1971,13 +2386,41 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 attack skills\n- Life 50+\n- Mana 50+\n- Critical damage 20%+\n- Dexterity 30+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Accessory / Amulet",
+            "officialCategory": "weapon.talisman",
             "baseHint": "Talisman",
+            "applied": [
+              {
+                "label": "+1 attack skills",
+                "target": "1+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Mana 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Critical damage 20%+",
+                "target": "20+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Dexterity 30+",
+                "target": "30+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -2018,9 +2461,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- +1 attack skills\n- Life 50+\n- Mana 50+\n- Critical damage 20%+\n- Dexterity 30+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- +Level: +1 minimum, +2 watchlist\n- Attributes or resource: one strong support roll\n- Damage multiplier: high tier if present\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Talisman"
       },
@@ -2029,8 +2474,8 @@
         "itemName": "Rare Shield",
         "baseLabel": "Shield",
         "slot": "Shield",
-        "adoptionCount": 2772,
-        "adoptionPct": 2.23,
+        "adoptionCount": 2761,
+        "adoptionPct": 2.22,
         "score": 13,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -2038,27 +2483,27 @@
         "classFits": [
           {
             "className": "Disciple of Varashta",
-            "count": 146,
-            "percentage": 2.86,
-            "classShare": 4.11
+            "count": 136,
+            "percentage": 2.67,
+            "classShare": 4.1
           },
           {
             "className": "Tactician",
-            "count": 60,
-            "percentage": 1.31,
-            "classShare": 3.69
+            "count": 56,
+            "percentage": 1.24,
+            "classShare": 3.64
           },
           {
             "className": "Oracle",
             "count": 45,
-            "percentage": 0.67,
-            "classShare": 5.37
+            "percentage": 0.68,
+            "classShare": 5.34
           },
           {
             "className": "Spirit Walker",
-            "count": 146,
-            "percentage": 0.63,
-            "classShare": 18.69
+            "count": 152,
+            "percentage": 0.65,
+            "classShare": 18.82
           }
         ],
         "topClass": "Disciple of Varashta",
@@ -2079,13 +2524,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Off-hand",
+            "officialCategory": "armour.shield",
             "baseHint": "Shield",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -2126,9 +2594,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Shield"
       },
@@ -2137,7 +2607,7 @@
         "itemName": "Rare One Handed Mace",
         "baseLabel": "One Handed Mace",
         "slot": "Weapon",
-        "adoptionCount": 1473,
+        "adoptionCount": 1480,
         "adoptionPct": 1.19,
         "score": 10,
         "verdict": "Avoid",
@@ -2146,27 +2616,27 @@
         "classFits": [
           {
             "className": "Martial Artist",
-            "count": 106,
-            "percentage": 0.35,
-            "classShare": 24.68
+            "count": 103,
+            "percentage": 0.34,
+            "classShare": 24.67
           },
           {
             "className": "Tactician",
-            "count": 14,
-            "percentage": 0.31,
-            "classShare": 3.69
+            "count": 12,
+            "percentage": 0.27,
+            "classShare": 3.64
           },
           {
             "className": "Oracle",
-            "count": 14,
-            "percentage": 0.21,
-            "classShare": 5.37
+            "count": 15,
+            "percentage": 0.23,
+            "classShare": 5.34
           },
           {
             "className": "Spirit Walker",
-            "count": 12,
-            "percentage": 0.05,
-            "classShare": 18.69
+            "count": 10,
+            "percentage": 0.04,
+            "classShare": 18.82
           }
         ],
         "topClass": "Martial Artist",
@@ -2187,13 +2657,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.onemace",
             "baseHint": "One Handed Mace",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -2234,9 +2727,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20One%20Handed%20Mace"
       },
@@ -2254,27 +2749,27 @@
         "classFits": [
           {
             "className": "Tactician",
-            "count": 51,
-            "percentage": 1.11,
-            "classShare": 3.69
+            "count": 48,
+            "percentage": 1.06,
+            "classShare": 3.64
           },
           {
             "className": "Spirit Walker",
-            "count": 47,
-            "percentage": 0.2,
-            "classShare": 18.69
+            "count": 53,
+            "percentage": 0.23,
+            "classShare": 18.82
           },
           {
             "className": "Oracle",
-            "count": 12,
-            "percentage": 0.18,
-            "classShare": 5.37
+            "count": 10,
+            "percentage": 0.15,
+            "classShare": 5.34
           },
           {
             "className": "Martial Artist",
-            "count": 19,
-            "percentage": 0.06,
-            "classShare": 24.68
+            "count": 22,
+            "percentage": 0.07,
+            "classShare": 24.67
           }
         ],
         "topClass": "Tactician",
@@ -2295,13 +2790,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Weapon",
+            "officialCategory": "weapon.twomace",
             "baseHint": "Two Handed Mace",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -2342,9 +2860,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Two%20Handed%20Mace"
       },
@@ -2353,8 +2873,8 @@
         "itemName": "Rare Buckler",
         "baseLabel": "Buckler",
         "slot": "Buckler",
-        "adoptionCount": 679,
-        "adoptionPct": 0.55,
+        "adoptionCount": 659,
+        "adoptionPct": 0.53,
         "score": 10,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -2362,27 +2882,27 @@
         "classFits": [
           {
             "className": "Spirit Walker",
-            "count": 343,
-            "percentage": 1.48,
-            "classShare": 18.69
+            "count": 319,
+            "percentage": 1.36,
+            "classShare": 18.82
           },
           {
             "className": "Martial Artist",
             "count": 18,
             "percentage": 0.06,
-            "classShare": 24.68
+            "classShare": 24.67
           },
           {
             "className": "Deadeye",
-            "count": 8,
-            "percentage": 0.05,
-            "classShare": 13.04
+            "count": 7,
+            "percentage": 0.04,
+            "classShare": 12.92
           },
           {
-            "className": "Oracle",
-            "count": 2,
-            "percentage": 0.03,
-            "classShare": 5.37
+            "className": "Disciple of Varashta",
+            "count": 1,
+            "percentage": 0.02,
+            "classShare": 4.1
           }
         ],
         "topClass": "Spirit Walker",
@@ -2403,13 +2923,36 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
             "rarity": "Rare",
             "category": "Off-hand",
+            "officialCategory": "armour.shield",
             "baseHint": "Buckler",
+            "applied": [
+              {
+                "label": "Life 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Total elemental resistance 50+",
+                "target": "50+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Attack speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              },
+              {
+                "label": "Cast speed 8%+",
+                "target": "8+",
+                "why": "official Trade URL filter"
+              }
+            ],
             "required": [
               {
                 "label": "primary damage prefix",
@@ -2450,9 +2993,11 @@
               "offline listings for manual checks",
               "low-tier single-mod rares"
             ],
-            "searchMode": "Stat filters + Count group",
-            "copyText": "PoE2 trade search recipe\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nMode: Stat filters + Count group\n\n[Required filters]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Minimum targets]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Preferred filters]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
-          }
+            "searchMode": "Official URL / Count >= 2",
+            "copyText": "PoE2 trade manual tune memo\n用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nURL filters: Official URL / Count >= 2\n\n[Trade filters]\n- Life 50+\n- Total elemental resistance 50+\n- Attack speed 8%+\n- Cast speed 8%+\n\n[Tighten first]\n- primary damage prefix (main filter)\n- life or defensive prefix (second filter)\n\n[Manual target rolls]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Optional upside]\n- resistance or speed suffix (nice to have)\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+          },
+          "linkStatus": "manual",
+          "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
         },
         "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rare%20Buckler"
       }
@@ -2463,674 +3008,674 @@
     {
       "name": "Heart of the Well",
       "type": "Jewel",
-      "adoptionCount": 65904,
-      "adoptionPct": 53.08,
+      "adoptionCount": 67533,
+      "adoptionPct": 54.38,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Heart%20of%20the%20Well"
     },
     {
       "name": "Lavianga's Spirits",
       "type": "Flask",
-      "adoptionCount": 56259,
-      "adoptionPct": 45.31,
+      "adoptionCount": 57404,
+      "adoptionPct": 46.22,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Lavianga's%20Spirits"
     },
     {
       "name": "Nascent Hope",
       "type": "Charm",
-      "adoptionCount": 55773,
-      "adoptionPct": 44.92,
+      "adoptionCount": 57371,
+      "adoptionPct": 46.2,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Nascent%20Hope"
     },
     {
       "name": "The Fall of the Axe",
       "type": "Unknown",
-      "adoptionCount": 33539,
-      "adoptionPct": 27.01,
+      "adoptionCount": 34940,
+      "adoptionPct": 28.13,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Fall%20of%20the%20Axe"
     },
     {
       "name": "Beira's Anguish",
       "type": "Unknown",
-      "adoptionCount": 25336,
-      "adoptionPct": 20.41,
+      "adoptionCount": 25799,
+      "adoptionPct": 20.77,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Beira's%20Anguish"
     },
     {
       "name": "From Nothing",
       "type": "Jewel",
-      "adoptionCount": 18283,
-      "adoptionPct": 14.73,
+      "adoptionCount": 19128,
+      "adoptionPct": 15.4,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=From%20Nothing"
     },
     {
       "name": "Rite of Passage",
       "type": "Charm",
-      "adoptionCount": 16591,
-      "adoptionPct": 13.36,
+      "adoptionCount": 17734,
+      "adoptionPct": 14.28,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rite%20of%20Passage"
     },
     {
       "name": "Lochtonial Caress",
       "type": "Gloves",
-      "adoptionCount": 16342,
-      "adoptionPct": 13.16,
+      "adoptionCount": 16224,
+      "adoptionPct": 13.06,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Lochtonial%20Caress"
     },
     {
       "name": "The Taming",
       "type": "Ring",
-      "adoptionCount": 14572,
-      "adoptionPct": 11.74,
+      "adoptionCount": 14942,
+      "adoptionPct": 12.03,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Taming"
     },
     {
       "name": "Amor Mandragora",
       "type": "Unknown",
-      "adoptionCount": 13817,
-      "adoptionPct": 11.13,
+      "adoptionCount": 13993,
+      "adoptionPct": 11.27,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Amor%20Mandragora"
     },
     {
-      "name": "Ingenuity",
-      "type": "Belt",
-      "adoptionCount": 13610,
-      "adoptionPct": 10.96,
-      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Ingenuity"
-    },
-    {
       "name": "Prism of Belief",
       "type": "Jewel",
-      "adoptionCount": 13449,
-      "adoptionPct": 10.83,
+      "adoptionCount": 13723,
+      "adoptionPct": 11.05,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Prism%20of%20Belief"
     },
     {
+      "name": "Ingenuity",
+      "type": "Belt",
+      "adoptionCount": 13594,
+      "adoptionPct": 10.95,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Ingenuity"
+    },
+    {
       "name": "Arakaali's Gift",
       "type": "Unknown",
-      "adoptionCount": 12791,
-      "adoptionPct": 10.3,
+      "adoptionCount": 12688,
+      "adoptionPct": 10.22,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Arakaali's%20Gift"
     },
     {
       "name": "Cadiro's Gambit",
       "type": "Quiver",
-      "adoptionCount": 12377,
-      "adoptionPct": 9.97,
-      "note": "high roll / corrupt で上振れ候補。",
+      "adoptionCount": 12541,
+      "adoptionPct": 10.1,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Cadiro's%20Gambit"
     },
     {
       "name": "Skysliver",
       "type": "Weapon",
-      "adoptionCount": 12215,
-      "adoptionPct": 9.84,
+      "adoptionCount": 12418,
+      "adoptionPct": 10,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Skysliver"
     },
     {
       "name": "Sanguis Heroum",
       "type": "Charm",
-      "adoptionCount": 11508,
-      "adoptionPct": 9.27,
+      "adoptionCount": 11567,
+      "adoptionPct": 9.31,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sanguis%20Heroum"
     },
     {
       "name": "Forgotten Warden",
       "type": "Body Armour",
-      "adoptionCount": 10957,
-      "adoptionPct": 8.82,
+      "adoptionCount": 11537,
+      "adoptionPct": 9.29,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Forgotten%20Warden"
     },
     {
       "name": "The Ordained",
       "type": "Weapon",
-      "adoptionCount": 9104,
-      "adoptionPct": 7.33,
+      "adoptionCount": 9520,
+      "adoptionPct": 7.67,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Ordained"
     },
     {
       "name": "Headhunter",
       "type": "Belt",
-      "adoptionCount": 8744,
-      "adoptionPct": 7.04,
+      "adoptionCount": 9235,
+      "adoptionPct": 7.44,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Headhunter"
     },
     {
       "name": "Sacred Flame",
       "type": "Weapon",
-      "adoptionCount": 8349,
-      "adoptionPct": 6.72,
+      "adoptionCount": 8884,
+      "adoptionPct": 7.15,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sacred%20Flame"
     },
     {
-      "name": "Normal Charm",
-      "type": "Charm",
-      "adoptionCount": 8246,
-      "adoptionPct": 6.64,
+      "name": "Mageblood",
+      "type": "Belt",
+      "adoptionCount": 8650,
+      "adoptionPct": 6.96,
       "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Normal%20Charm"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Mageblood"
     },
     {
       "name": "Blood of the Warrior",
       "type": "Flask",
-      "adoptionCount": 8243,
-      "adoptionPct": 6.64,
+      "adoptionCount": 8477,
+      "adoptionPct": 6.83,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Blood%20of%20the%20Warrior"
     },
     {
       "name": "Against the Darkness",
       "type": "Jewel",
-      "adoptionCount": 8084,
-      "adoptionPct": 6.51,
+      "adoptionCount": 8390,
+      "adoptionPct": 6.76,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Against%20the%20Darkness"
     },
     {
-      "name": "Mageblood",
-      "type": "Belt",
-      "adoptionCount": 8049,
-      "adoptionPct": 6.48,
+      "name": "Normal Charm",
+      "type": "Charm",
+      "adoptionCount": 7902,
+      "adoptionPct": 6.36,
       "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Mageblood"
-    },
-    {
-      "name": "Sylvan's Effigy",
-      "type": "Weapon",
-      "adoptionCount": 7171,
-      "adoptionPct": 5.78,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sylvan's%20Effigy"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Normal%20Charm"
     },
     {
       "name": "For Utopia",
       "type": "Charm",
-      "adoptionCount": 7166,
-      "adoptionPct": 5.77,
+      "adoptionCount": 7419,
+      "adoptionPct": 5.97,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=For%20Utopia"
     },
     {
+      "name": "Sylvan's Effigy",
+      "type": "Weapon",
+      "adoptionCount": 7398,
+      "adoptionPct": 5.96,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sylvan's%20Effigy"
+    },
+    {
       "name": "Shavronne's Satchel",
       "type": "Belt",
-      "adoptionCount": 7080,
-      "adoptionPct": 5.7,
+      "adoptionCount": 7149,
+      "adoptionPct": 5.76,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Shavronne's%20Satchel"
     },
     {
+      "name": "Kalandra's Touch",
+      "type": "Ring",
+      "adoptionCount": 6939,
+      "adoptionPct": 5.59,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Kalandra's%20Touch"
+    },
+    {
       "name": "Alpha's Howl",
       "type": "Helmet",
-      "adoptionCount": 6743,
-      "adoptionPct": 5.43,
+      "adoptionCount": 6882,
+      "adoptionPct": 5.54,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Alpha's%20Howl"
     },
     {
       "name": "Constricting Command",
       "type": "Unknown",
-      "adoptionCount": 6551,
-      "adoptionPct": 5.28,
+      "adoptionCount": 6504,
+      "adoptionPct": 5.24,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Constricting%20Command"
     },
     {
-      "name": "Kalandra's Touch",
-      "type": "Ring",
-      "adoptionCount": 6502,
-      "adoptionPct": 5.24,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Kalandra's%20Touch"
-    },
-    {
       "name": "Ngamahu's Chosen",
       "type": "Charm",
-      "adoptionCount": 6436,
-      "adoptionPct": 5.18,
+      "adoptionCount": 6302,
+      "adoptionPct": 5.07,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Ngamahu's%20Chosen"
     },
     {
-      "name": "Maligaro's Virtuosity",
-      "type": "Gloves",
-      "adoptionCount": 5927,
-      "adoptionPct": 4.77,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Maligaro's%20Virtuosity"
-    },
-    {
       "name": "Morior Invictus",
       "type": "Body Armour",
-      "adoptionCount": 5864,
-      "adoptionPct": 4.72,
+      "adoptionCount": 6142,
+      "adoptionPct": 4.95,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Morior%20Invictus"
     },
     {
+      "name": "Maligaro's Virtuosity",
+      "type": "Gloves",
+      "adoptionCount": 5966,
+      "adoptionPct": 4.8,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Maligaro's%20Virtuosity"
+    },
+    {
       "name": "Hyrri's Ire",
       "type": "Body Armour",
-      "adoptionCount": 5784,
-      "adoptionPct": 4.66,
+      "adoptionCount": 5798,
+      "adoptionPct": 4.67,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Hyrri's%20Ire"
     },
     {
-      "name": "Tyranny's Grip",
-      "type": "Unknown",
-      "adoptionCount": 5375,
-      "adoptionPct": 4.33,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Tyranny's%20Grip"
-    },
-    {
       "name": "Duality",
       "type": "Unknown",
-      "adoptionCount": 5355,
-      "adoptionPct": 4.31,
+      "adoptionCount": 5438,
+      "adoptionPct": 4.38,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Duality"
     },
     {
-      "name": "Guiding Palm of the Eye",
-      "type": "Weapon",
-      "adoptionCount": 5294,
-      "adoptionPct": 4.26,
+      "name": "Tyranny's Grip",
+      "type": "Unknown",
+      "adoptionCount": 5349,
+      "adoptionPct": 4.31,
       "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Guiding%20Palm%20of%20the%20Eye"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Tyranny's%20Grip"
     },
     {
       "name": "Breath of the Mountains",
       "type": "Charm",
-      "adoptionCount": 5279,
-      "adoptionPct": 4.25,
+      "adoptionCount": 5182,
+      "adoptionPct": 4.17,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Breath%20of%20the%20Mountains"
     },
     {
-      "name": "Valako's Roar",
-      "type": "Charm",
-      "adoptionCount": 5040,
-      "adoptionPct": 4.06,
+      "name": "Guiding Palm of the Eye",
+      "type": "Weapon",
+      "adoptionCount": 5123,
+      "adoptionPct": 4.13,
       "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Valako's%20Roar"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Guiding%20Palm%20of%20the%20Eye"
     },
     {
       "name": "Darkness Enthroned",
       "type": "Belt",
-      "adoptionCount": 4919,
-      "adoptionPct": 3.96,
+      "adoptionCount": 5076,
+      "adoptionPct": 4.09,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Darkness%20Enthroned"
+    },
+    {
+      "name": "Valako's Roar",
+      "type": "Charm",
+      "adoptionCount": 4910,
+      "adoptionPct": 3.95,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Valako's%20Roar"
     }
   ],
   "gems": [
     {
-      "name": "Magnified Area II",
-      "adoptionCount": 108456,
-      "adoptionPct": 87.35,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Magnified%20Area%20II"
-    },
-    {
-      "name": "Prolonged Duration II",
-      "adoptionCount": 104210,
-      "adoptionPct": 83.93,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Prolonged%20Duration%20II"
-    },
-    {
-      "name": "Cooldown Recovery II",
-      "adoptionCount": 97924,
-      "adoptionPct": 78.87,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cooldown%20Recovery%20II"
-    },
-    {
-      "name": "Elemental Armament II",
-      "adoptionCount": 66223,
-      "adoptionPct": 53.34,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Elemental%20Armament%20II"
-    },
-    {
-      "name": "Rapid Casting II",
-      "adoptionCount": 64718,
-      "adoptionPct": 52.12,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rapid%20Casting%20II"
-    },
-    {
-      "name": "Rage III",
-      "adoptionCount": 56172,
-      "adoptionPct": 45.24,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rage%20III"
-    },
-    {
-      "name": "Rapid Attacks II",
-      "adoptionCount": 55342,
-      "adoptionPct": 44.57,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rapid%20Attacks%20II"
-    },
-    {
-      "name": "Blind II",
-      "adoptionCount": 54469,
-      "adoptionPct": 43.87,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blind%20II"
-    },
-    {
-      "name": "Efficiency II",
-      "adoptionCount": 50503,
-      "adoptionPct": 40.68,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Efficiency%20II"
-    },
-    {
       "name": "Wind Dancer",
-      "adoptionCount": 47089,
-      "adoptionPct": 37.93,
+      "adoptionCount": 47099,
+      "adoptionPct": 37.92,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wind%20Dancer"
     },
     {
-      "name": "Elemental Focus",
-      "adoptionCount": 45229,
-      "adoptionPct": 36.43,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Elemental%20Focus"
-    },
-    {
-      "name": "Charge Profusion II",
-      "adoptionCount": 44856,
-      "adoptionPct": 36.13,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charge%20Profusion%20II"
-    },
-    {
-      "name": "Perpetual Charge",
-      "adoptionCount": 44364,
-      "adoptionPct": 35.73,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Perpetual%20Charge"
-    },
-    {
-      "name": "Concentrated Area",
-      "adoptionCount": 43234,
-      "adoptionPct": 34.82,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Concentrated%20Area"
-    },
-    {
       "name": "Ghost Dance",
-      "adoptionCount": 41804,
-      "adoptionPct": 33.67,
+      "adoptionCount": 42208,
+      "adoptionPct": 33.99,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ghost%20Dance"
     },
     {
       "name": "Herald of Ice",
-      "adoptionCount": 40024,
-      "adoptionPct": 32.24,
+      "adoptionCount": 39961,
+      "adoptionPct": 32.18,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Ice"
     },
     {
-      "name": "Rapid Attacks III",
-      "adoptionCount": 39003,
-      "adoptionPct": 31.41,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rapid%20Attacks%20III"
-    },
-    {
-      "name": "Charged Mark",
-      "adoptionCount": 36970,
-      "adoptionPct": 29.78,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charged%20Mark"
-    },
-    {
       "name": "Charge Regulation",
-      "adoptionCount": 35873,
-      "adoptionPct": 28.89,
+      "adoptionCount": 36079,
+      "adoptionPct": 29.05,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charge%20Regulation"
     },
     {
-      "name": "Blazing Critical",
-      "adoptionCount": 35817,
-      "adoptionPct": 28.85,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blazing%20Critical"
-    },
-    {
-      "name": "Close Combat II",
-      "adoptionCount": 34551,
-      "adoptionPct": 27.83,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Close%20Combat%20II"
-    },
-    {
-      "name": "Heightened Charges",
-      "adoptionCount": 33984,
-      "adoptionPct": 27.37,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Heightened%20Charges"
-    },
-    {
-      "name": "Deliberation",
-      "adoptionCount": 33971,
-      "adoptionPct": 27.36,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Deliberation"
-    },
-    {
       "name": "Freezing Mark",
-      "adoptionCount": 32334,
-      "adoptionPct": 26.04,
+      "adoptionCount": 32130,
+      "adoptionPct": 25.87,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Freezing%20Mark"
     },
     {
-      "name": "Longshot II",
-      "adoptionCount": 32045,
-      "adoptionPct": 25.81,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Longshot%20II"
-    },
-    {
       "name": "Barrage",
-      "adoptionCount": 31951,
-      "adoptionPct": 25.73,
+      "adoptionCount": 32015,
+      "adoptionPct": 25.78,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Barrage"
     },
     {
-      "name": "Eternal Mark",
-      "adoptionCount": 31202,
-      "adoptionPct": 25.13,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Eternal%20Mark"
-    },
-    {
-      "name": "Maim",
-      "adoptionCount": 30784,
-      "adoptionPct": 24.79,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Maim"
-    },
-    {
-      "name": "Pinpoint Critical",
-      "adoptionCount": 28831,
-      "adoptionPct": 23.22,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Pinpoint%20Critical"
-    },
-    {
-      "name": "Overabundance II",
-      "adoptionCount": 28224,
-      "adoptionPct": 22.73,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Overabundance%20II"
-    },
-    {
-      "name": "Knockback",
-      "adoptionCount": 27457,
-      "adoptionPct": 22.11,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Knockback"
-    },
-    {
-      "name": "Culling Strike II",
-      "adoptionCount": 27163,
-      "adoptionPct": 21.88,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Culling%20Strike%20II"
-    },
-    {
       "name": "Hollow Focus",
-      "adoptionCount": 26643,
-      "adoptionPct": 21.46,
+      "adoptionCount": 26611,
+      "adoptionPct": 21.43,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Hollow%20Focus"
     },
     {
-      "name": "Cold Mastery",
-      "adoptionCount": 26050,
-      "adoptionPct": 20.98,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cold%20Mastery"
-    },
-    {
-      "name": "Projectile Acceleration III",
-      "adoptionCount": 25358,
-      "adoptionPct": 20.42,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Projectile%20Acceleration%20III"
-    },
-    {
-      "name": "Blindside",
-      "adoptionCount": 25224,
-      "adoptionPct": 20.32,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blindside"
-    },
-    {
-      "name": "Romira's Requital",
-      "adoptionCount": 24907,
-      "adoptionPct": 20.06,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Romira's%20Requital"
-    },
-    {
       "name": "Whirling Assault",
-      "adoptionCount": 24801,
-      "adoptionPct": 19.97,
+      "adoptionCount": 24641,
+      "adoptionPct": 19.84,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Whirling%20Assault"
     },
     {
-      "name": "Hulking Minions",
-      "adoptionCount": 24680,
-      "adoptionPct": 19.88,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Hulking%20Minions"
-    },
-    {
-      "name": "Armour Break III",
-      "adoptionCount": 24548,
-      "adoptionPct": 19.77,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Armour%20Break%20III"
-    },
-    {
-      "name": "Clarity II",
-      "adoptionCount": 24448,
-      "adoptionPct": 19.69,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Clarity%20II"
-    },
-    {
-      "name": "Heft",
-      "adoptionCount": 24376,
-      "adoptionPct": 19.63,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Heft"
-    },
-    {
-      "name": "Meat Shield II",
-      "adoptionCount": 24245,
-      "adoptionPct": 19.53,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Meat%20Shield%20II"
-    },
-    {
-      "name": "Mark of Siphoning II",
-      "adoptionCount": 24201,
-      "adoptionPct": 19.49,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Mark%20of%20Siphoning%20II"
-    },
-    {
-      "name": "Shock",
-      "adoptionCount": 23802,
-      "adoptionPct": 19.17,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Shock"
-    },
-    {
-      "name": "Living Lightning II",
-      "adoptionCount": 23778,
-      "adoptionPct": 19.15,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Living%20Lightning%20II"
-    },
-    {
       "name": "Blasphemy",
-      "adoptionCount": 23508,
-      "adoptionPct": 18.93,
+      "adoptionCount": 23794,
+      "adoptionPct": 19.16,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blasphemy"
     },
     {
-      "name": "Cold Attunement",
-      "adoptionCount": 23376,
-      "adoptionPct": 18.83,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cold%20Attunement"
-    },
-    {
-      "name": "Clarity I",
-      "adoptionCount": 23114,
-      "adoptionPct": 18.62,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Clarity%20I"
-    },
-    {
       "name": "Wild Protector",
-      "adoptionCount": 23008,
-      "adoptionPct": 18.53,
+      "adoptionCount": 23195,
+      "adoptionPct": 18.68,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wild%20Protector"
+    },
+    {
+      "name": "Combat Frenzy",
+      "adoptionCount": 21903,
+      "adoptionPct": 17.64,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Combat%20Frenzy"
+    },
+    {
+      "name": "Herald of Thunder",
+      "adoptionCount": 21853,
+      "adoptionPct": 17.6,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Thunder"
+    },
+    {
+      "name": "Ice-Tipped Arrows",
+      "adoptionCount": 20708,
+      "adoptionPct": 16.67,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ice-Tipped%20Arrows"
+    },
+    {
+      "name": "Spear Throw",
+      "adoptionCount": 20389,
+      "adoptionPct": 16.42,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Spear%20Throw"
+    },
+    {
+      "name": "Rakiata's Flow",
+      "adoptionCount": 20340,
+      "adoptionPct": 16.38,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rakiata's%20Flow"
+    },
+    {
+      "name": "Rend",
+      "adoptionCount": 19890,
+      "adoptionPct": 16.02,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rend"
+    },
+    {
+      "name": "Refutation",
+      "adoptionCount": 19492,
+      "adoptionPct": 15.69,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Refutation"
+    },
+    {
+      "name": "Hollow Form",
+      "adoptionCount": 18797,
+      "adoptionPct": 15.14,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Hollow%20Form"
+    },
+    {
+      "name": "Elemental Weakness",
+      "adoptionCount": 18759,
+      "adoptionPct": 15.1,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Elemental%20Weakness"
+    },
+    {
+      "name": "Mirage Archer",
+      "adoptionCount": 18744,
+      "adoptionPct": 15.09,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Mirage%20Archer"
+    },
+    {
+      "name": "Mana Remnants",
+      "adoptionCount": 18479,
+      "adoptionPct": 14.88,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Mana%20Remnants"
+    },
+    {
+      "name": "Pounce",
+      "adoptionCount": 18323,
+      "adoptionPct": 14.75,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Pounce"
+    },
+    {
+      "name": "Trinity",
+      "adoptionCount": 18070,
+      "adoptionPct": 14.55,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Trinity"
+    },
+    {
+      "name": "Whirling Slash",
+      "adoptionCount": 17203,
+      "adoptionPct": 13.85,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Whirling%20Slash"
+    },
+    {
+      "name": "Twister",
+      "adoptionCount": 16452,
+      "adoptionPct": 13.25,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Twister"
+    },
+    {
+      "name": "Temporal Chains",
+      "adoptionCount": 16433,
+      "adoptionPct": 13.23,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Temporal%20Chains"
+    },
+    {
+      "name": "Ice Shot",
+      "adoptionCount": 16353,
+      "adoptionPct": 13.17,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ice%20Shot"
+    },
+    {
+      "name": "Tornado Shot",
+      "adoptionCount": 15622,
+      "adoptionPct": 12.58,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Tornado%20Shot"
+    },
+    {
+      "name": "Sniper's Mark",
+      "adoptionCount": 15365,
+      "adoptionPct": 12.37,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sniper's%20Mark"
+    },
+    {
+      "name": "Mirage Deadeye",
+      "adoptionCount": 14204,
+      "adoptionPct": 11.44,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Mirage%20Deadeye"
+    },
+    {
+      "name": "Tempest Bell",
+      "adoptionCount": 13463,
+      "adoptionPct": 10.84,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Tempest%20Bell"
+    },
+    {
+      "name": "Herald of Ash",
+      "adoptionCount": 13366,
+      "adoptionPct": 10.76,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Ash"
+    },
+    {
+      "name": "Vivid Stampede",
+      "adoptionCount": 13215,
+      "adoptionPct": 10.64,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Vivid%20Stampede"
+    },
+    {
+      "name": "Devour",
+      "adoptionCount": 13115,
+      "adoptionPct": 10.56,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Devour"
+    },
+    {
+      "name": "Frost Bomb",
+      "adoptionCount": 13090,
+      "adoptionPct": 10.54,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Frost%20Bomb"
+    },
+    {
+      "name": "Snipe",
+      "adoptionCount": 13063,
+      "adoptionPct": 10.52,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Snipe"
+    },
+    {
+      "name": "Primal Bounty",
+      "adoptionCount": 12976,
+      "adoptionPct": 10.45,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Primal%20Bounty"
+    },
+    {
+      "name": "Sigil of Power",
+      "adoptionCount": 12911,
+      "adoptionPct": 10.4,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sigil%20of%20Power"
+    },
+    {
+      "name": "Purity of Fire",
+      "adoptionCount": 12756,
+      "adoptionPct": 10.27,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Purity%20of%20Fire"
+    },
+    {
+      "name": "Cast on Critical",
+      "adoptionCount": 12704,
+      "adoptionPct": 10.23,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cast%20on%20Critical"
+    },
+    {
+      "name": "Wolf Pack",
+      "adoptionCount": 12410,
+      "adoptionPct": 9.99,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wolf%20Pack"
+    },
+    {
+      "name": "Olroth's Conviction",
+      "adoptionCount": 12198,
+      "adoptionPct": 9.82,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Olroth's%20Conviction"
+    },
+    {
+      "name": "Ailith's Chimes",
+      "adoptionCount": 12100,
+      "adoptionPct": 9.74,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ailith's%20Chimes"
+    },
+    {
+      "name": "Charged Staff",
+      "adoptionCount": 11720,
+      "adoptionPct": 9.44,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charged%20Staff"
+    },
+    {
+      "name": "Killing Palm",
+      "adoptionCount": 11679,
+      "adoptionPct": 9.4,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Killing%20Palm"
+    },
+    {
+      "name": "Spirit Vessel",
+      "adoptionCount": 11537,
+      "adoptionPct": 9.29,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Spirit%20Vessel"
+    },
+    {
+      "name": "Skeletal Cleric",
+      "adoptionCount": 11016,
+      "adoptionPct": 8.87,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Skeletal%20Cleric"
+    },
+    {
+      "name": "Convalescence",
+      "adoptionCount": 10383,
+      "adoptionPct": 8.36,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Convalescence"
+    },
+    {
+      "name": "Eternal Rage",
+      "adoptionCount": 10355,
+      "adoptionPct": 8.34,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Eternal%20Rage"
+    },
+    {
+      "name": "Discipline",
+      "adoptionCount": 9865,
+      "adoptionPct": 7.94,
+      "note": "採用率は中位。特定ビルド向け。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Discipline"
     }
   ]
 }

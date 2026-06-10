@@ -5,6 +5,34 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_PATH = path.join(ROOT, "public", "data", "market.json");
 const POE_NINJA = "https://poe.ninja";
+const POE_TRADE = "https://www.pathofexile.com";
+const TRADE_LINK_LIMIT = Number(process.env.TRADE_LINK_LIMIT ?? 5);
+const TRADE_RETRY_MAX_WAIT_MS = Number(process.env.TRADE_RETRY_MAX_WAIT_MS ?? 15000);
+
+const TRADE_STATS = {
+  life: "explicit.stat_3299347043",
+  mana: "explicit.stat_1050105434",
+  totalElementalResistance: "pseudo.pseudo_total_elemental_resistance",
+  movementSpeed: "explicit.stat_2250533757",
+  spellLevel: "explicit.stat_124131830",
+  attackLevel: "explicit.stat_3035140377",
+  spellDamage: "explicit.stat_2974417149",
+  castSpeed: "explicit.stat_2891184298",
+  attackSpeed: "explicit.stat_681332047",
+  localAttackSpeed: "explicit.stat_210067635",
+  physicalDamage: "explicit.stat_1509134228",
+  elementalAttackDamage: "explicit.stat_387439868",
+  accuracy: "explicit.stat_803737631",
+  criticalDamage: "explicit.stat_3556824919",
+  criticalChance: "explicit.stat_587431675",
+  strength: "explicit.stat_4080418644",
+  dexterity: "explicit.stat_3261801346",
+  intelligence: "explicit.stat_328541901",
+  energyShield: "explicit.stat_3489782002",
+  armour: "explicit.stat_809229260",
+  evasion: "explicit.stat_2144192055",
+  spirit: "explicit.stat_3981240776",
+};
 
 function readVarint(buffer, offset) {
   let value = 0n;
@@ -208,7 +236,12 @@ function uniqueRows(searchData) {
 }
 
 function gemRows(searchData) {
-  return rowsForDimension(searchData, "allskills").slice(0, 120);
+  return rowsForDimension(searchData, "allskills").filter((row) => !isSupportGemRow(row)).slice(0, 120);
+}
+
+function isSupportGemRow(row) {
+  const icon = row.props.icon ?? "";
+  return /\/NewSupport\/|SupportGem|Lineage/i.test(icon);
 }
 
 function targetSlotWeight(name, type) {
@@ -285,6 +318,10 @@ function statLine(label, target, why) {
   return { label, target, why };
 }
 
+function tradeFilter(id, min, label) {
+  return { id, min, label };
+}
+
 function tradeCategoryFor(opportunity) {
   const label = `${opportunity.baseLabel} ${opportunity.slot}`;
   if (/Amulet|Talisman/i.test(label)) return "Accessory / Amulet";
@@ -299,6 +336,142 @@ function tradeCategoryFor(opportunity) {
   if (/Jewel/i.test(label)) return "Jewel";
   if (/Bow|Crossbow|Quarterstaff|Sceptre|Staff|Wand|Spear|Mace/i.test(label)) return "Weapon";
   return opportunity.slot || "Item";
+}
+
+function tradeCategoryOptionFor(opportunity) {
+  const label = `${opportunity.baseLabel} ${opportunity.slot}`;
+  if (/Ring/i.test(label)) return "accessory.ring";
+  if (/Amulet/i.test(label)) return "accessory.amulet";
+  if (/Belt/i.test(label)) return "accessory.belt";
+  if (/Talisman/i.test(label)) return "weapon.talisman";
+  if (/Boots/i.test(label)) return "armour.boots";
+  if (/Gloves/i.test(label)) return "armour.gloves";
+  if (/Helmet/i.test(label)) return "armour.helmet";
+  if (/Body Armour/i.test(label)) return "armour.chest";
+  if (/Quiver/i.test(label)) return "armour.quiver";
+  if (/Shield|Buckler/i.test(label)) return "armour.shield";
+  if (/Focus/i.test(label)) return "armour.focus";
+  if (/Jewel/i.test(label)) return "jewel";
+  if (/Quarterstaff/i.test(label)) return "weapon.warstaff";
+  if (/Sceptre/i.test(label)) return "weapon.sceptre";
+  if (/Staff/i.test(label)) return "weapon.staff";
+  if (/Wand/i.test(label)) return "weapon.wand";
+  if (/Bow/i.test(label)) return "weapon.bow";
+  if (/Crossbow/i.test(label)) return "weapon.crossbow";
+  if (/Spear/i.test(label)) return "weapon.spear";
+  if (/One Handed Mace/i.test(label)) return "weapon.onemace";
+  if (/Two Handed Mace/i.test(label)) return "weapon.twomace";
+  if (/Mace/i.test(label)) return "weapon.onemace";
+  return null;
+}
+
+function tradeSearchConfigFor(opportunity) {
+  const label = `${opportunity.baseLabel} ${opportunity.slot}`;
+  const archetype = opportunity.archetype;
+  const filters = [];
+  let countMin = 2;
+
+  if (/Ring/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
+      tradeFilter(TRADE_STATS.mana, 50, "Mana 50+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 60, "Total elemental resistance 60+"),
+      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 8, archetype === "caster" ? "Cast speed 8%+" : "Attack speed 8%+"),
+    );
+  } else if (/Boots/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.movementSpeed, 25, "Movement speed 25%+"),
+      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
+    );
+  } else if (/Amulet|Talisman/i.test(label)) {
+    filters.push(
+      tradeFilter(archetype === "attack" ? TRADE_STATS.attackLevel : TRADE_STATS.spellLevel, 1, archetype === "attack" ? "+1 attack skills" : "+1 spell skills"),
+      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
+      tradeFilter(TRADE_STATS.mana, 50, "Mana 50+"),
+      tradeFilter(TRADE_STATS.criticalDamage, 20, "Critical damage 20%+"),
+      tradeFilter(archetype === "attack" ? TRADE_STATS.dexterity : TRADE_STATS.intelligence, 30, archetype === "attack" ? "Dexterity 30+" : "Intelligence 30+"),
+    );
+  } else if (/Quarterstaff|Sceptre|Staff|Wand/i.test(label)) {
+    if (archetype === "caster") {
+      filters.push(
+        tradeFilter(TRADE_STATS.spellLevel, 1, "+1 spell skills"),
+        tradeFilter(TRADE_STATS.spellDamage, 70, "Spell damage 70%+"),
+        tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+"),
+        tradeFilter(TRADE_STATS.mana, 50, "Mana 50+"),
+      );
+    } else {
+      filters.push(
+        tradeFilter(TRADE_STATS.physicalDamage, 80, "Physical damage 80%+"),
+        tradeFilter(TRADE_STATS.localAttackSpeed, 10, "Local attack speed 10%+"),
+        tradeFilter(TRADE_STATS.accuracy, 100, "Accuracy 100+"),
+        tradeFilter(TRADE_STATS.criticalChance, 40, "Critical chance 40%+"),
+      );
+    }
+  } else if (/Focus/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.spellLevel, 1, "+1 spell skills"),
+      tradeFilter(TRADE_STATS.spellDamage, 60, "Spell damage 60%+"),
+      tradeFilter(TRADE_STATS.energyShield, 50, "Energy Shield 50+"),
+      tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+"),
+    );
+  } else if (/Gloves/i.test(label)) {
+    filters.push(
+      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 8, archetype === "caster" ? "Cast speed 8%+" : "Attack speed 8%+"),
+      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
+    );
+  } else if (/Body Armour/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.life, 70, "Life 70+"),
+      tradeFilter(TRADE_STATS.energyShield, 80, "Energy Shield 80+"),
+      tradeFilter(TRADE_STATS.armour, 150, "Armour 150+"),
+      tradeFilter(TRADE_STATS.evasion, 150, "Evasion 150+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 40, "Total elemental resistance 40+"),
+    );
+  } else if (/Helmet/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
+      tradeFilter(TRADE_STATS.energyShield, 50, "Energy Shield 50+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
+      tradeFilter(TRADE_STATS.intelligence, 25, "Intelligence 25+"),
+    );
+  } else if (/Belt/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.life, 70, "Life 70+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 60, "Total elemental resistance 60+"),
+      tradeFilter(TRADE_STATS.strength, 30, "Strength 30+"),
+    );
+  } else if (/Jewel/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.criticalDamage, 15, "Critical damage 15%+"),
+      tradeFilter(TRADE_STATS.attackSpeed, 5, "Attack speed 5%+"),
+      tradeFilter(TRADE_STATS.castSpeed, 5, "Cast speed 5%+"),
+    );
+    countMin = 1;
+  } else if (/Quiver/i.test(label)) {
+    filters.push(
+      tradeFilter(TRADE_STATS.attackSpeed, 8, "Attack speed 8%+"),
+      tradeFilter(TRADE_STATS.accuracy, 100, "Accuracy 100+"),
+      tradeFilter(TRADE_STATS.criticalChance, 30, "Critical chance 30%+"),
+      tradeFilter(TRADE_STATS.elementalAttackDamage, 30, "Elemental attack damage 30%+"),
+    );
+  } else {
+    filters.push(
+      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
+      tradeFilter(TRADE_STATS.attackSpeed, 8, "Attack speed 8%+"),
+      tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+"),
+    );
+  }
+
+  const officialCategory = tradeCategoryOptionFor(opportunity);
+  const uniqueFilters = filters.filter((filter, index, array) => filter.id && array.findIndex((item) => item.id === filter.id) === index);
+  return {
+    officialCategory,
+    filters: uniqueFilters,
+    countMin: Math.min(countMin, uniqueFilters.length),
+  };
 }
 
 function minimumTargetsFor(opportunity) {
@@ -417,6 +590,7 @@ function avoidTradeFiltersFor(opportunity) {
 }
 
 function buildTradeProfile(opportunity, leagueName) {
+  const searchConfig = tradeSearchConfigFor(opportunity);
   const required = opportunity.modSignature.slice(0, 2).map((mod, index) =>
     statLine(mod, index === 0 ? "main filter" : "second filter", index === 0 ? "start here when filtering" : "use Count >= 2 if supply is thin"),
   );
@@ -427,30 +601,36 @@ function buildTradeProfile(opportunity, leagueName) {
     status: "Online only",
     rarity: "Rare",
     category: tradeCategoryFor(opportunity),
+    officialCategory: searchConfig.officialCategory,
     baseHint: opportunity.baseLabel,
+    applied: searchConfig.filters.map((filter) => statLine(filter.label, `${filter.min}+`, "official Trade URL filter")),
     required,
     preferred,
     minimums,
     avoid: avoidTradeFiltersFor(opportunity),
-    searchMode: opportunity.craftScope === "Manual review" ? "Manual stat search" : "Stat filters + Count group",
+    searchMode: searchConfig.filters.length ? `Official URL / Count >= ${searchConfig.countMin}` : "Official URL / category only",
   };
 
   const lines = [
-    "PoE2 trade search recipe",
+    "PoE2 trade manual tune memo",
+    "用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。",
     `League: ${profile.league}`,
     `Status: ${profile.status}`,
     `Rarity: ${profile.rarity}`,
     `Category: ${profile.category}`,
     `Base/type hint: ${profile.baseHint}`,
-    `Mode: ${profile.searchMode}`,
+    `URL filters: ${profile.searchMode}`,
     "",
-    "[Required filters]",
+    "[Trade filters]",
+    ...profile.applied.map((item) => `- ${item.label}`),
+    "",
+    "[Tighten first]",
     ...profile.required.map((item) => `- ${item.label} (${item.target})`),
     "",
-    "[Minimum targets]",
+    "[Manual target rolls]",
     ...profile.minimums.map((item) => `- ${item.label}: ${item.target}`),
     "",
-    "[Preferred filters]",
+    "[Optional upside]",
     ...profile.preferred.map((item) => `- ${item.label} (${item.target})`),
     "",
     "[Avoid]",
@@ -460,6 +640,43 @@ function buildTradeProfile(opportunity, leagueName) {
   return { ...profile, copyText: lines.join("\n") };
 }
 
+function buildTradeRequest(opportunity) {
+  const searchConfig = tradeSearchConfigFor(opportunity);
+  const filters = {
+    type_filters: {
+      filters: {
+        rarity: { option: "rare" },
+      },
+    },
+  };
+
+  if (searchConfig.officialCategory) {
+    filters.type_filters.filters.category = { option: searchConfig.officialCategory };
+  }
+
+  const stats = [];
+  if (searchConfig.filters.length) {
+    stats.push({
+      type: searchConfig.filters.length > 1 ? "count" : "and",
+      value: searchConfig.filters.length > 1 ? { min: searchConfig.countMin } : undefined,
+      filters: searchConfig.filters.map((filter) => ({
+        id: filter.id,
+        value: filter.min > 0 ? { min: filter.min } : undefined,
+        disabled: false,
+      })),
+    });
+  }
+
+  return {
+    query: {
+      status: { option: "onlineleague" },
+      stats,
+      filters,
+    },
+    sort: { price: "asc" },
+  };
+}
+
 function buildTradeSearch(leagueName, opportunity) {
   const profile = buildTradeProfile(opportunity, leagueName);
   return {
@@ -467,6 +684,69 @@ function buildTradeSearch(leagueName, opportunity) {
     query: profile.copyText,
     profile,
   };
+}
+
+async function createOfficialTradeSearch(leagueName, opportunity) {
+  const response = await fetch(`${POE_TRADE}/api/trade2/search/poe2/${encodeURIComponent(leagueName)}`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      accept: "application/json",
+      "user-agent": "poe2-market-dashboard/0.1",
+    },
+    body: JSON.stringify(buildTradeRequest(opportunity)),
+  });
+
+  if (!response.ok) {
+    const error = new Error(`Trade search failed ${response.status}`);
+    error.status = response.status;
+    error.retryAfter = Number(response.headers.get("retry-after") ?? 0);
+    throw error;
+  }
+  const payload = await response.json();
+  if (!payload.id) throw new Error("Trade search response did not include an id.");
+  return payload.id;
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function attachOfficialTradeLinks(leagueName, opportunities) {
+  let createdLinks = 0;
+  for (const opportunity of opportunities) {
+    if (createdLinks >= TRADE_LINK_LIMIT) {
+      opportunity.trade.linkStatus = "manual";
+      opportunity.trade.linkError = `Filtered URL generation skipped after top ${TRADE_LINK_LIMIT} candidates to avoid official trade rate limits.`;
+      continue;
+    }
+
+    let lastError;
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      try {
+        const id = await createOfficialTradeSearch(leagueName, opportunity);
+        opportunity.trade.searchId = id;
+        opportunity.trade.url = `${POE_TRADE}/trade2/search/poe2/${encodeURIComponent(leagueName)}/${id}`;
+        opportunity.trade.linkStatus = "filtered";
+        createdLinks += 1;
+        lastError = null;
+        break;
+      } catch (error) {
+        lastError = error;
+        if (error.status !== 429 || attempt === 1) break;
+        const waitMs = Math.min(Math.max(error.retryAfter * 1000, 3000 * (attempt + 1)), TRADE_RETRY_MAX_WAIT_MS);
+        console.warn(`Trade search rate-limited for ${opportunity.baseLabel}; retrying in ${waitMs}ms`);
+        await sleep(waitMs);
+      }
+    }
+
+    if (lastError) {
+      opportunity.trade.linkStatus = "fallback";
+      opportunity.trade.linkError = lastError.message;
+    }
+
+    await sleep(1250);
+  }
 }
 
 function makeOpportunities({ allSearch, classSearches, classes }) {
@@ -570,6 +850,9 @@ async function main() {
     ),
   );
 
+  const rareOpportunities = makeOpportunities({ allSearch, classSearches, classes });
+  await attachOfficialTradeLinks(league.name, rareOpportunities);
+
   const market = {
     generatedAt: new Date().toISOString(),
     source: {
@@ -588,7 +871,7 @@ async function main() {
     },
     classes,
     rare: {
-      opportunities: makeOpportunities({ allSearch, classSearches, classes }),
+      opportunities: rareOpportunities,
     },
     unique: summarizeUniques(allSearch),
     gems: summarizeGems(allSearch),
