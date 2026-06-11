@@ -404,7 +404,8 @@ tbody tr:hover,
 }
 
 .build-stack,
-.mod-list {
+.mod-list,
+.evidence-stack {
   display: grid;
   gap: 5px;
 }
@@ -412,6 +413,18 @@ tbody tr:hover,
 .build-stack span,
 .mod-list span {
   color: #d5e0e5;
+}
+
+.evidence-pill {
+  background: rgba(240, 180, 41, 0.12);
+  border: 1px solid rgba(240, 180, 41, 0.38);
+  border-radius: 5px;
+  color: var(--amber);
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+  max-width: fit-content;
+  padding: 4px 7px;
 }
 
 .build-stack b {
@@ -519,6 +532,13 @@ tbody tr:hover,
   border-top: 1px solid var(--line-soft);
   padding: 16px 0 0;
   margin-top: 16px;
+}
+
+.evidence-note p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0 0 10px;
 }
 
 .detail-section h3 {

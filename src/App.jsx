@@ -210,7 +210,7 @@ function Sidebar({ data, filters, setFilters, slots, classes }) {
         <span>
           poe.ninja: {formatNumber(data?.league?.totalCharacters)} chars
           <br />
-          mod/craft: rule-based
+          rare mods: source-limited
         </span>
       </div>
     </aside>
@@ -229,7 +229,7 @@ function RareTable({ items, selected, onSelect }) {
             <th>Slot</th>
             <th>Base</th>
             <th>Demand Builds</th>
-            <th>Mod Signature</th>
+            <th>Mod Evidence</th>
             <th>Craft</th>
             <th>Trade</th>
             <th>Verdict</th>
@@ -258,10 +258,9 @@ function RareTable({ items, selected, onSelect }) {
                 </div>
               </td>
               <td>
-                <div className="mod-list compact">
-                  {item.modSignature.slice(0, 3).map((mod) => (
-                    <span key={mod}>{mod}</span>
-                  ))}
+                <div className="evidence-stack compact">
+                  <span className="evidence-pill">{item.modEvidenceLabel ?? "実mod未取得"}</span>
+                  <small>poe.ninja集計は部位採用まで</small>
                 </div>
               </td>
               <td>
@@ -272,7 +271,7 @@ function RareTable({ items, selected, onSelect }) {
                 <a className="icon-link" href={item.trade.url} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
                   {item.trade.linkStatus === "filtered" ? "Filtered" : "Manual"} <ExternalLink size={14} />
                 </a>
-                <small>{item.trade.linkStatus === "filtered" ? item.trade.profile?.searchMode ?? "Trade search" : "条件は右ペイン参照"}</small>
+                <small>{item.trade.linkStatus === "filtered" ? item.trade.profile?.searchMode ?? "Trade search" : "手動確認"}</small>
               </td>
               <td>
                 <VerdictBadge verdict={item.verdict} />
@@ -320,10 +319,12 @@ function SideDetail({ selected, copyText }) {
     status: "Online only",
     searchMode: "Manual stat search",
     applied: [],
-    required: selected.modSignature.map((mod) => ({ label: mod, target: "filter", why: "" })),
+    required: [],
     preferred: [],
     minimums: [],
+    hypothesis: [],
     avoid: selected.riskFlags.map((risk) => ({ label: risk, target: "", why: "" })),
+    evidenceNote: selected.modEvidenceNote,
     copyText: selected.trade.query,
   };
   const tradeCopyText = tradeProfile.copyText ?? selected.trade.query;
@@ -389,10 +390,14 @@ function SideDetail({ selected, copyText }) {
             <strong>{selected.trade.linkStatus === "filtered" ? "条件付きURL" : "手動検索"}</strong>
           </div>
         </div>
-        <SearchStatList title={selected.trade.linkStatus === "filtered" ? "URLに入っている条件" : "手動で入れる条件"} items={tradeProfile.applied} />
-        <SearchStatList title="手動で締める条件" items={tradeProfile.required} />
-        <SearchStatList title="最低目安" items={tradeProfile.minimums} />
-        <SearchStatList title="加点条件" items={tradeProfile.preferred} />
+        <SearchStatList title="URLに入っている条件" items={tradeProfile.applied} />
+      </section>
+
+      <section className="detail-section evidence-note">
+        <h3>実mod情報</h3>
+        <p>{tradeProfile.evidenceNote ?? selected.modEvidenceNote}</p>
+        <p>この候補は「どのrare部位が採用されているか」までは実データです。商材mod/TierはTrade結果や個別ビルドを開いて手動確認してください。</p>
+        <SearchStatList title="手動確認の仮説メモ" items={tradeProfile.hypothesis} />
       </section>
 
       <section className="detail-section">
@@ -532,7 +537,16 @@ export function App() {
       if (filters.craftScope !== "all" && item.craftScope !== filters.craftScope) return false;
       if (item.score < filters.minScore) return false;
       if (!query) return true;
-      return [item.baseLabel, item.slot, item.topClass, item.budget, item.craftScope, ...item.modSignature]
+      return [
+        item.baseLabel,
+        item.slot,
+        item.topClass,
+        item.budget,
+        item.craftScope,
+        item.modEvidenceLabel,
+        item.modEvidenceNote,
+        ...(item.heuristicModSignature ?? []),
+      ]
         .join(" ")
         .toLowerCase()
         .includes(query);

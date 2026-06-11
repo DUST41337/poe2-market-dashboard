@@ -14,7 +14,7 @@ https://dust41337.github.io/poe2-market-dashboard/
 - Ranks rare gear opportunities by usage, class fit, slot priority, and craft practicality.
 - Keeps price automation out of MVP. The app provides trade-site links and copyable search text.
 
-Rare slot demand and build usage are extracted from `poe.ninja`. Rare mod signatures and craft routes are rule-based recommendations, not direct item-mod exports.
+Rare slot demand and build usage are extracted from `poe.ninja`. The current public aggregate search data does not expose the actual explicit mods on equipped rare items, so the app must not treat rare mod/tier hints as source-backed evidence.
 
 ## GitHub Pages
 
@@ -32,11 +32,11 @@ For a private-feeling share, keep the repository or Pages URL known only to your
 
 Official PoE Trade filtered URLs require creating a search id through the official trade API. That endpoint is rate-limited, so the data update only creates filtered URLs for the highest-priority rare candidates by default.
 
-- `Filtered` opens a generated official Trade URL with rarity, category, and stat filters.
-- `Manual` opens the league Trade page; use the detail pane's filters as the manual checklist.
+- `Filtered` opens a generated official Trade URL with online status, rarity, and category filters only.
+- `Manual` opens the league Trade page; use the detail pane as an evidence memo and manually inspect actual mods.
 - Set `TRADE_LINK_LIMIT` during data update to change how many filtered URLs are generated.
 
-Rare stat thresholds are intentionally market-facing heuristics, not an export of exact in-game affix tier tables. The UI labels them as `T1-T2商材`, `+3以上`, or similar so the checklist describes the sellable line rather than a low search floor.
+Rare stat thresholds are kept only as hypothesis notes for manual review. They are not used in generated Trade URLs until a reliable source for observed rare affix distribution is added.
 
 ## Data Update
 

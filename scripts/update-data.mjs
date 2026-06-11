@@ -376,115 +376,11 @@ function tradeCategoryOptionFor(opportunity) {
 }
 
 function tradeSearchConfigFor(opportunity) {
-  const label = `${opportunity.baseLabel} ${opportunity.slot}`;
-  const archetype = opportunity.archetype;
-  const filters = [];
-  let countMin = 2;
-
-  if (/Ring/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.flatPhysicalToAttacks, 9, "Flat physical to attacks 9+ avg", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.flatFireToAttacks, 18, "Flat fire to attacks 18+ avg", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.flatColdToAttacks, 16, "Flat cold to attacks 16+ avg", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.flatLightningToAttacks, 22, "Flat lightning to attacks 22+ avg", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 85, "Total elemental resistance 85+", "T1-T2商材"),
-      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 12, archetype === "caster" ? "Cast speed 12%+" : "Attack speed 12%+", "T1-T2商材"),
-    );
-    countMin = 2;
-  } else if (/Boots/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.movementSpeed, 30, "Movement speed 30%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 80, "Total elemental resistance 80+", "T1-T2商材"),
-    );
-  } else if (/Amulet|Talisman/i.test(label)) {
-    filters.push(
-      tradeFilter(archetype === "attack" ? TRADE_STATS.attackLevel : TRADE_STATS.spellLevel, 2, archetype === "attack" ? "+2 attack skills" : "+2 spell skills", "T1-T2商材"),
-      tradeFilter(archetype === "attack" ? TRADE_STATS.meleeLevel : TRADE_STATS.projectileLevel, 1, archetype === "attack" ? "+1 melee skills" : "+1 projectile skills", "複合+3狙い"),
-      tradeFilter(TRADE_STATS.criticalDamage, 35, "Critical damage 35%+", "T1-T2商材"),
-      tradeFilter(archetype === "attack" ? TRADE_STATS.dexterity : TRADE_STATS.intelligence, 45, archetype === "attack" ? "Dexterity 45+" : "Intelligence 45+", "T1-T2商材"),
-    );
-  } else if (/Quarterstaff|Sceptre|Staff|Wand/i.test(label)) {
-    if (archetype === "caster") {
-      filters.push(
-        tradeFilter(TRADE_STATS.spellLevel, 3, "+3 spell skills", "+3以上"),
-        tradeFilter(TRADE_STATS.spellDamage, 100, "Spell damage 100%+", "T1-T2商材"),
-        tradeFilter(TRADE_STATS.castSpeed, 14, "Cast speed 14%+", "T1-T2商材"),
-      );
-      countMin = 1;
-    } else {
-      filters.push(
-        tradeFilter(TRADE_STATS.attackLevel, 3, "+3 attack skills", "+3以上"),
-        tradeFilter(TRADE_STATS.physicalDamage, 120, "Physical damage 120%+", "T1-T2商材"),
-        tradeFilter(TRADE_STATS.localAttackSpeed, 14, "Local attack speed 14%+", "T1-T2商材"),
-        tradeFilter(TRADE_STATS.criticalChance, 60, "Critical chance 60%+", "T1-T2商材"),
-      );
-      countMin = 1;
-    }
-  } else if (/Focus/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.spellLevel, 2, "+2 spell skills", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.spellDamage, 90, "Spell damage 90%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.energyShield, 90, "Energy Shield 90+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.castSpeed, 12, "Cast speed 12%+", "T1-T2商材"),
-    );
-  } else if (/Gloves/i.test(label)) {
-    filters.push(
-      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 12, archetype === "caster" ? "Cast speed 12%+" : "Attack speed 12%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 70, "Total elemental resistance 70+", "T1-T2商材"),
-    );
-  } else if (/Body Armour/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.life, 100, "Life 100+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.energyShield, 140, "Energy Shield 140+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.armour, 300, "Armour 300+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.evasion, 300, "Evasion 300+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 70, "Total elemental resistance 70+", "T1-T2商材"),
-    );
-  } else if (/Helmet/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.energyShield, 90, "Energy Shield 90+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 75, "Total elemental resistance 75+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.intelligence, 40, "Intelligence 40+", "T1-T2商材"),
-    );
-  } else if (/Belt/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.life, 100, "Life 100+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 85, "Total elemental resistance 85+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.strength, 45, "Strength 45+", "T1-T2商材"),
-    );
-  } else if (/Jewel/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.criticalDamage, 25, "Critical damage 25%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.attackSpeed, 8, "Attack speed 8%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+", "T1-T2商材"),
-    );
-    countMin = 1;
-  } else if (/Quiver/i.test(label)) {
-    filters.push(
-      tradeFilter(TRADE_STATS.flatPhysicalToAttacks, 9, "Flat physical to attacks 9+ avg", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.attackSpeed, 12, "Attack speed 12%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.accuracy, 180, "Accuracy 180+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.criticalChance, 45, "Critical chance 45%+", "T1-T2商材"),
-    );
-  } else {
-    filters.push(
-      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 75, "Total elemental resistance 75+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.attackSpeed, 12, "Attack speed 12%+", "T1-T2商材"),
-      tradeFilter(TRADE_STATS.castSpeed, 12, "Cast speed 12%+", "T1-T2商材"),
-    );
-  }
-
   const officialCategory = tradeCategoryOptionFor(opportunity);
-  const uniqueFilters = filters.filter((filter, index, array) => filter.id && array.findIndex((item) => item.id === filter.id) === index);
   return {
     officialCategory,
-    filters: uniqueFilters,
-    countMin: Math.min(countMin, uniqueFilters.length),
+    filters: [],
+    countMin: 0,
   };
 }
 
@@ -607,11 +503,7 @@ function avoidTradeFiltersFor(opportunity) {
 
 function buildTradeProfile(opportunity, leagueName) {
   const searchConfig = tradeSearchConfigFor(opportunity);
-  const required = opportunity.modSignature.slice(0, 2).map((mod, index) =>
-    statLine(mod, index === 0 ? "main filter" : "second filter", index === 0 ? "start here when filtering" : "use Count >= 2 if supply is thin"),
-  );
-  const preferred = opportunity.modSignature.slice(2).map((mod) => statLine(mod, "nice to have", "raise price if the first filters hit"));
-  const minimums = minimumTargetsFor(opportunity);
+  const hypothesis = minimumTargetsFor(opportunity);
   const profile = {
     league: leagueName,
     status: "Online only",
@@ -619,35 +511,42 @@ function buildTradeProfile(opportunity, leagueName) {
     category: tradeCategoryFor(opportunity),
     officialCategory: searchConfig.officialCategory,
     baseHint: opportunity.baseLabel,
-    applied: searchConfig.filters.map((filter) => tierLine(filter.label, filter.tier, `${filter.min}+`, "official Trade URL filter")),
-    required,
-    preferred,
-    minimums,
+    applied: [
+      tierLine("Status", "", "Online in current league", "official Trade URL filter"),
+      tierLine("Rarity", "", "Rare", "official Trade URL filter"),
+      ...(searchConfig.officialCategory ? [tierLine("Category", "", searchConfig.officialCategory, "official Trade URL filter")] : []),
+    ],
+    required: [],
+    preferred: [],
+    minimums: [],
+    hypothesis,
     avoid: avoidTradeFiltersFor(opportunity),
-    searchMode: searchConfig.filters.length ? `Official URL / Count >= ${searchConfig.countMin}` : "Official URL / category only",
+    evidenceStatus: "rare_mods_unavailable",
+    evidenceNote:
+      "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
+    searchMode: "Official URL / category only",
   };
 
   const lines = [
-    "PoE2 trade manual tune memo",
-    "用途: Tradeリンク確認後、結果が広すぎる/狭すぎる時の手動調整または共有用。貼り付け用検索式ではありません。",
+    "PoE2 rare demand evidence memo",
+    "用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。",
     `League: ${profile.league}`,
     `Status: ${profile.status}`,
     `Rarity: ${profile.rarity}`,
     `Category: ${profile.category}`,
     `Base/type hint: ${profile.baseHint}`,
-    `URL filters: ${profile.searchMode}`,
+    `Trade URL: ${profile.searchMode}`,
+    `Mod evidence: ${profile.evidenceNote}`,
     "",
-    "[Trade filters]",
+    "[Confirmed from poe.ninja aggregate]",
+    `- ${opportunity.itemName}: ${opportunity.adoptionCount} characters (${opportunity.adoptionPct}%)`,
+    ...opportunity.classFits.map((fit) => `- ${fit.className}: ${fit.count} characters (${fit.percentage}%)`),
+    "",
+    "[Trade URL filters]",
     ...profile.applied.map((item) => `- ${item.label}${item.tier ? ` / ${item.tier}` : ""}`),
     "",
-    "[Tighten first]",
-    ...profile.required.map((item) => `- ${item.label} (${item.target})`),
-    "",
-    "[Manual target rolls]",
-    ...profile.minimums.map((item) => `- ${item.label}: ${item.tier ? `${item.tier} / ` : ""}${item.target}`),
-    "",
-    "[Optional upside]",
-    ...profile.preferred.map((item) => `- ${item.label} (${item.target})`),
+    "[Hypothesis only; verify actual equipped/trade mods manually]",
+    ...profile.hypothesis.map((item) => `- ${item.label}: ${item.tier ? `${item.tier} / ` : ""}${item.target}`),
     "",
     "[Avoid]",
     ...profile.avoid.map((item) => `- ${item}`),
@@ -670,23 +569,10 @@ function buildTradeRequest(opportunity) {
     filters.type_filters.filters.category = { option: searchConfig.officialCategory };
   }
 
-  const stats = [];
-  if (searchConfig.filters.length) {
-    stats.push({
-      type: searchConfig.filters.length > 1 ? "count" : "and",
-      value: searchConfig.filters.length > 1 ? { min: searchConfig.countMin } : undefined,
-      filters: searchConfig.filters.map((filter) => ({
-        id: filter.id,
-        value: filter.min > 0 ? { min: filter.min } : undefined,
-        disabled: false,
-      })),
-    });
-  }
-
   return {
     query: {
       status: { option: "onlineleague" },
-      stats,
+      stats: [],
       filters,
     },
     sort: { price: "asc" },
@@ -796,7 +682,7 @@ function makeOpportunities({ allSearch, classSearches, classes }) {
       const slotWeight = targetSlotWeight(row.name, row.props.type);
       const score = Math.max(1, Math.min(96, Math.round(Math.min(row.percentage, 100) * 0.45 + Math.min(maxClassPct, 100) * 0.4 + slotWeight * 15)));
       const baseLabel = row.name.replace(/^Rare\s+/i, "");
-      const modSignature = signatureFor(row.name, row.props.type, topClass);
+      const heuristicModSignature = signatureFor(row.name, row.props.type, topClass);
       const opportunity = {
         id: row.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
         itemName: row.name,
@@ -811,7 +697,12 @@ function makeOpportunities({ allSearch, classSearches, classes }) {
         classFits: classFits.map((fit) => ({ ...fit, percentage: Number(fit.percentage.toFixed(2)) })),
         topClass,
         archetype: archetypeFor(topClass),
-        modSignature,
+        modSignature: [],
+        heuristicModSignature,
+        modEvidenceStatus: "unavailable",
+        modEvidenceLabel: "実mod未取得",
+        modEvidenceNote:
+          "poe.ninjaのrare集計は装備部位/カテゴリの採用数までです。実際に装備されているexplicit mod本文は公開検索データから確認できません。",
         craftPlan: craftPlanFor(row.name, row.props.type),
         riskFlags: riskFlagsFor(row.name, row.props.type),
         targetSlot: targetSlotWeight(row.name, row.props.type) >= 0.9,
