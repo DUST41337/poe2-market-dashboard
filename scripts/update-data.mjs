@@ -16,10 +16,16 @@ const TRADE_STATS = {
   movementSpeed: "explicit.stat_2250533757",
   spellLevel: "explicit.stat_124131830",
   attackLevel: "explicit.stat_3035140377",
+  meleeLevel: "explicit.stat_9187492",
+  projectileLevel: "explicit.stat_1202301673",
   spellDamage: "explicit.stat_2974417149",
   castSpeed: "explicit.stat_2891184298",
   attackSpeed: "explicit.stat_681332047",
   localAttackSpeed: "explicit.stat_210067635",
+  flatPhysicalToAttacks: "explicit.stat_3032590688",
+  flatFireToAttacks: "explicit.stat_1573130764",
+  flatColdToAttacks: "explicit.stat_4067062424",
+  flatLightningToAttacks: "explicit.stat_1754445556",
   physicalDamage: "explicit.stat_1509134228",
   elementalAttackDamage: "explicit.stat_387439868",
   accuracy: "explicit.stat_803737631",
@@ -318,8 +324,12 @@ function statLine(label, target, why) {
   return { label, target, why };
 }
 
-function tradeFilter(id, min, label) {
-  return { id, min, label };
+function tradeFilter(id, min, label, tier = "商材") {
+  return { id, min, label, tier };
+}
+
+function tierLine(label, tier, target, why) {
+  return { label, tier, target, why };
 }
 
 function tradeCategoryFor(opportunity) {
@@ -373,95 +383,99 @@ function tradeSearchConfigFor(opportunity) {
 
   if (/Ring/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
-      tradeFilter(TRADE_STATS.mana, 50, "Mana 50+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 60, "Total elemental resistance 60+"),
-      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 8, archetype === "caster" ? "Cast speed 8%+" : "Attack speed 8%+"),
+      tradeFilter(TRADE_STATS.flatPhysicalToAttacks, 9, "Flat physical to attacks 9+ avg", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.flatFireToAttacks, 18, "Flat fire to attacks 18+ avg", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.flatColdToAttacks, 16, "Flat cold to attacks 16+ avg", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.flatLightningToAttacks, 22, "Flat lightning to attacks 22+ avg", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 85, "Total elemental resistance 85+", "T1-T2商材"),
+      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 12, archetype === "caster" ? "Cast speed 12%+" : "Attack speed 12%+", "T1-T2商材"),
     );
+    countMin = 2;
   } else if (/Boots/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.movementSpeed, 25, "Movement speed 25%+"),
-      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
+      tradeFilter(TRADE_STATS.movementSpeed, 30, "Movement speed 30%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 80, "Total elemental resistance 80+", "T1-T2商材"),
     );
   } else if (/Amulet|Talisman/i.test(label)) {
     filters.push(
-      tradeFilter(archetype === "attack" ? TRADE_STATS.attackLevel : TRADE_STATS.spellLevel, 1, archetype === "attack" ? "+1 attack skills" : "+1 spell skills"),
-      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
-      tradeFilter(TRADE_STATS.mana, 50, "Mana 50+"),
-      tradeFilter(TRADE_STATS.criticalDamage, 20, "Critical damage 20%+"),
-      tradeFilter(archetype === "attack" ? TRADE_STATS.dexterity : TRADE_STATS.intelligence, 30, archetype === "attack" ? "Dexterity 30+" : "Intelligence 30+"),
+      tradeFilter(archetype === "attack" ? TRADE_STATS.attackLevel : TRADE_STATS.spellLevel, 2, archetype === "attack" ? "+2 attack skills" : "+2 spell skills", "T1-T2商材"),
+      tradeFilter(archetype === "attack" ? TRADE_STATS.meleeLevel : TRADE_STATS.projectileLevel, 1, archetype === "attack" ? "+1 melee skills" : "+1 projectile skills", "複合+3狙い"),
+      tradeFilter(TRADE_STATS.criticalDamage, 35, "Critical damage 35%+", "T1-T2商材"),
+      tradeFilter(archetype === "attack" ? TRADE_STATS.dexterity : TRADE_STATS.intelligence, 45, archetype === "attack" ? "Dexterity 45+" : "Intelligence 45+", "T1-T2商材"),
     );
   } else if (/Quarterstaff|Sceptre|Staff|Wand/i.test(label)) {
     if (archetype === "caster") {
       filters.push(
-        tradeFilter(TRADE_STATS.spellLevel, 1, "+1 spell skills"),
-        tradeFilter(TRADE_STATS.spellDamage, 70, "Spell damage 70%+"),
-        tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+"),
-        tradeFilter(TRADE_STATS.mana, 50, "Mana 50+"),
+        tradeFilter(TRADE_STATS.spellLevel, 3, "+3 spell skills", "+3以上"),
+        tradeFilter(TRADE_STATS.spellDamage, 100, "Spell damage 100%+", "T1-T2商材"),
+        tradeFilter(TRADE_STATS.castSpeed, 14, "Cast speed 14%+", "T1-T2商材"),
       );
+      countMin = 1;
     } else {
       filters.push(
-        tradeFilter(TRADE_STATS.physicalDamage, 80, "Physical damage 80%+"),
-        tradeFilter(TRADE_STATS.localAttackSpeed, 10, "Local attack speed 10%+"),
-        tradeFilter(TRADE_STATS.accuracy, 100, "Accuracy 100+"),
-        tradeFilter(TRADE_STATS.criticalChance, 40, "Critical chance 40%+"),
+        tradeFilter(TRADE_STATS.attackLevel, 3, "+3 attack skills", "+3以上"),
+        tradeFilter(TRADE_STATS.physicalDamage, 120, "Physical damage 120%+", "T1-T2商材"),
+        tradeFilter(TRADE_STATS.localAttackSpeed, 14, "Local attack speed 14%+", "T1-T2商材"),
+        tradeFilter(TRADE_STATS.criticalChance, 60, "Critical chance 60%+", "T1-T2商材"),
       );
+      countMin = 1;
     }
   } else if (/Focus/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.spellLevel, 1, "+1 spell skills"),
-      tradeFilter(TRADE_STATS.spellDamage, 60, "Spell damage 60%+"),
-      tradeFilter(TRADE_STATS.energyShield, 50, "Energy Shield 50+"),
-      tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+"),
+      tradeFilter(TRADE_STATS.spellLevel, 2, "+2 spell skills", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.spellDamage, 90, "Spell damage 90%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.energyShield, 90, "Energy Shield 90+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.castSpeed, 12, "Cast speed 12%+", "T1-T2商材"),
     );
   } else if (/Gloves/i.test(label)) {
     filters.push(
-      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 8, archetype === "caster" ? "Cast speed 8%+" : "Attack speed 8%+"),
-      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
+      tradeFilter(archetype === "caster" ? TRADE_STATS.castSpeed : TRADE_STATS.attackSpeed, 12, archetype === "caster" ? "Cast speed 12%+" : "Attack speed 12%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 70, "Total elemental resistance 70+", "T1-T2商材"),
     );
   } else if (/Body Armour/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.life, 70, "Life 70+"),
-      tradeFilter(TRADE_STATS.energyShield, 80, "Energy Shield 80+"),
-      tradeFilter(TRADE_STATS.armour, 150, "Armour 150+"),
-      tradeFilter(TRADE_STATS.evasion, 150, "Evasion 150+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 40, "Total elemental resistance 40+"),
+      tradeFilter(TRADE_STATS.life, 100, "Life 100+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.energyShield, 140, "Energy Shield 140+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.armour, 300, "Armour 300+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.evasion, 300, "Evasion 300+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 70, "Total elemental resistance 70+", "T1-T2商材"),
     );
   } else if (/Helmet/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
-      tradeFilter(TRADE_STATS.energyShield, 50, "Energy Shield 50+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
-      tradeFilter(TRADE_STATS.intelligence, 25, "Intelligence 25+"),
+      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.energyShield, 90, "Energy Shield 90+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 75, "Total elemental resistance 75+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.intelligence, 40, "Intelligence 40+", "T1-T2商材"),
     );
   } else if (/Belt/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.life, 70, "Life 70+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 60, "Total elemental resistance 60+"),
-      tradeFilter(TRADE_STATS.strength, 30, "Strength 30+"),
+      tradeFilter(TRADE_STATS.life, 100, "Life 100+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 85, "Total elemental resistance 85+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.strength, 45, "Strength 45+", "T1-T2商材"),
     );
   } else if (/Jewel/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.criticalDamage, 15, "Critical damage 15%+"),
-      tradeFilter(TRADE_STATS.attackSpeed, 5, "Attack speed 5%+"),
-      tradeFilter(TRADE_STATS.castSpeed, 5, "Cast speed 5%+"),
+      tradeFilter(TRADE_STATS.criticalDamage, 25, "Critical damage 25%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.attackSpeed, 8, "Attack speed 8%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+", "T1-T2商材"),
     );
     countMin = 1;
   } else if (/Quiver/i.test(label)) {
     filters.push(
-      tradeFilter(TRADE_STATS.attackSpeed, 8, "Attack speed 8%+"),
-      tradeFilter(TRADE_STATS.accuracy, 100, "Accuracy 100+"),
-      tradeFilter(TRADE_STATS.criticalChance, 30, "Critical chance 30%+"),
-      tradeFilter(TRADE_STATS.elementalAttackDamage, 30, "Elemental attack damage 30%+"),
+      tradeFilter(TRADE_STATS.flatPhysicalToAttacks, 9, "Flat physical to attacks 9+ avg", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.attackSpeed, 12, "Attack speed 12%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.accuracy, 180, "Accuracy 180+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.criticalChance, 45, "Critical chance 45%+", "T1-T2商材"),
     );
   } else {
     filters.push(
-      tradeFilter(TRADE_STATS.life, 50, "Life 50+"),
-      tradeFilter(TRADE_STATS.totalElementalResistance, 50, "Total elemental resistance 50+"),
-      tradeFilter(TRADE_STATS.attackSpeed, 8, "Attack speed 8%+"),
-      tradeFilter(TRADE_STATS.castSpeed, 8, "Cast speed 8%+"),
+      tradeFilter(TRADE_STATS.life, 80, "Life 80+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.totalElementalResistance, 75, "Total elemental resistance 75+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.attackSpeed, 12, "Attack speed 12%+", "T1-T2商材"),
+      tradeFilter(TRADE_STATS.castSpeed, 12, "Cast speed 12%+", "T1-T2商材"),
     );
   }
 
@@ -480,96 +494,98 @@ function minimumTargetsFor(opportunity) {
 
   if (/Boots/i.test(label)) {
     return [
-      statLine("Movement Speed", "25%+ preferred", "speed is the easiest buyer-side filter"),
-      statLine("Life or ES", "mid/high tier", "avoid pure resistance boots unless very cheap"),
-      statLine("Total useful resists", "60%+ if no premium mod", "keeps the listing from blending into bulk supply"),
+      tierLine("Movement Speed", "T1狙い", "30%+", "25%は妥協検索。売り物は30%から見たい"),
+      tierLine("Life / ES", "T1-T2", "Life 80+ or ES 90+", "移動速度だけの靴は供給に埋もれやすい"),
+      tierLine("Total resists", "T1-T2合算", "80%+", "耐性が薄いなら他に速度以外の強みが必要"),
     ];
   }
 
   if (/Ring/i.test(label)) {
     return [
-      statLine("Life/Mana/ES", "one strong prefix", "rings without a core resource roll are hard to price up"),
-      statLine("Total useful resists", "70%+ target", "resist rings are common, total value needs to be obvious"),
-      statLine("Damage/speed suffix", "one build-facing suffix", "separates the item from generic fixer rings"),
+      tierLine("Flat damage to attacks", "T1-T2", "phys avg 9+ / fire 18+ / cold 16+ / lightning 22+", "攻撃向け指輪は高tierフラットが商材ライン"),
+      tierLine("Life", "T1-T2", "80+", "Life 50台は自用品寄り。売るなら高tierと組み合わせ"),
+      tierLine("Total resists", "T1-T2合算", "85%+", "耐性だけなら高合算でないと価格が伸びにくい"),
+      tierLine("Attack/Cast Speed", "T1-T2", "12%+", "フラットやLifeと同時に付くと差別化しやすい"),
     ];
   }
 
   if (/Amulet|Talisman/i.test(label)) {
     return [
-      statLine("+Level", "+1 minimum, +2 watchlist", "most buyers start with a level filter"),
-      statLine("Attributes or resource", "one strong support roll", "makes attribute-starved builds easier to fit"),
-      statLine("Damage multiplier", "high tier if present", "premium upside for finished listings"),
+      tierLine("+Skill Level", "商材", "+3以上 or +2 all + strong suffix", "+1単体は基本的に妥協検索"),
+      tierLine("Critical Damage", "T1-T2", "35%+", "スキルレベルと並ぶ価格上振れ枠"),
+      tierLine("Attribute", "T1-T2", "45+", "要求値解決を兼ねる高tierなら評価しやすい"),
     ];
   }
 
   if (/Quarterstaff|Sceptre|Staff|Wand/i.test(label)) {
     if (archetype === "caster") {
       return [
-        statLine("+Spell level", "+2 target, +1 budget", "caster weapons are usually filtered by gem level first"),
-        statLine("Spell damage", "80%+ target", "keeps low-roll caster weapons out"),
-        statLine("Cast speed", "10%+ if available", "important second-pass buyer filter"),
+        tierLine("+Spell Level", "商材", "+3以上", "+1/+2は他modが相当強い時だけ"),
+        tierLine("Spell Damage", "T1-T2", "100%+", "gem levelなしの低spell damageは候補外"),
+        tierLine("Cast Speed", "T1-T2", "14%+", "高tier cast speedで完成品感が出る"),
       ];
     }
     return [
-      statLine("Physical or elemental DPS", "clear high roll", "attack weapons need visible damage"),
-      statLine("Attack speed", "10%+ target", "buyers filter speed aggressively"),
-      statLine("Accuracy or crit", "one useful suffix", "helps justify price above essence failures"),
+      tierLine("+Attack Level", "商材", "+3以上", "スキル武器は+3から見たい"),
+      tierLine("Physical Damage", "T1-T2", "120%+", "武器はDPSが見えないと売り物にしにくい"),
+      tierLine("Attack Speed", "T1-T2", "14%+", "低速武器は価格が落ちやすい"),
     ];
   }
 
   if (/Focus/i.test(label)) {
     return [
-      statLine("+Spell level or spell damage", "one premium caster prefix", "focus buyers need a reason over shields"),
-      statLine("Energy Shield or Mana", "one strong defense/resource roll", "keeps the item usable"),
-      statLine("Cast speed / crit / res", "one useful suffix", "turns a stat stick into a sellable piece"),
+      tierLine("+Spell Level", "T1-T2", "+2以上", "Focusは+levelか高spell damageがないと弱い"),
+      tierLine("Spell Damage", "T1-T2", "90%+", "盾との差別化枠"),
+      tierLine("Energy Shield", "T1-T2", "90+", "防御値が薄いFocusは売りにくい"),
+      tierLine("Cast Speed", "T1-T2", "12%+", "高tier suffixなら商材化しやすい"),
     ];
   }
 
   if (/Gloves/i.test(label)) {
     return [
-      statLine("Attack or Cast Speed", "10%+ target", "main reason to search gloves specifically"),
-      statLine("Life or ES", "mid/high tier", "defensive floor for non-unique gloves"),
-      statLine("Resists or attributes", "one strong suffix", "fit pressure sells"),
+      tierLine("Attack/Cast Speed", "T1-T2", "12%+", "速度が低い手袋は差別化しにくい"),
+      tierLine("Life / ES", "T1-T2", "Life 80+ or ES 80+", "速度だけなら薄い"),
+      tierLine("Total resists", "T1-T2合算", "70%+", "耐性で装備更新に入りやすくなる"),
     ];
   }
 
   if (/Body Armour/i.test(label)) {
     return [
-      statLine("Base defence", "high local defence", "buyers compare armour by defence first"),
-      statLine("Life or ES", "high tier", "required for rare armour to beat cheap alternatives"),
-      statLine("Resistance", "one strong suffix", "keeps it easy to equip"),
+      tierLine("Life / ES", "T1-T2", "Life 100+ or ES 140+", "胴は防御価値が見えないと厳しい"),
+      tierLine("Local defence", "高ロール", "Armour/Evasion 300+目安", "ベース差が出るので数値が重要"),
+      tierLine("Total resists", "T1-T2合算", "70%+", "防御+耐性で完成品に近づく"),
     ];
   }
 
   if (/Helmet/i.test(label)) {
     return [
-      statLine("Life or ES", "mid/high tier", "generic helmets need a defensive floor"),
-      statLine("Resists", "two useful suffixes or one premium suffix", "common buyer filter"),
-      statLine("Utility suffix", "reservation, attribute, or skill utility", "the differentiator"),
+      tierLine("Life / ES", "T1-T2", "Life 80+ or ES 90+", "防御床がないHelmetは弱い"),
+      tierLine("Total resists", "T1-T2合算", "75%+", "耐性の合算が低いならユーティリティ必須"),
+      tierLine("Attribute / utility", "T1-T2", "40+ or build utility", "ここが差別化枠"),
     ];
   }
 
   if (/Belt/i.test(label)) {
     return [
-      statLine("Life", "high tier", "belts are usually life-first searches"),
-      statLine("Resists", "60%+ total target", "common fit pressure"),
-      statLine("Strength or charm/flask utility", "one useful extra", "helps avoid bulk-pricing"),
+      tierLine("Life", "T1-T2", "100+", "BeltはLifeが主役"),
+      tierLine("Total resists", "T1-T2合算", "85%+", "耐性合算で価格が見えやすい"),
+      tierLine("Strength / utility", "T1-T2", "45+ or strong utility", "Life+resだけの量産品から抜ける枠"),
     ];
   }
 
   if (/Jewel/i.test(label)) {
     return [
-      statLine("Build-specific damage", "two relevant lines", "jewels are bought by exact build fit"),
-      statLine("Defense or attribute", "one useful support line", "raises floor value"),
-      statLine("Corruption/high tier", "manual watch", "automated pricing is intentionally deferred"),
+      tierLine("Build-specific damage", "T1-T2", "2 lines以上", "Jewelは exact fit で見る"),
+      tierLine("Speed/Crit", "T1-T2", "AS/CS 8%+ or crit damage 25%+", "汎用商材化しやすいライン"),
+      tierLine("Corruption/high roll", "手動確認", "自動価格は後回し"),
     ];
   }
 
   if (/Quiver/i.test(label)) {
     return [
-      statLine("Added damage", "high roll", "ranged builds filter damage first"),
-      statLine("Attack speed", "10%+ target", "premium suffix"),
-      statLine("Accuracy or crit", "one useful suffix", "keeps it build-facing"),
+      tierLine("Flat damage", "T1-T2", "phys avg 9+ or high ele flat", "弓系は高tierフラットが重要"),
+      tierLine("Attack Speed", "T1-T2", "12%+", "速度が価格の見える軸"),
+      tierLine("Accuracy/Crit", "T1-T2", "Accuracy 180+ or crit 45%+", "命中/critで完成度を見る"),
     ];
   }
 
@@ -603,7 +619,7 @@ function buildTradeProfile(opportunity, leagueName) {
     category: tradeCategoryFor(opportunity),
     officialCategory: searchConfig.officialCategory,
     baseHint: opportunity.baseLabel,
-    applied: searchConfig.filters.map((filter) => statLine(filter.label, `${filter.min}+`, "official Trade URL filter")),
+    applied: searchConfig.filters.map((filter) => tierLine(filter.label, filter.tier, `${filter.min}+`, "official Trade URL filter")),
     required,
     preferred,
     minimums,
@@ -622,13 +638,13 @@ function buildTradeProfile(opportunity, leagueName) {
     `URL filters: ${profile.searchMode}`,
     "",
     "[Trade filters]",
-    ...profile.applied.map((item) => `- ${item.label}`),
+    ...profile.applied.map((item) => `- ${item.label}${item.tier ? ` / ${item.tier}` : ""}`),
     "",
     "[Tighten first]",
     ...profile.required.map((item) => `- ${item.label} (${item.target})`),
     "",
     "[Manual target rolls]",
-    ...profile.minimums.map((item) => `- ${item.label}: ${item.target}`),
+    ...profile.minimums.map((item) => `- ${item.label}: ${item.tier ? `${item.tier} / ` : ""}${item.target}`),
     "",
     "[Optional upside]",
     ...profile.preferred.map((item) => `- ${item.label} (${item.target})`),
@@ -714,10 +730,13 @@ function sleep(ms) {
 
 async function attachOfficialTradeLinks(leagueName, opportunities) {
   let createdLinks = 0;
+  let tradeRateLimited = false;
   for (const opportunity of opportunities) {
-    if (createdLinks >= TRADE_LINK_LIMIT) {
+    if (createdLinks >= TRADE_LINK_LIMIT || tradeRateLimited) {
       opportunity.trade.linkStatus = "manual";
-      opportunity.trade.linkError = `Filtered URL generation skipped after top ${TRADE_LINK_LIMIT} candidates to avoid official trade rate limits.`;
+      opportunity.trade.linkError = tradeRateLimited
+        ? "Filtered URL generation skipped because the official trade API rate limit was reached."
+        : `Filtered URL generation skipped after top ${TRADE_LINK_LIMIT} candidates to avoid official trade rate limits.`;
       continue;
     }
 
@@ -733,7 +752,10 @@ async function attachOfficialTradeLinks(leagueName, opportunities) {
         break;
       } catch (error) {
         lastError = error;
-        if (error.status !== 429 || attempt === 1) break;
+        if (error.status !== 429 || attempt === 1) {
+          if (error.status === 429) tradeRateLimited = true;
+          break;
+        }
         const waitMs = Math.min(Math.max(error.retryAfter * 1000, 3000 * (attempt + 1)), TRADE_RETRY_MAX_WAIT_MS);
         console.warn(`Trade search rate-limited for ${opportunity.baseLabel}; retrying in ${waitMs}ms`);
         await sleep(waitMs);

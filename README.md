@@ -36,6 +36,8 @@ Official PoE Trade filtered URLs require creating a search id through the offici
 - `Manual` opens the league Trade page; use the detail pane's filters as the manual checklist.
 - Set `TRADE_LINK_LIMIT` during data update to change how many filtered URLs are generated.
 
+Rare stat thresholds are intentionally market-facing heuristics, not an export of exact in-game affix tier tables. The UI labels them as `T1-T2商材`, `+3以上`, or similar so the checklist describes the sellable line rather than a low search floor.
+
 ## Data Update
 
 Manual update path:

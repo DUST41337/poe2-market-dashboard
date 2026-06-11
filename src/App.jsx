@@ -295,7 +295,7 @@ function SearchStatList({ title, items }) {
         {items.map((item) => (
           <li key={`${title}-${item.label}-${item.target}`}>
             <strong>{item.label}</strong>
-            <span>{item.target}</span>
+            <span>{item.tier ? `${item.tier} / ${item.target}` : item.target}</span>
             {item.why ? <small>{item.why}</small> : null}
           </li>
         ))}
