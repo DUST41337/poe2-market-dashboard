@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T04:10:21.425Z",
+  "generatedAt": "2026-07-22T04:11:54.464Z",
   "source": {
     "kind": "poe.ninja",
     "indexStateUrl": "https://poe.ninja/poe2/api/data/index-state",
@@ -11,48 +11,48 @@
     "url": "runesofaldur",
     "displayName": "Runes of Aldur",
     "snapshotName": "runes-of-aldur",
-    "snapshotVersion": "0315-20260721-11799",
-    "totalCharacters": 124273
+    "snapshotVersion": "0214-20260722-03598",
+    "totalCharacters": 124262
   },
   "classes": [
     {
       "name": "Martial Artist",
-      "count": 22962,
-      "percentage": 18.48
+      "count": 23360,
+      "percentage": 18.8
     },
     {
       "name": "Gemling Legionnaire",
-      "count": 20210,
-      "percentage": 16.26
+      "count": 20502,
+      "percentage": 16.5
     },
     {
       "name": "Spirit Walker",
-      "count": 19315,
-      "percentage": 15.54
+      "count": 18428,
+      "percentage": 14.83
     },
     {
       "name": "Deadeye",
-      "count": 8462,
-      "percentage": 6.81
+      "count": 8623,
+      "percentage": 6.94
     },
     {
       "name": "Stormweaver",
-      "count": 6467,
-      "percentage": 5.2
-    },
-    {
-      "name": "Infernalist",
-      "count": 6217,
-      "percentage": 5
+      "count": 6397,
+      "percentage": 5.15
     },
     {
       "name": "Oracle",
-      "count": 6188,
-      "percentage": 4.98
+      "count": 6263,
+      "percentage": 5.04
+    },
+    {
+      "name": "Infernalist",
+      "count": 6078,
+      "percentage": 4.89
     },
     {
       "name": "Blood Mage",
-      "count": 4958,
+      "count": 4956,
       "percentage": 3.99
     }
   ],
@@ -63,8 +63,8 @@
         "itemName": "Rare Ring",
         "baseLabel": "Ring",
         "slot": "Ring",
-        "adoptionCount": 118615,
-        "adoptionPct": 95.45,
+        "adoptionCount": 118639,
+        "adoptionPct": 95.47,
         "score": 96,
         "verdict": "High",
         "budget": "1-5 div",
@@ -72,27 +72,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 8391,
-            "percentage": 99.16,
-            "classShare": 6.81
+            "count": 8549,
+            "percentage": 99.14,
+            "classShare": 6.94
           },
           {
             "className": "Martial Artist",
-            "count": 22750,
-            "percentage": 99.08,
-            "classShare": 18.48
+            "count": 23142,
+            "percentage": 99.07,
+            "classShare": 18.8
           },
           {
             "className": "Stormweaver",
-            "count": 6404,
-            "percentage": 99.03,
-            "classShare": 5.2
+            "count": 6332,
+            "percentage": 98.98,
+            "classShare": 5.15
           },
           {
-            "className": "Gemling Legionnaire",
-            "count": 19565,
-            "percentage": 96.81,
-            "classShare": 16.26
+            "className": "Oracle",
+            "count": 6160,
+            "percentage": 98.36,
+            "classShare": 5.04
           }
         ],
         "topClass": "Deadeye",
@@ -118,7 +118,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/jW6jXwoLsX",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Ring: 118615 characters (95.45%)\n- Deadeye: 8391 characters (99.16%)\n- Martial Artist: 22750 characters (99.08%)\n- Stormweaver: 6404 characters (99.03%)\n- Gemling Legionnaire: 19565 characters (96.81%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage to attacks: T1-T2 / phys avg 9+ / fire 18+ / cold 16+ / lightning 22+\n- Life: T1-T2 / 80+\n- Total resists: T1-T2合算 / 85%+\n- Attack/Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Ring: 118639 characters (95.47%)\n- Deadeye: 8549 characters (99.14%)\n- Martial Artist: 23142 characters (99.07%)\n- Stormweaver: 6332 characters (98.98%)\n- Oracle: 6160 characters (98.36%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage to attacks: T1-T2 / phys avg 9+ / fire 18+ / cold 16+ / lightning 22+\n- Life: T1-T2 / 80+\n- Total resists: T1-T2合算 / 85%+\n- Attack/Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -183,7 +183,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Ring: 118615 characters (95.45%)\n- Deadeye: 8391 characters (99.16%)\n- Martial Artist: 22750 characters (99.08%)\n- Stormweaver: 6404 characters (99.03%)\n- Gemling Legionnaire: 19565 characters (96.81%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage to attacks: T1-T2 / phys avg 9+ / fire 18+ / cold 16+ / lightning 22+\n- Life: T1-T2 / 80+\n- Total resists: T1-T2合算 / 85%+\n- Attack/Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Ring\nBase/type hint: Ring\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Ring: 118639 characters (95.47%)\n- Deadeye: 8549 characters (99.14%)\n- Martial Artist: 23142 characters (99.07%)\n- Stormweaver: 6332 characters (98.98%)\n- Oracle: 6160 characters (98.36%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage to attacks: T1-T2 / phys avg 9+ / fire 18+ / cold 16+ / lightning 22+\n- Life: T1-T2 / 80+\n- Total resists: T1-T2合算 / 85%+\n- Attack/Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
           },
           "searchId": "jW6jXwoLsX",
           "linkStatus": "filtered"
@@ -195,40 +195,40 @@
         "itemName": "Rare Amulet",
         "baseLabel": "Amulet",
         "slot": "Amulet",
-        "adoptionCount": 112149,
-        "adoptionPct": 90.24,
-        "score": 95,
+        "adoptionCount": 112028,
+        "adoptionPct": 90.15,
+        "score": 94,
         "verdict": "High",
         "budget": "5-20 div",
         "craftScope": "Omen tier",
         "classFits": [
           {
-            "className": "Infernalist",
-            "count": 6067,
-            "percentage": 97.59,
-            "classShare": 5
-          },
-          {
             "className": "Deadeye",
-            "count": 8194,
-            "percentage": 96.83,
-            "classShare": 6.81
+            "count": 8354,
+            "percentage": 96.88,
+            "classShare": 6.94
           },
           {
             "className": "Stormweaver",
-            "count": 6201,
-            "percentage": 95.89,
-            "classShare": 5.2
+            "count": 6124,
+            "percentage": 95.73,
+            "classShare": 5.15
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 18739,
+            "count": 19010,
             "percentage": 92.72,
-            "classShare": 16.26
+            "classShare": 16.5
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 16959,
+            "percentage": 92.03,
+            "classShare": 14.83
           }
         ],
-        "topClass": "Infernalist",
-        "archetype": "hybrid",
+        "topClass": "Deadeye",
+        "archetype": "ranged",
         "modSignature": [],
         "heuristicModSignature": [
           "+1 to Level of relevant Skills",
@@ -250,7 +250,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/pJ6jXMwvu0",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Amulet: 112149 characters (90.24%)\n- Infernalist: 6067 characters (97.59%)\n- Deadeye: 8194 characters (96.83%)\n- Stormweaver: 6201 characters (95.89%)\n- Gemling Legionnaire: 18739 characters (92.72%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Amulet: 112028 characters (90.15%)\n- Deadeye: 8354 characters (96.88%)\n- Stormweaver: 6124 characters (95.73%)\n- Gemling Legionnaire: 19010 characters (92.72%)\n- Spirit Walker: 16959 characters (92.03%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -309,7 +309,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Amulet: 112149 characters (90.24%)\n- Infernalist: 6067 characters (97.59%)\n- Deadeye: 8194 characters (96.83%)\n- Stormweaver: 6201 characters (95.89%)\n- Gemling Legionnaire: 18739 characters (92.72%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Amulet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Amulet: 112028 characters (90.15%)\n- Deadeye: 8354 characters (96.88%)\n- Stormweaver: 6124 characters (95.73%)\n- Gemling Legionnaire: 19010 characters (92.72%)\n- Spirit Walker: 16959 characters (92.03%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
           },
           "searchId": "pJ6jXMwvu0",
           "linkStatus": "filtered"
@@ -321,8 +321,8 @@
         "itemName": "Rare Boots",
         "baseLabel": "Boots",
         "slot": "Boots",
-        "adoptionCount": 113155,
-        "adoptionPct": 91.05,
+        "adoptionCount": 113013,
+        "adoptionPct": 90.95,
         "score": 91,
         "verdict": "High",
         "budget": "1-5 div",
@@ -330,27 +330,27 @@
         "classFits": [
           {
             "className": "Stormweaver",
-            "count": 6349,
-            "percentage": 98.18,
-            "classShare": 5.2
+            "count": 6276,
+            "percentage": 98.11,
+            "classShare": 5.15
           },
           {
             "className": "Deadeye",
-            "count": 8215,
-            "percentage": 97.08,
-            "classShare": 6.81
+            "count": 8370,
+            "percentage": 97.07,
+            "classShare": 6.94
+          },
+          {
+            "className": "Oracle",
+            "count": 6076,
+            "percentage": 97.01,
+            "classShare": 5.04
           },
           {
             "className": "Spirit Walker",
-            "count": 18367,
-            "percentage": 95.09,
-            "classShare": 15.54
-          },
-          {
-            "className": "Martial Artist",
-            "count": 20894,
-            "percentage": 90.99,
-            "classShare": 18.48
+            "count": 17505,
+            "percentage": 94.99,
+            "classShare": 14.83
           }
         ],
         "topClass": "Stormweaver",
@@ -376,7 +376,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/nr6jXM6Bf0",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Boots: 113155 characters (91.05%)\n- Stormweaver: 6349 characters (98.18%)\n- Deadeye: 8215 characters (97.08%)\n- Spirit Walker: 18367 characters (95.09%)\n- Martial Artist: 20894 characters (90.99%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Movement Speed: T1狙い / 30%+\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 80%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Boots: 113013 characters (90.95%)\n- Stormweaver: 6276 characters (98.11%)\n- Deadeye: 8370 characters (97.07%)\n- Oracle: 6076 characters (97.01%)\n- Spirit Walker: 17505 characters (94.99%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Movement Speed: T1狙い / 30%+\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 80%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -435,7 +435,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Boots: 113155 characters (91.05%)\n- Stormweaver: 6349 characters (98.18%)\n- Deadeye: 8215 characters (97.08%)\n- Spirit Walker: 18367 characters (95.09%)\n- Martial Artist: 20894 characters (90.99%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Movement Speed: T1狙い / 30%+\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 80%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Boots\nBase/type hint: Boots\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Boots: 113013 characters (90.95%)\n- Stormweaver: 6276 characters (98.11%)\n- Deadeye: 8370 characters (97.07%)\n- Oracle: 6076 characters (97.01%)\n- Spirit Walker: 17505 characters (94.99%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Movement Speed: T1狙い / 30%+\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 80%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
           },
           "searchId": "nr6jXM6Bf0",
           "linkStatus": "filtered"
@@ -447,40 +447,40 @@
         "itemName": "Rare Jewel",
         "baseLabel": "Jewel",
         "slot": "Jewel",
-        "adoptionCount": 116835,
-        "adoptionPct": 94.01,
+        "adoptionCount": 116771,
+        "adoptionPct": 93.97,
         "score": 89,
         "verdict": "High",
         "budget": "要確認",
         "craftScope": "Manual review",
         "classFits": [
           {
-            "className": "Spirit Walker",
-            "count": 18545,
-            "percentage": 96.01,
-            "classShare": 15.54
-          },
-          {
-            "className": "Martial Artist",
-            "count": 22021,
-            "percentage": 95.9,
-            "classShare": 18.48
+            "className": "Stormweaver",
+            "count": 6144,
+            "percentage": 96.05,
+            "classShare": 5.15
           },
           {
             "className": "Deadeye",
-            "count": 8114,
-            "percentage": 95.89,
-            "classShare": 6.81
+            "count": 8276,
+            "percentage": 95.98,
+            "classShare": 6.94
           },
           {
-            "className": "Stormweaver",
-            "count": 6191,
-            "percentage": 95.73,
-            "classShare": 5.2
+            "className": "Spirit Walker",
+            "count": 17675,
+            "percentage": 95.91,
+            "classShare": 14.83
+          },
+          {
+            "className": "Martial Artist",
+            "count": 22398,
+            "percentage": 95.88,
+            "classShare": 18.8
           }
         ],
-        "topClass": "Spirit Walker",
-        "archetype": "hybrid",
+        "topClass": "Stormweaver",
+        "archetype": "caster",
         "modSignature": [],
         "heuristicModSignature": [
           "build-specific damage mod",
@@ -502,7 +502,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/jW6jXMMLuX",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Jewel: 116835 characters (94.01%)\n- Spirit Walker: 18545 characters (96.01%)\n- Martial Artist: 22021 characters (95.9%)\n- Deadeye: 8114 characters (95.89%)\n- Stormweaver: 6191 characters (95.73%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Build-specific damage: T1-T2 / 2 lines以上\n- Speed/Crit: T1-T2 / AS/CS 8%+ or crit damage 25%+\n- Corruption/high roll: 手動確認 / 自動価格は後回し\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Jewel: 116771 characters (93.97%)\n- Stormweaver: 6144 characters (96.05%)\n- Deadeye: 8276 characters (95.98%)\n- Spirit Walker: 17675 characters (95.91%)\n- Martial Artist: 22398 characters (95.88%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Build-specific damage: T1-T2 / 2 lines以上\n- Speed/Crit: T1-T2 / AS/CS 8%+ or crit damage 25%+\n- Corruption/high roll: 手動確認 / 自動価格は後回し\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -560,7 +560,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Jewel: 116835 characters (94.01%)\n- Spirit Walker: 18545 characters (96.01%)\n- Martial Artist: 22021 characters (95.9%)\n- Deadeye: 8114 characters (95.89%)\n- Stormweaver: 6191 characters (95.73%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Build-specific damage: T1-T2 / 2 lines以上\n- Speed/Crit: T1-T2 / AS/CS 8%+ or crit damage 25%+\n- Corruption/high roll: 手動確認 / 自動価格は後回し\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Jewel\nBase/type hint: Jewel\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Jewel: 116771 characters (93.97%)\n- Stormweaver: 6144 characters (96.05%)\n- Deadeye: 8276 characters (95.98%)\n- Spirit Walker: 17675 characters (95.91%)\n- Martial Artist: 22398 characters (95.88%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Build-specific damage: T1-T2 / 2 lines以上\n- Speed/Crit: T1-T2 / AS/CS 8%+ or crit damage 25%+\n- Corruption/high roll: 手動確認 / 自動価格は後回し\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- generic damage jewels with no exact build fit"
           },
           "searchId": "jW6jXMMLuX",
           "linkStatus": "filtered"
@@ -572,8 +572,8 @@
         "itemName": "Rare Gloves",
         "baseLabel": "Gloves",
         "slot": "Gloves",
-        "adoptionCount": 93792,
-        "adoptionPct": 75.47,
+        "adoptionCount": 93684,
+        "adoptionPct": 75.39,
         "score": 86,
         "verdict": "High",
         "budget": "1-5 div",
@@ -581,27 +581,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 8073,
-            "percentage": 95.4,
-            "classShare": 6.81
+            "count": 8231,
+            "percentage": 95.45,
+            "classShare": 6.94
           },
           {
             "className": "Spirit Walker",
-            "count": 18252,
-            "percentage": 94.5,
-            "classShare": 15.54
-          },
-          {
-            "className": "Infernalist",
-            "count": 5745,
-            "percentage": 92.41,
-            "classShare": 5
+            "count": 17344,
+            "percentage": 94.12,
+            "classShare": 14.83
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 16282,
-            "percentage": 80.56,
-            "classShare": 16.26
+            "count": 16552,
+            "percentage": 80.73,
+            "classShare": 16.5
+          },
+          {
+            "className": "Oracle",
+            "count": 4919,
+            "percentage": 78.54,
+            "classShare": 5.04
           }
         ],
         "topClass": "Deadeye",
@@ -626,7 +626,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur/V5vDnjqrUp",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Gloves: 93792 characters (75.47%)\n- Deadeye: 8073 characters (95.4%)\n- Spirit Walker: 18252 characters (94.5%)\n- Infernalist: 5745 characters (92.41%)\n- Gemling Legionnaire: 16282 characters (80.56%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Attack/Cast Speed: T1-T2 / 12%+\n- Life / ES: T1-T2 / Life 80+ or ES 80+\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Gloves: 93684 characters (75.39%)\n- Deadeye: 8231 characters (95.45%)\n- Spirit Walker: 17344 characters (94.12%)\n- Gemling Legionnaire: 16552 characters (80.73%)\n- Oracle: 4919 characters (78.54%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Attack/Cast Speed: T1-T2 / 12%+\n- Life / ES: T1-T2 / Life 80+ or ES 80+\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -684,7 +684,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Gloves: 93792 characters (75.47%)\n- Deadeye: 8073 characters (95.4%)\n- Spirit Walker: 18252 characters (94.5%)\n- Infernalist: 5745 characters (92.41%)\n- Gemling Legionnaire: 16282 characters (80.56%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Attack/Cast Speed: T1-T2 / 12%+\n- Life / ES: T1-T2 / Life 80+ or ES 80+\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Gloves\nBase/type hint: Gloves\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Gloves: 93684 characters (75.39%)\n- Deadeye: 8231 characters (95.45%)\n- Spirit Walker: 17344 characters (94.12%)\n- Gemling Legionnaire: 16552 characters (80.73%)\n- Oracle: 4919 characters (78.54%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Attack/Cast Speed: T1-T2 / 12%+\n- Life / ES: T1-T2 / Life 80+ or ES 80+\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "searchId": "V5vDnjqrUp",
           "linkStatus": "filtered"
@@ -696,8 +696,8 @@
         "itemName": "Rare Helmet",
         "baseLabel": "Helmet",
         "slot": "Helmet",
-        "adoptionCount": 92951,
-        "adoptionPct": 74.8,
+        "adoptionCount": 92958,
+        "adoptionPct": 74.81,
         "score": 83,
         "verdict": "High",
         "budget": "1-5 div",
@@ -705,27 +705,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 8135,
-            "percentage": 96.14,
-            "classShare": 6.81
+            "count": 8294,
+            "percentage": 96.18,
+            "classShare": 6.94
           },
           {
             "className": "Stormweaver",
-            "count": 5867,
-            "percentage": 90.72,
-            "classShare": 5.2
+            "count": 5828,
+            "percentage": 91.11,
+            "classShare": 5.15
           },
           {
             "className": "Spirit Walker",
-            "count": 17121,
-            "percentage": 88.64,
-            "classShare": 15.54
+            "count": 16252,
+            "percentage": 88.19,
+            "classShare": 14.83
           },
           {
             "className": "Martial Artist",
-            "count": 19607,
+            "count": 19948,
             "percentage": 85.39,
-            "classShare": 18.48
+            "classShare": 18.8
           }
         ],
         "topClass": "Deadeye",
@@ -751,7 +751,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Helmet: 92951 characters (74.8%)\n- Deadeye: 8135 characters (96.14%)\n- Stormweaver: 5867 characters (90.72%)\n- Spirit Walker: 17121 characters (88.64%)\n- Martial Artist: 19607 characters (85.39%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 75%+\n- Attribute / utility: T1-T2 / 40+ or build utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Helmet: 92958 characters (74.81%)\n- Deadeye: 8294 characters (96.18%)\n- Stormweaver: 5828 characters (91.11%)\n- Spirit Walker: 16252 characters (88.19%)\n- Martial Artist: 19948 characters (85.39%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 75%+\n- Attribute / utility: T1-T2 / 40+ or build utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -810,7 +810,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Helmet: 92951 characters (74.8%)\n- Deadeye: 8135 characters (96.14%)\n- Stormweaver: 5867 characters (90.72%)\n- Spirit Walker: 17121 characters (88.64%)\n- Martial Artist: 19607 characters (85.39%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 75%+\n- Attribute / utility: T1-T2 / 40+ or build utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Helmet\nBase/type hint: Helmet\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Helmet: 92958 characters (74.81%)\n- Deadeye: 8294 characters (96.18%)\n- Stormweaver: 5828 characters (91.11%)\n- Spirit Walker: 16252 characters (88.19%)\n- Martial Artist: 19948 characters (85.39%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 80+ or ES 90+\n- Total resists: T1-T2合算 / 75%+\n- Attribute / utility: T1-T2 / 40+ or build utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -822,8 +822,8 @@
         "itemName": "Rare Body Armour",
         "baseLabel": "Body Armour",
         "slot": "Body Armour",
-        "adoptionCount": 65585,
-        "adoptionPct": 52.77,
+        "adoptionCount": 66202,
+        "adoptionPct": 53.28,
         "score": 71,
         "verdict": "Watch",
         "budget": "5-20 div",
@@ -831,27 +831,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 7115,
-            "percentage": 84.08,
-            "classShare": 6.81
+            "count": 7239,
+            "percentage": 83.95,
+            "classShare": 6.94
           },
           {
             "className": "Stormweaver",
-            "count": 4242,
-            "percentage": 65.59,
-            "classShare": 5.2
+            "count": 4316,
+            "percentage": 67.47,
+            "classShare": 5.15
+          },
+          {
+            "className": "Oracle",
+            "count": 4143,
+            "percentage": 66.15,
+            "classShare": 5.04
           },
           {
             "className": "Martial Artist",
-            "count": 13881,
-            "percentage": 60.45,
-            "classShare": 18.48
-          },
-          {
-            "className": "Spirit Walker",
-            "count": 8476,
-            "percentage": 43.88,
-            "classShare": 15.54
+            "count": 14059,
+            "percentage": 60.18,
+            "classShare": 18.8
           }
         ],
         "topClass": "Deadeye",
@@ -876,7 +876,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Body Armour: 65585 characters (52.77%)\n- Deadeye: 7115 characters (84.08%)\n- Stormweaver: 4242 characters (65.59%)\n- Martial Artist: 13881 characters (60.45%)\n- Spirit Walker: 8476 characters (43.88%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 100+ or ES 140+\n- Local defence: 高ロール / Armour/Evasion 300+目安\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Body Armour: 66202 characters (53.28%)\n- Deadeye: 7239 characters (83.95%)\n- Stormweaver: 4316 characters (67.47%)\n- Oracle: 4143 characters (66.15%)\n- Martial Artist: 14059 characters (60.18%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 100+ or ES 140+\n- Local defence: 高ロール / Armour/Evasion 300+目安\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -934,7 +934,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Body Armour: 65585 characters (52.77%)\n- Deadeye: 7115 characters (84.08%)\n- Stormweaver: 4242 characters (65.59%)\n- Martial Artist: 13881 characters (60.45%)\n- Spirit Walker: 8476 characters (43.88%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 100+ or ES 140+\n- Local defence: 高ロール / Armour/Evasion 300+目安\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Armour / Body Armour\nBase/type hint: Body Armour\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Body Armour: 66202 characters (53.28%)\n- Deadeye: 7239 characters (83.95%)\n- Stormweaver: 4316 characters (67.47%)\n- Oracle: 4143 characters (66.15%)\n- Martial Artist: 14059 characters (60.18%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life / ES: T1-T2 / Life 100+ or ES 140+\n- Local defence: 高ロール / Armour/Evasion 300+目安\n- Total resists: T1-T2合算 / 70%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -946,8 +946,8 @@
         "itemName": "Rare Quarterstaff",
         "baseLabel": "Quarterstaff",
         "slot": "Weapon",
-        "adoptionCount": 18152,
-        "adoptionPct": 14.61,
+        "adoptionCount": 18511,
+        "adoptionPct": 14.9,
         "score": 50,
         "verdict": "Avoid",
         "budget": "5-20 div",
@@ -955,27 +955,27 @@
         "classFits": [
           {
             "className": "Martial Artist",
-            "count": 16070,
-            "percentage": 69.99,
-            "classShare": 18.48
+            "count": 16391,
+            "percentage": 70.17,
+            "classShare": 18.8
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 1005,
-            "percentage": 4.97,
-            "classShare": 16.26
+            "count": 1021,
+            "percentage": 4.98,
+            "classShare": 16.5
+          },
+          {
+            "className": "Oracle",
+            "count": 22,
+            "percentage": 0.35,
+            "classShare": 5.04
           },
           {
             "className": "Spirit Walker",
             "count": 42,
-            "percentage": 0.22,
-            "classShare": 15.54
-          },
-          {
-            "className": "Deadeye",
-            "count": 15,
-            "percentage": 0.18,
-            "classShare": 6.81
+            "percentage": 0.23,
+            "classShare": 14.83
           }
         ],
         "topClass": "Martial Artist",
@@ -1001,7 +1001,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quarterstaff: 18152 characters (14.61%)\n- Martial Artist: 16070 characters (69.99%)\n- Gemling Legionnaire: 1005 characters (4.97%)\n- Spirit Walker: 42 characters (0.22%)\n- Deadeye: 15 characters (0.18%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Attack Level: 商材 / +3以上\n- Physical Damage: T1-T2 / 120%+\n- Attack Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quarterstaff: 18511 characters (14.9%)\n- Martial Artist: 16391 characters (70.17%)\n- Gemling Legionnaire: 1021 characters (4.98%)\n- Oracle: 22 characters (0.35%)\n- Spirit Walker: 42 characters (0.23%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Attack Level: 商材 / +3以上\n- Physical Damage: T1-T2 / 120%+\n- Attack Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1060,7 +1060,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quarterstaff: 18152 characters (14.61%)\n- Martial Artist: 16070 characters (69.99%)\n- Gemling Legionnaire: 1005 characters (4.97%)\n- Spirit Walker: 42 characters (0.22%)\n- Deadeye: 15 characters (0.18%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Attack Level: 商材 / +3以上\n- Physical Damage: T1-T2 / 120%+\n- Attack Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Quarterstaff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quarterstaff: 18511 characters (14.9%)\n- Martial Artist: 16391 characters (70.17%)\n- Gemling Legionnaire: 1021 characters (4.98%)\n- Oracle: 22 characters (0.35%)\n- Spirit Walker: 42 characters (0.23%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Attack Level: 商材 / +3以上\n- Physical Damage: T1-T2 / 120%+\n- Attack Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1072,8 +1072,8 @@
         "itemName": "Rare Bow",
         "baseLabel": "Bow",
         "slot": "Weapon",
-        "adoptionCount": 10679,
-        "adoptionPct": 8.59,
+        "adoptionCount": 10894,
+        "adoptionPct": 8.77,
         "score": 50,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1081,27 +1081,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 7495,
-            "percentage": 88.57,
-            "classShare": 6.81
+            "count": 7647,
+            "percentage": 88.68,
+            "classShare": 6.94
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 469,
-            "percentage": 2.32,
-            "classShare": 16.26
+            "count": 480,
+            "percentage": 2.34,
+            "classShare": 16.5
           },
           {
             "className": "Spirit Walker",
-            "count": 140,
-            "percentage": 0.72,
-            "classShare": 15.54
+            "count": 134,
+            "percentage": 0.73,
+            "classShare": 14.83
           },
           {
             "className": "Martial Artist",
-            "count": 161,
-            "percentage": 0.7,
-            "classShare": 18.48
+            "count": 165,
+            "percentage": 0.71,
+            "classShare": 18.8
           }
         ],
         "topClass": "Deadeye",
@@ -1126,7 +1126,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Bow: 10679 characters (8.59%)\n- Deadeye: 7495 characters (88.57%)\n- Gemling Legionnaire: 469 characters (2.32%)\n- Spirit Walker: 140 characters (0.72%)\n- Martial Artist: 161 characters (0.7%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Bow: 10894 characters (8.77%)\n- Deadeye: 7647 characters (88.68%)\n- Gemling Legionnaire: 480 characters (2.34%)\n- Spirit Walker: 134 characters (0.73%)\n- Martial Artist: 165 characters (0.71%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1181,7 +1181,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Bow: 10679 characters (8.59%)\n- Deadeye: 7495 characters (88.57%)\n- Gemling Legionnaire: 469 characters (2.32%)\n- Spirit Walker: 140 characters (0.72%)\n- Martial Artist: 161 characters (0.7%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Bow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Bow: 10894 characters (8.77%)\n- Deadeye: 7647 characters (88.68%)\n- Gemling Legionnaire: 480 characters (2.34%)\n- Spirit Walker: 134 characters (0.73%)\n- Martial Artist: 165 characters (0.71%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1193,36 +1193,36 @@
         "itemName": "Rare Belt",
         "baseLabel": "Belt",
         "slot": "Belt",
-        "adoptionCount": 35812,
-        "adoptionPct": 28.82,
-        "score": 45,
+        "adoptionCount": 35191,
+        "adoptionPct": 28.32,
+        "score": 44,
         "verdict": "Avoid",
         "budget": "1-5 div",
         "craftScope": "Essence/Omen",
         "classFits": [
           {
             "className": "Spirit Walker",
-            "count": 10177,
-            "percentage": 52.69,
-            "classShare": 15.54
+            "count": 9412,
+            "percentage": 51.07,
+            "classShare": 14.83
           },
           {
             "className": "Stormweaver",
-            "count": 1916,
-            "percentage": 29.63,
-            "classShare": 5.2
+            "count": 1890,
+            "percentage": 29.55,
+            "classShare": 5.15
+          },
+          {
+            "className": "Oracle",
+            "count": 1819,
+            "percentage": 29.04,
+            "classShare": 5.04
           },
           {
             "className": "Deadeye",
-            "count": 2290,
-            "percentage": 27.06,
-            "classShare": 6.81
-          },
-          {
-            "className": "Infernalist",
-            "count": 1274,
-            "percentage": 20.49,
-            "classShare": 5
+            "count": 2317,
+            "percentage": 26.87,
+            "classShare": 6.94
           }
         ],
         "topClass": "Spirit Walker",
@@ -1248,7 +1248,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Belt: 35812 characters (28.82%)\n- Spirit Walker: 10177 characters (52.69%)\n- Stormweaver: 1916 characters (29.63%)\n- Deadeye: 2290 characters (27.06%)\n- Infernalist: 1274 characters (20.49%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life: T1-T2 / 100+\n- Total resists: T1-T2合算 / 85%+\n- Strength / utility: T1-T2 / 45+ or strong utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Belt: 35191 characters (28.32%)\n- Spirit Walker: 9412 characters (51.07%)\n- Stormweaver: 1890 characters (29.55%)\n- Oracle: 1819 characters (29.04%)\n- Deadeye: 2317 characters (26.87%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life: T1-T2 / 100+\n- Total resists: T1-T2合算 / 85%+\n- Strength / utility: T1-T2 / 45+ or strong utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1307,7 +1307,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Belt: 35812 characters (28.82%)\n- Spirit Walker: 10177 characters (52.69%)\n- Stormweaver: 1916 characters (29.63%)\n- Deadeye: 2290 characters (27.06%)\n- Infernalist: 1274 characters (20.49%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life: T1-T2 / 100+\n- Total resists: T1-T2合算 / 85%+\n- Strength / utility: T1-T2 / 45+ or strong utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Belt\nBase/type hint: Belt\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Belt: 35191 characters (28.32%)\n- Spirit Walker: 9412 characters (51.07%)\n- Stormweaver: 1890 characters (29.55%)\n- Oracle: 1819 characters (29.04%)\n- Deadeye: 2317 characters (26.87%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Life: T1-T2 / 100+\n- Total resists: T1-T2合算 / 85%+\n- Strength / utility: T1-T2 / 45+ or strong utility\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- resistance-only items with no life/resource/damage hook"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1319,7 +1319,7 @@
         "itemName": "Rare Staff",
         "baseLabel": "Staff",
         "slot": "Weapon",
-        "adoptionCount": 16342,
+        "adoptionCount": 16337,
         "adoptionPct": 13.15,
         "score": 44,
         "verdict": "Avoid",
@@ -1328,27 +1328,27 @@
         "classFits": [
           {
             "className": "Stormweaver",
-            "count": 3673,
-            "percentage": 56.8,
-            "classShare": 5.2
+            "count": 3653,
+            "percentage": 57.1,
+            "classShare": 5.15
           },
           {
-            "className": "Infernalist",
-            "count": 1206,
-            "percentage": 19.4,
-            "classShare": 5
+            "className": "Oracle",
+            "count": 1800,
+            "percentage": 28.74,
+            "classShare": 5.04
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 1667,
-            "percentage": 8.25,
-            "classShare": 16.26
+            "count": 1654,
+            "percentage": 8.07,
+            "classShare": 16.5
           },
           {
             "className": "Spirit Walker",
-            "count": 78,
-            "percentage": 0.4,
-            "classShare": 15.54
+            "count": 72,
+            "percentage": 0.39,
+            "classShare": 14.83
           }
         ],
         "topClass": "Stormweaver",
@@ -1374,7 +1374,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Staff: 16342 characters (13.15%)\n- Stormweaver: 3673 characters (56.8%)\n- Infernalist: 1206 characters (19.4%)\n- Gemling Legionnaire: 1667 characters (8.25%)\n- Spirit Walker: 78 characters (0.4%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Staff: 16337 characters (13.15%)\n- Stormweaver: 3653 characters (57.1%)\n- Oracle: 1800 characters (28.74%)\n- Gemling Legionnaire: 1654 characters (8.07%)\n- Spirit Walker: 72 characters (0.39%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1433,7 +1433,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Staff: 16342 characters (13.15%)\n- Stormweaver: 3673 characters (56.8%)\n- Infernalist: 1206 characters (19.4%)\n- Gemling Legionnaire: 1667 characters (8.25%)\n- Spirit Walker: 78 characters (0.4%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Staff\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Staff: 16337 characters (13.15%)\n- Stormweaver: 3653 characters (57.1%)\n- Oracle: 1800 characters (28.74%)\n- Gemling Legionnaire: 1654 characters (8.07%)\n- Spirit Walker: 72 characters (0.39%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1445,45 +1445,45 @@
         "itemName": "Rare Wand",
         "baseLabel": "Wand",
         "slot": "Weapon",
-        "adoptionCount": 16031,
-        "adoptionPct": 12.9,
+        "adoptionCount": 15886,
+        "adoptionPct": 12.78,
         "score": 40,
         "verdict": "Avoid",
         "budget": "5-20 div",
         "craftScope": "Omen tier",
         "classFits": [
           {
-            "className": "Infernalist",
-            "count": 2972,
-            "percentage": 47.8,
-            "classShare": 5
+            "className": "Oracle",
+            "count": 3034,
+            "percentage": 48.44,
+            "classShare": 5.04
           },
           {
             "className": "Stormweaver",
-            "count": 1362,
-            "percentage": 21.06,
-            "classShare": 5.2
+            "count": 1353,
+            "percentage": 21.15,
+            "classShare": 5.15
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 3557,
-            "percentage": 17.6,
-            "classShare": 16.26
+            "count": 3535,
+            "percentage": 17.24,
+            "classShare": 16.5
           },
           {
             "className": "Spirit Walker",
-            "count": 111,
+            "count": 105,
             "percentage": 0.57,
-            "classShare": 15.54
+            "classShare": 14.83
           }
         ],
-        "topClass": "Infernalist",
-        "archetype": "hybrid",
+        "topClass": "Oracle",
+        "archetype": "caster",
         "modSignature": [],
         "heuristicModSignature": [
-          "+#% increased Physical Damage",
-          "+#% to Attack Speed",
-          "Adds # to # Elemental Damage"
+          "+2 to Level of all Spell Skills",
+          "+#% increased Spell Damage",
+          "+#% to Cast Speed"
         ],
         "modEvidenceStatus": "unavailable",
         "modEvidenceLabel": "実mod未取得",
@@ -1500,7 +1500,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Wand: 16031 characters (12.9%)\n- Infernalist: 2972 characters (47.8%)\n- Stormweaver: 1362 characters (21.06%)\n- Gemling Legionnaire: 3557 characters (17.6%)\n- Spirit Walker: 111 characters (0.57%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Attack Level: 商材 / +3以上\n- Physical Damage: T1-T2 / 120%+\n- Attack Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Wand: 15886 characters (12.78%)\n- Oracle: 3034 characters (48.44%)\n- Stormweaver: 1353 characters (21.15%)\n- Gemling Legionnaire: 3535 characters (17.24%)\n- Spirit Walker: 105 characters (0.57%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1533,22 +1533,22 @@
             "minimums": [],
             "hypothesis": [
               {
-                "label": "+Attack Level",
+                "label": "+Spell Level",
                 "tier": "商材",
                 "target": "+3以上",
-                "why": "スキル武器は+3から見たい"
+                "why": "+1/+2は他modが相当強い時だけ"
               },
               {
-                "label": "Physical Damage",
+                "label": "Spell Damage",
                 "tier": "T1-T2",
-                "target": "120%+",
-                "why": "武器はDPSが見えないと売り物にしにくい"
+                "target": "100%+",
+                "why": "gem levelなしの低spell damageは候補外"
               },
               {
-                "label": "Attack Speed",
+                "label": "Cast Speed",
                 "tier": "T1-T2",
                 "target": "14%+",
-                "why": "低速武器は価格が落ちやすい"
+                "why": "高tier cast speedで完成品感が出る"
               }
             ],
             "avoid": [
@@ -1559,7 +1559,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Wand: 16031 characters (12.9%)\n- Infernalist: 2972 characters (47.8%)\n- Stormweaver: 1362 characters (21.06%)\n- Gemling Legionnaire: 3557 characters (17.6%)\n- Spirit Walker: 111 characters (0.57%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Attack Level: 商材 / +3以上\n- Physical Damage: T1-T2 / 120%+\n- Attack Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Wand\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Wand: 15886 characters (12.78%)\n- Oracle: 3034 characters (48.44%)\n- Stormweaver: 1353 characters (21.15%)\n- Gemling Legionnaire: 3535 characters (17.24%)\n- Spirit Walker: 105 characters (0.57%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1571,39 +1571,39 @@
         "itemName": "Rare Sceptre",
         "baseLabel": "Sceptre",
         "slot": "Weapon",
-        "adoptionCount": 19854,
-        "adoptionPct": 15.98,
-        "score": 32,
+        "adoptionCount": 19716,
+        "adoptionPct": 15.87,
+        "score": 36,
         "verdict": "Avoid",
         "budget": "5-20 div",
         "craftScope": "Omen tier",
         "classFits": [
           {
+            "className": "Oracle",
+            "count": 2173,
+            "percentage": 34.7,
+            "classShare": 5.04
+          },
+          {
             "className": "Stormweaver",
-            "count": 1598,
-            "percentage": 24.71,
-            "classShare": 5.2
+            "count": 1570,
+            "percentage": 24.54,
+            "classShare": 5.15
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 4646,
-            "percentage": 22.99,
-            "classShare": 16.26
-          },
-          {
-            "className": "Infernalist",
-            "count": 1288,
-            "percentage": 20.72,
-            "classShare": 5
+            "count": 4687,
+            "percentage": 22.86,
+            "classShare": 16.5
           },
           {
             "className": "Spirit Walker",
-            "count": 3480,
-            "percentage": 18.02,
-            "classShare": 15.54
+            "count": 3277,
+            "percentage": 17.78,
+            "classShare": 14.83
           }
         ],
-        "topClass": "Stormweaver",
+        "topClass": "Oracle",
         "archetype": "caster",
         "modSignature": [],
         "heuristicModSignature": [
@@ -1626,7 +1626,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Sceptre: 19854 characters (15.98%)\n- Stormweaver: 1598 characters (24.71%)\n- Gemling Legionnaire: 4646 characters (22.99%)\n- Infernalist: 1288 characters (20.72%)\n- Spirit Walker: 3480 characters (18.02%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Sceptre: 19716 characters (15.87%)\n- Oracle: 2173 characters (34.7%)\n- Stormweaver: 1570 characters (24.54%)\n- Gemling Legionnaire: 4687 characters (22.86%)\n- Spirit Walker: 3277 characters (17.78%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1685,7 +1685,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Sceptre: 19854 characters (15.98%)\n- Stormweaver: 1598 characters (24.71%)\n- Gemling Legionnaire: 4646 characters (22.99%)\n- Infernalist: 1288 characters (20.72%)\n- Spirit Walker: 3480 characters (18.02%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Sceptre\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Sceptre: 19716 characters (15.87%)\n- Oracle: 2173 characters (34.7%)\n- Stormweaver: 1570 characters (24.54%)\n- Gemling Legionnaire: 4687 characters (22.86%)\n- Spirit Walker: 3277 characters (17.78%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: 商材 / +3以上\n- Spell Damage: T1-T2 / 100%+\n- Cast Speed: T1-T2 / 14%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1697,45 +1697,45 @@
         "itemName": "Rare Focus",
         "baseLabel": "Focus",
         "slot": "Focus",
-        "adoptionCount": 12879,
-        "adoptionPct": 10.36,
-        "score": 27,
+        "adoptionCount": 13068,
+        "adoptionPct": 10.52,
+        "score": 28,
         "verdict": "Avoid",
         "budget": "5-20 div",
         "craftScope": "Omen tier",
         "classFits": [
           {
-            "className": "Infernalist",
-            "count": 1077,
-            "percentage": 17.32,
-            "classShare": 5
+            "className": "Oracle",
+            "count": 1253,
+            "percentage": 20.01,
+            "classShare": 5.04
           },
           {
             "className": "Stormweaver",
-            "count": 916,
-            "percentage": 14.16,
-            "classShare": 5.2
+            "count": 940,
+            "percentage": 14.69,
+            "classShare": 5.15
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 1792,
-            "percentage": 8.87,
-            "classShare": 16.26
+            "count": 1835,
+            "percentage": 8.95,
+            "classShare": 16.5
           },
           {
             "className": "Spirit Walker",
-            "count": 117,
-            "percentage": 0.61,
-            "classShare": 15.54
+            "count": 122,
+            "percentage": 0.66,
+            "classShare": 14.83
           }
         ],
-        "topClass": "Infernalist",
-        "archetype": "hybrid",
+        "topClass": "Oracle",
+        "archetype": "caster",
         "modSignature": [],
         "heuristicModSignature": [
-          "+#% increased Physical Damage",
-          "+#% to Attack Speed",
-          "Adds # to # Elemental Damage"
+          "+2 to Level of all Spell Skills",
+          "+#% increased Spell Damage",
+          "+#% to Cast Speed"
         ],
         "modEvidenceStatus": "unavailable",
         "modEvidenceLabel": "実mod未取得",
@@ -1752,7 +1752,7 @@
         "targetSlot": true,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Focus: 12879 characters (10.36%)\n- Infernalist: 1077 characters (17.32%)\n- Stormweaver: 916 characters (14.16%)\n- Gemling Legionnaire: 1792 characters (8.87%)\n- Spirit Walker: 117 characters (0.61%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: T1-T2 / +2以上\n- Spell Damage: T1-T2 / 90%+\n- Energy Shield: T1-T2 / 90+\n- Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Focus: 13068 characters (10.52%)\n- Oracle: 1253 characters (20.01%)\n- Stormweaver: 940 characters (14.69%)\n- Gemling Legionnaire: 1835 characters (8.95%)\n- Spirit Walker: 122 characters (0.66%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: T1-T2 / +2以上\n- Spell Damage: T1-T2 / 90%+\n- Energy Shield: T1-T2 / 90+\n- Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1817,7 +1817,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Focus: 12879 characters (10.36%)\n- Infernalist: 1077 characters (17.32%)\n- Stormweaver: 916 characters (14.16%)\n- Gemling Legionnaire: 1792 characters (8.87%)\n- Spirit Walker: 117 characters (0.61%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: T1-T2 / +2以上\n- Spell Damage: T1-T2 / 90%+\n- Energy Shield: T1-T2 / 90+\n- Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Focus\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Focus: 13068 characters (10.52%)\n- Oracle: 1253 characters (20.01%)\n- Stormweaver: 940 characters (14.69%)\n- Gemling Legionnaire: 1835 characters (8.95%)\n- Spirit Walker: 122 characters (0.66%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Spell Level: T1-T2 / +2以上\n- Spell Damage: T1-T2 / 90%+\n- Energy Shield: T1-T2 / 90+\n- Cast Speed: T1-T2 / 12%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares\n- items missing the premium first filter"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1829,8 +1829,8 @@
         "itemName": "Rare Spear",
         "baseLabel": "Spear",
         "slot": "Weapon",
-        "adoptionCount": 9536,
-        "adoptionPct": 7.67,
+        "adoptionCount": 9723,
+        "adoptionPct": 7.82,
         "score": 23,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1838,27 +1838,27 @@
         "classFits": [
           {
             "className": "Spirit Walker",
-            "count": 4151,
-            "percentage": 21.49,
-            "classShare": 15.54
+            "count": 4222,
+            "percentage": 22.91,
+            "classShare": 14.83
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 2431,
-            "percentage": 12.03,
-            "classShare": 16.26
+            "count": 2486,
+            "percentage": 12.13,
+            "classShare": 16.5
           },
           {
             "className": "Deadeye",
-            "count": 391,
-            "percentage": 4.62,
-            "classShare": 6.81
+            "count": 403,
+            "percentage": 4.67,
+            "classShare": 6.94
           },
           {
             "className": "Martial Artist",
-            "count": 760,
-            "percentage": 3.31,
-            "classShare": 18.48
+            "count": 777,
+            "percentage": 3.33,
+            "classShare": 18.8
           }
         ],
         "topClass": "Spirit Walker",
@@ -1883,7 +1883,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Spear: 9536 characters (7.67%)\n- Spirit Walker: 4151 characters (21.49%)\n- Gemling Legionnaire: 2431 characters (12.03%)\n- Deadeye: 391 characters (4.62%)\n- Martial Artist: 760 characters (3.31%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Spear: 9723 characters (7.82%)\n- Spirit Walker: 4222 characters (22.91%)\n- Gemling Legionnaire: 2486 characters (12.13%)\n- Deadeye: 403 characters (4.67%)\n- Martial Artist: 777 characters (3.33%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -1938,7 +1938,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Spear: 9536 characters (7.67%)\n- Spirit Walker: 4151 characters (21.49%)\n- Gemling Legionnaire: 2431 characters (12.03%)\n- Deadeye: 391 characters (4.62%)\n- Martial Artist: 760 characters (3.31%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Spear\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Spear: 9723 characters (7.82%)\n- Spirit Walker: 4222 characters (22.91%)\n- Gemling Legionnaire: 2486 characters (12.13%)\n- Deadeye: 403 characters (4.67%)\n- Martial Artist: 777 characters (3.33%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -1950,8 +1950,8 @@
         "itemName": "Rare Quiver",
         "baseLabel": "Quiver",
         "slot": "Quiver",
-        "adoptionCount": 3842,
-        "adoptionPct": 3.09,
+        "adoptionCount": 3914,
+        "adoptionPct": 3.15,
         "score": 23,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -1959,27 +1959,27 @@
         "classFits": [
           {
             "className": "Deadeye",
-            "count": 2270,
-            "percentage": 26.83,
-            "classShare": 6.81
-          },
-          {
-            "className": "Infernalist",
-            "count": 119,
-            "percentage": 1.91,
-            "classShare": 5
+            "count": 2315,
+            "percentage": 26.85,
+            "classShare": 6.94
           },
           {
             "className": "Stormweaver",
-            "count": 82,
-            "percentage": 1.27,
-            "classShare": 5.2
+            "count": 85,
+            "percentage": 1.33,
+            "classShare": 5.15
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 231,
-            "percentage": 1.14,
-            "classShare": 16.26
+            "count": 242,
+            "percentage": 1.18,
+            "classShare": 16.5
+          },
+          {
+            "className": "Spirit Walker",
+            "count": 91,
+            "percentage": 0.49,
+            "classShare": 14.83
           }
         ],
         "topClass": "Deadeye",
@@ -2004,7 +2004,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quiver: 3842 characters (3.09%)\n- Deadeye: 2270 characters (26.83%)\n- Infernalist: 119 characters (1.91%)\n- Stormweaver: 82 characters (1.27%)\n- Gemling Legionnaire: 231 characters (1.14%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage: T1-T2 / phys avg 9+ or high ele flat\n- Attack Speed: T1-T2 / 12%+\n- Accuracy/Crit: T1-T2 / Accuracy 180+ or crit 45%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quiver: 3914 characters (3.15%)\n- Deadeye: 2315 characters (26.85%)\n- Stormweaver: 85 characters (1.33%)\n- Gemling Legionnaire: 242 characters (1.18%)\n- Spirit Walker: 91 characters (0.49%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage: T1-T2 / phys avg 9+ or high ele flat\n- Attack Speed: T1-T2 / 12%+\n- Accuracy/Crit: T1-T2 / Accuracy 180+ or crit 45%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2062,7 +2062,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quiver: 3842 characters (3.09%)\n- Deadeye: 2270 characters (26.83%)\n- Infernalist: 119 characters (1.91%)\n- Stormweaver: 82 characters (1.27%)\n- Gemling Legionnaire: 231 characters (1.14%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage: T1-T2 / phys avg 9+ or high ele flat\n- Attack Speed: T1-T2 / 12%+\n- Accuracy/Crit: T1-T2 / Accuracy 180+ or crit 45%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand / Quiver\nBase/type hint: Quiver\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Quiver: 3914 characters (3.15%)\n- Deadeye: 2315 characters (26.85%)\n- Stormweaver: 85 characters (1.33%)\n- Gemling Legionnaire: 242 characters (1.18%)\n- Spirit Walker: 91 characters (0.49%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Flat damage: T1-T2 / phys avg 9+ or high ele flat\n- Attack Speed: T1-T2 / 12%+\n- Accuracy/Crit: T1-T2 / Accuracy 180+ or crit 45%+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2074,8 +2074,8 @@
         "itemName": "Rare Crossbow",
         "baseLabel": "Crossbow",
         "slot": "Weapon",
-        "adoptionCount": 5872,
-        "adoptionPct": 4.73,
+        "adoptionCount": 5957,
+        "adoptionPct": 4.79,
         "score": 18,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -2083,27 +2083,27 @@
         "classFits": [
           {
             "className": "Gemling Legionnaire",
-            "count": 2603,
-            "percentage": 12.88,
-            "classShare": 16.26
+            "count": 2654,
+            "percentage": 12.95,
+            "classShare": 16.5
           },
           {
             "className": "Deadeye",
-            "count": 115,
-            "percentage": 1.36,
-            "classShare": 6.81
+            "count": 111,
+            "percentage": 1.29,
+            "classShare": 6.94
           },
           {
             "className": "Spirit Walker",
-            "count": 74,
-            "percentage": 0.38,
-            "classShare": 15.54
+            "count": 76,
+            "percentage": 0.41,
+            "classShare": 14.83
           },
           {
             "className": "Martial Artist",
-            "count": 60,
-            "percentage": 0.26,
-            "classShare": 18.48
+            "count": 57,
+            "percentage": 0.24,
+            "classShare": 18.8
           }
         ],
         "topClass": "Gemling Legionnaire",
@@ -2128,7 +2128,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Crossbow: 5872 characters (4.73%)\n- Gemling Legionnaire: 2603 characters (12.88%)\n- Deadeye: 115 characters (1.36%)\n- Spirit Walker: 74 characters (0.38%)\n- Martial Artist: 60 characters (0.26%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Crossbow: 5957 characters (4.79%)\n- Gemling Legionnaire: 2654 characters (12.95%)\n- Deadeye: 111 characters (1.29%)\n- Spirit Walker: 76 characters (0.41%)\n- Martial Artist: 57 characters (0.24%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2183,7 +2183,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Crossbow: 5872 characters (4.73%)\n- Gemling Legionnaire: 2603 characters (12.88%)\n- Deadeye: 115 characters (1.36%)\n- Spirit Walker: 74 characters (0.38%)\n- Martial Artist: 60 characters (0.26%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Crossbow\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Crossbow: 5957 characters (4.79%)\n- Gemling Legionnaire: 2654 characters (12.95%)\n- Deadeye: 111 characters (1.29%)\n- Spirit Walker: 76 characters (0.41%)\n- Martial Artist: 57 characters (0.24%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2195,40 +2195,40 @@
         "itemName": "Rare Talisman",
         "baseLabel": "Talisman",
         "slot": "Weapon",
-        "adoptionCount": 6170,
-        "adoptionPct": 4.96,
+        "adoptionCount": 6195,
+        "adoptionPct": 4.99,
         "score": 16,
         "verdict": "Avoid",
         "budget": "1-5 div",
         "craftScope": "Essence/Omen",
         "classFits": [
           {
+            "className": "Oracle",
+            "count": 761,
+            "percentage": 12.15,
+            "classShare": 5.04
+          },
+          {
             "className": "Martial Artist",
-            "count": 2439,
-            "percentage": 10.62,
-            "classShare": 18.48
+            "count": 2494,
+            "percentage": 10.68,
+            "classShare": 18.8
           },
           {
             "className": "Spirit Walker",
-            "count": 1029,
-            "percentage": 5.33,
-            "classShare": 15.54
+            "count": 959,
+            "percentage": 5.2,
+            "classShare": 14.83
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 647,
-            "percentage": 3.2,
-            "classShare": 16.26
-          },
-          {
-            "className": "Deadeye",
-            "count": 55,
-            "percentage": 0.65,
-            "classShare": 6.81
+            "count": 648,
+            "percentage": 3.16,
+            "classShare": 16.5
           }
         ],
-        "topClass": "Martial Artist",
-        "archetype": "attack",
+        "topClass": "Oracle",
+        "archetype": "caster",
         "modSignature": [],
         "heuristicModSignature": [
           "primary damage prefix",
@@ -2249,7 +2249,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Talisman: 6170 characters (4.96%)\n- Martial Artist: 2439 characters (10.62%)\n- Spirit Walker: 1029 characters (5.33%)\n- Gemling Legionnaire: 647 characters (3.2%)\n- Deadeye: 55 characters (0.65%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Talisman: 6195 characters (4.99%)\n- Oracle: 761 characters (12.15%)\n- Martial Artist: 2494 characters (10.68%)\n- Spirit Walker: 959 characters (5.2%)\n- Gemling Legionnaire: 648 characters (3.16%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2307,7 +2307,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Talisman: 6170 characters (4.96%)\n- Martial Artist: 2439 characters (10.62%)\n- Spirit Walker: 1029 characters (5.33%)\n- Gemling Legionnaire: 647 characters (3.2%)\n- Deadeye: 55 characters (0.65%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Accessory / Amulet\nBase/type hint: Talisman\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Talisman: 6195 characters (4.99%)\n- Oracle: 761 characters (12.15%)\n- Martial Artist: 2494 characters (10.68%)\n- Spirit Walker: 959 characters (5.2%)\n- Gemling Legionnaire: 648 characters (3.16%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- +Skill Level: 商材 / +3以上 or +2 all + strong suffix\n- Critical Damage: T1-T2 / 35%+\n- Attribute: T1-T2 / 45+\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2319,40 +2319,40 @@
         "itemName": "Rare Shield",
         "baseLabel": "Shield",
         "slot": "Shield",
-        "adoptionCount": 2451,
-        "adoptionPct": 1.97,
-        "score": 13,
+        "adoptionCount": 2468,
+        "adoptionPct": 1.99,
+        "score": 12,
         "verdict": "Avoid",
         "budget": "1-5 div",
         "craftScope": "Essence/Omen",
         "classFits": [
           {
-            "className": "Infernalist",
-            "count": 154,
-            "percentage": 2.48,
-            "classShare": 5
+            "className": "Oracle",
+            "count": 67,
+            "percentage": 1.07,
+            "classShare": 5.04
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 167,
-            "percentage": 0.83,
-            "classShare": 16.26
+            "count": 165,
+            "percentage": 0.8,
+            "classShare": 16.5
           },
           {
             "className": "Martial Artist",
-            "count": 153,
-            "percentage": 0.67,
-            "classShare": 18.48
+            "count": 154,
+            "percentage": 0.66,
+            "classShare": 18.8
           },
           {
             "className": "Spirit Walker",
-            "count": 104,
-            "percentage": 0.54,
-            "classShare": 15.54
+            "count": 98,
+            "percentage": 0.53,
+            "classShare": 14.83
           }
         ],
-        "topClass": "Infernalist",
-        "archetype": "hybrid",
+        "topClass": "Oracle",
+        "archetype": "caster",
         "modSignature": [],
         "heuristicModSignature": [
           "primary damage prefix",
@@ -2373,7 +2373,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Shield: 2451 characters (1.97%)\n- Infernalist: 154 characters (2.48%)\n- Gemling Legionnaire: 167 characters (0.83%)\n- Martial Artist: 153 characters (0.67%)\n- Spirit Walker: 104 characters (0.54%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Shield: 2468 characters (1.99%)\n- Oracle: 67 characters (1.07%)\n- Gemling Legionnaire: 165 characters (0.8%)\n- Martial Artist: 154 characters (0.66%)\n- Spirit Walker: 98 characters (0.53%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2428,7 +2428,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Shield: 2451 characters (1.97%)\n- Infernalist: 154 characters (2.48%)\n- Gemling Legionnaire: 167 characters (0.83%)\n- Martial Artist: 153 characters (0.67%)\n- Spirit Walker: 104 characters (0.54%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Shield\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Shield: 2468 characters (1.99%)\n- Oracle: 67 characters (1.07%)\n- Gemling Legionnaire: 165 characters (0.8%)\n- Martial Artist: 154 characters (0.66%)\n- Spirit Walker: 98 characters (0.53%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2440,7 +2440,7 @@
         "itemName": "Rare Two Handed Mace",
         "baseLabel": "Two Handed Mace",
         "slot": "Weapon",
-        "adoptionCount": 1924,
+        "adoptionCount": 1922,
         "adoptionPct": 1.55,
         "score": 11,
         "verdict": "Avoid",
@@ -2449,27 +2449,27 @@
         "classFits": [
           {
             "className": "Gemling Legionnaire",
-            "count": 708,
-            "percentage": 3.5,
-            "classShare": 16.26
+            "count": 689,
+            "percentage": 3.36,
+            "classShare": 16.5
           },
           {
             "className": "Spirit Walker",
-            "count": 74,
-            "percentage": 0.38,
-            "classShare": 15.54
+            "count": 76,
+            "percentage": 0.41,
+            "classShare": 14.83
           },
           {
-            "className": "Infernalist",
-            "count": 7,
-            "percentage": 0.11,
-            "classShare": 5
+            "className": "Oracle",
+            "count": 16,
+            "percentage": 0.26,
+            "classShare": 5.04
           },
           {
             "className": "Martial Artist",
             "count": 12,
             "percentage": 0.05,
-            "classShare": 18.48
+            "classShare": 18.8
           }
         ],
         "topClass": "Gemling Legionnaire",
@@ -2494,7 +2494,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Two Handed Mace: 1924 characters (1.55%)\n- Gemling Legionnaire: 708 characters (3.5%)\n- Spirit Walker: 74 characters (0.38%)\n- Infernalist: 7 characters (0.11%)\n- Martial Artist: 12 characters (0.05%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Two Handed Mace: 1922 characters (1.55%)\n- Gemling Legionnaire: 689 characters (3.36%)\n- Spirit Walker: 76 characters (0.41%)\n- Oracle: 16 characters (0.26%)\n- Martial Artist: 12 characters (0.05%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2549,7 +2549,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Two Handed Mace: 1924 characters (1.55%)\n- Gemling Legionnaire: 708 characters (3.5%)\n- Spirit Walker: 74 characters (0.38%)\n- Infernalist: 7 characters (0.11%)\n- Martial Artist: 12 characters (0.05%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: Two Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Two Handed Mace: 1922 characters (1.55%)\n- Gemling Legionnaire: 689 characters (3.36%)\n- Spirit Walker: 76 characters (0.41%)\n- Oracle: 16 characters (0.26%)\n- Martial Artist: 12 characters (0.05%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2561,8 +2561,8 @@
         "itemName": "Rare One Handed Mace",
         "baseLabel": "One Handed Mace",
         "slot": "Weapon",
-        "adoptionCount": 1551,
-        "adoptionPct": 1.25,
+        "adoptionCount": 1591,
+        "adoptionPct": 1.28,
         "score": 11,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -2570,27 +2570,27 @@
         "classFits": [
           {
             "className": "Gemling Legionnaire",
-            "count": 344,
-            "percentage": 1.7,
-            "classShare": 16.26
+            "count": 374,
+            "percentage": 1.82,
+            "classShare": 16.5
           },
           {
             "className": "Martial Artist",
             "count": 114,
-            "percentage": 0.5,
-            "classShare": 18.48
+            "percentage": 0.49,
+            "classShare": 18.8
           },
           {
-            "className": "Infernalist",
-            "count": 5,
-            "percentage": 0.08,
-            "classShare": 5
+            "className": "Oracle",
+            "count": 17,
+            "percentage": 0.27,
+            "classShare": 5.04
           },
           {
             "className": "Spirit Walker",
-            "count": 14,
+            "count": 13,
             "percentage": 0.07,
-            "classShare": 15.54
+            "classShare": 14.83
           }
         ],
         "topClass": "Gemling Legionnaire",
@@ -2615,7 +2615,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare One Handed Mace: 1551 characters (1.25%)\n- Gemling Legionnaire: 344 characters (1.7%)\n- Martial Artist: 114 characters (0.5%)\n- Infernalist: 5 characters (0.08%)\n- Spirit Walker: 14 characters (0.07%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare One Handed Mace: 1591 characters (1.28%)\n- Gemling Legionnaire: 374 characters (1.82%)\n- Martial Artist: 114 characters (0.49%)\n- Oracle: 17 characters (0.27%)\n- Spirit Walker: 13 characters (0.07%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2670,7 +2670,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare One Handed Mace: 1551 characters (1.25%)\n- Gemling Legionnaire: 344 characters (1.7%)\n- Martial Artist: 114 characters (0.5%)\n- Infernalist: 5 characters (0.08%)\n- Spirit Walker: 14 characters (0.07%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Weapon\nBase/type hint: One Handed Mace\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare One Handed Mace: 1591 characters (1.28%)\n- Gemling Legionnaire: 374 characters (1.82%)\n- Martial Artist: 114 characters (0.49%)\n- Oracle: 17 characters (0.27%)\n- Spirit Walker: 13 characters (0.07%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2682,8 +2682,8 @@
         "itemName": "Rare Buckler",
         "baseLabel": "Buckler",
         "slot": "Buckler",
-        "adoptionCount": 416,
-        "adoptionPct": 0.33,
+        "adoptionCount": 403,
+        "adoptionPct": 0.32,
         "score": 10,
         "verdict": "Avoid",
         "budget": "1-5 div",
@@ -2691,27 +2691,27 @@
         "classFits": [
           {
             "className": "Spirit Walker",
-            "count": 207,
-            "percentage": 1.07,
-            "classShare": 15.54
+            "count": 196,
+            "percentage": 1.06,
+            "classShare": 14.83
           },
           {
             "className": "Deadeye",
-            "count": 8,
-            "percentage": 0.09,
-            "classShare": 6.81
+            "count": 7,
+            "percentage": 0.08,
+            "classShare": 6.94
           },
           {
             "className": "Gemling Legionnaire",
-            "count": 13,
-            "percentage": 0.06,
-            "classShare": 16.26
+            "count": 14,
+            "percentage": 0.07,
+            "classShare": 16.5
           },
           {
             "className": "Martial Artist",
             "count": 14,
             "percentage": 0.06,
-            "classShare": 18.48
+            "classShare": 18.8
           }
         ],
         "topClass": "Spirit Walker",
@@ -2736,7 +2736,7 @@
         "targetSlot": false,
         "trade": {
           "url": "https://www.pathofexile.com/trade2/search/poe2/Runes%20of%20Aldur",
-          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Buckler: 416 characters (0.33%)\n- Spirit Walker: 207 characters (1.07%)\n- Deadeye: 8 characters (0.09%)\n- Gemling Legionnaire: 13 characters (0.06%)\n- Martial Artist: 14 characters (0.06%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
+          "query": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Buckler: 403 characters (0.32%)\n- Spirit Walker: 196 characters (1.06%)\n- Deadeye: 7 characters (0.08%)\n- Gemling Legionnaire: 14 characters (0.07%)\n- Martial Artist: 14 characters (0.06%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares",
           "profile": {
             "league": "Runes of Aldur",
             "status": "Online only",
@@ -2791,7 +2791,7 @@
             "evidenceStatus": "rare_mods_unavailable",
             "evidenceNote": "poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。",
             "searchMode": "Official URL / category only",
-            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Buckler: 416 characters (0.33%)\n- Spirit Walker: 207 characters (1.07%)\n- Deadeye: 8 characters (0.09%)\n- Gemling Legionnaire: 13 characters (0.06%)\n- Martial Artist: 14 characters (0.06%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
+            "copyText": "PoE2 rare demand evidence memo\n用途: poe.ninjaの採用部位を共有し、Trade側で実modを手動確認するためのメモ。貼り付け用検索式ではありません。\nLeague: Runes of Aldur\nStatus: Online only\nRarity: Rare\nCategory: Off-hand\nBase/type hint: Buckler\nTrade URL: Official URL / category only\nMod evidence: poe.ninjaの公開集計ではrare装備の部位/カテゴリ採用は確認できますが、実際に装備されているexplicit mod本文は取得できません。\n\n[Confirmed from poe.ninja aggregate]\n- Rare Buckler: 403 characters (0.32%)\n- Spirit Walker: 196 characters (1.06%)\n- Deadeye: 7 characters (0.08%)\n- Gemling Legionnaire: 14 characters (0.07%)\n- Martial Artist: 14 characters (0.06%)\n\n[Trade URL filters]\n- Status\n- Rarity\n- Category\n\n[Hypothesis only; verify actual equipped/trade mods manually]\n- Primary damage/defense roll: high enough to notice\n- Life/resource or resistance: one defensive anchor\n- Build-facing suffix: one useful suffix\n\n[Avoid]\n- offline listings for manual checks\n- low-tier single-mod rares"
           },
           "linkStatus": "manual",
           "linkError": "Filtered URL generation skipped after top 5 candidates to avoid official trade rate limits."
@@ -2805,320 +2805,320 @@
     {
       "name": "Heart of the Well",
       "type": "Jewel",
-      "adoptionCount": 79353,
-      "adoptionPct": 63.85,
+      "adoptionCount": 79785,
+      "adoptionPct": 64.21,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Heart%20of%20the%20Well"
     },
     {
       "name": "Nascent Hope",
       "type": "Charm",
-      "adoptionCount": 70965,
-      "adoptionPct": 57.1,
+      "adoptionCount": 71027,
+      "adoptionPct": 57.16,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Nascent%20Hope"
     },
     {
       "name": "Lavianga's Spirits",
       "type": "Flask",
-      "adoptionCount": 64722,
-      "adoptionPct": 52.08,
+      "adoptionCount": 64956,
+      "adoptionPct": 52.27,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Lavianga's%20Spirits"
     },
     {
       "name": "Rite of Passage",
       "type": "Charm",
-      "adoptionCount": 63671,
-      "adoptionPct": 51.23,
+      "adoptionCount": 63948,
+      "adoptionPct": 51.46,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Rite%20of%20Passage"
     },
     {
       "name": "Mageblood",
       "type": "Belt",
-      "adoptionCount": 43032,
-      "adoptionPct": 34.63,
+      "adoptionCount": 43464,
+      "adoptionPct": 34.98,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Mageblood"
     },
     {
       "name": "The Fall of the Axe",
       "type": "Unknown",
-      "adoptionCount": 42520,
-      "adoptionPct": 34.21,
+      "adoptionCount": 42621,
+      "adoptionPct": 34.3,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Fall%20of%20the%20Axe"
     },
     {
       "name": "From Nothing",
       "type": "Jewel",
-      "adoptionCount": 38683,
-      "adoptionPct": 31.13,
+      "adoptionCount": 38411,
+      "adoptionPct": 30.91,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=From%20Nothing"
     },
     {
       "name": "Kalandra's Touch",
       "type": "Ring",
-      "adoptionCount": 33470,
-      "adoptionPct": 26.93,
+      "adoptionCount": 33585,
+      "adoptionPct": 27.03,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Kalandra's%20Touch"
     },
     {
       "name": "Megalomaniac",
       "type": "Jewel",
-      "adoptionCount": 31696,
-      "adoptionPct": 25.51,
+      "adoptionCount": 31871,
+      "adoptionPct": 25.65,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Megalomaniac"
     },
     {
       "name": "Beira's Anguish",
       "type": "Unknown",
-      "adoptionCount": 30383,
-      "adoptionPct": 24.45,
+      "adoptionCount": 30200,
+      "adoptionPct": 24.3,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Beira's%20Anguish"
     },
     {
       "name": "Headhunter",
       "type": "Belt",
-      "adoptionCount": 26998,
-      "adoptionPct": 21.72,
+      "adoptionCount": 27233,
+      "adoptionPct": 21.92,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Headhunter"
     },
     {
       "name": "Prism of Belief",
       "type": "Jewel",
-      "adoptionCount": 19542,
-      "adoptionPct": 15.73,
+      "adoptionCount": 19580,
+      "adoptionPct": 15.76,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Prism%20of%20Belief"
     },
     {
       "name": "Morior Invictus",
       "type": "Body Armour",
-      "adoptionCount": 18928,
-      "adoptionPct": 15.23,
+      "adoptionCount": 19000,
+      "adoptionPct": 15.29,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Morior%20Invictus"
     },
     {
       "name": "Split Personality",
       "type": "Jewel",
-      "adoptionCount": 16626,
-      "adoptionPct": 13.38,
+      "adoptionCount": 16706,
+      "adoptionPct": 13.44,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Split%20Personality"
     },
     {
       "name": "Sacred Flame",
       "type": "Weapon",
-      "adoptionCount": 14764,
-      "adoptionPct": 11.88,
+      "adoptionCount": 14926,
+      "adoptionPct": 12.01,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sacred%20Flame"
     },
     {
       "name": "Against the Darkness",
       "type": "Jewel",
-      "adoptionCount": 13088,
-      "adoptionPct": 10.53,
+      "adoptionCount": 13315,
+      "adoptionPct": 10.72,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Against%20the%20Darkness"
     },
     {
       "name": "For Utopia",
       "type": "Charm",
-      "adoptionCount": 13013,
-      "adoptionPct": 10.47,
+      "adoptionCount": 13077,
+      "adoptionPct": 10.52,
       "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=For%20Utopia"
     },
     {
       "name": "Voices",
       "type": "Jewel",
-      "adoptionCount": 12374,
-      "adoptionPct": 9.96,
-      "note": "high roll / corrupt で上振れ候補。",
+      "adoptionCount": 12671,
+      "adoptionPct": 10.2,
+      "note": "通常品も回転候補。上限roll/corrupt差を確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Voices"
-    },
-    {
-      "name": "Forgotten Warden",
-      "type": "Body Armour",
-      "adoptionCount": 11871,
-      "adoptionPct": 9.55,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Forgotten%20Warden"
     },
     {
       "name": "The Taming",
       "type": "Ring",
-      "adoptionCount": 11561,
-      "adoptionPct": 9.3,
+      "adoptionCount": 11786,
+      "adoptionPct": 9.48,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Taming"
     },
     {
+      "name": "Forgotten Warden",
+      "type": "Body Armour",
+      "adoptionCount": 11362,
+      "adoptionPct": 9.14,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Forgotten%20Warden"
+    },
+    {
       "name": "Alpha's Howl",
       "type": "Helmet",
-      "adoptionCount": 11107,
-      "adoptionPct": 8.94,
+      "adoptionCount": 10991,
+      "adoptionPct": 8.85,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Alpha's%20Howl"
     },
     {
-      "name": "Sylvan's Effigy",
-      "type": "Weapon",
-      "adoptionCount": 10854,
-      "adoptionPct": 8.73,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sylvan's%20Effigy"
-    },
-    {
       "name": "Amor Mandragora",
       "type": "Unknown",
-      "adoptionCount": 10521,
-      "adoptionPct": 8.47,
+      "adoptionCount": 10661,
+      "adoptionPct": 8.58,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Amor%20Mandragora"
     },
     {
       "name": "Runeseeker's Call",
       "type": "Unknown",
-      "adoptionCount": 10433,
-      "adoptionPct": 8.4,
+      "adoptionCount": 10601,
+      "adoptionPct": 8.53,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Runeseeker's%20Call"
     },
     {
-      "name": "Sanguis Heroum",
-      "type": "Charm",
-      "adoptionCount": 10410,
-      "adoptionPct": 8.38,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sanguis%20Heroum"
-    },
-    {
       "name": "Blood of the Warrior",
       "type": "Flask",
-      "adoptionCount": 10329,
-      "adoptionPct": 8.31,
+      "adoptionCount": 10447,
+      "adoptionPct": 8.41,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Blood%20of%20the%20Warrior"
     },
     {
+      "name": "Sanguis Heroum",
+      "type": "Charm",
+      "adoptionCount": 10310,
+      "adoptionPct": 8.3,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sanguis%20Heroum"
+    },
+    {
+      "name": "Sylvan's Effigy",
+      "type": "Weapon",
+      "adoptionCount": 10035,
+      "adoptionPct": 8.08,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Sylvan's%20Effigy"
+    },
+    {
       "name": "Arakaali's Gift",
       "type": "Unknown",
-      "adoptionCount": 9986,
-      "adoptionPct": 8.04,
+      "adoptionCount": 9899,
+      "adoptionPct": 7.97,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Arakaali's%20Gift"
     },
     {
       "name": "Controlled Metamorphosis",
       "type": "Jewel",
-      "adoptionCount": 9742,
-      "adoptionPct": 7.84,
+      "adoptionCount": 9799,
+      "adoptionPct": 7.89,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Controlled%20Metamorphosis"
     },
     {
       "name": "Uhtred's Chalice",
       "type": "Unknown",
-      "adoptionCount": 9149,
-      "adoptionPct": 7.36,
+      "adoptionCount": 9200,
+      "adoptionPct": 7.4,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Uhtred's%20Chalice"
     },
     {
       "name": "Adonia's Ego",
       "type": "Unknown",
-      "adoptionCount": 9004,
-      "adoptionPct": 7.25,
+      "adoptionCount": 9077,
+      "adoptionPct": 7.3,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Adonia's%20Ego"
     },
     {
       "name": "Lochtonial Caress",
       "type": "Gloves",
-      "adoptionCount": 8878,
-      "adoptionPct": 7.14,
+      "adoptionCount": 9065,
+      "adoptionPct": 7.3,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Lochtonial%20Caress"
     },
     {
       "name": "Maligaro's Virtuosity",
       "type": "Gloves",
-      "adoptionCount": 8840,
-      "adoptionPct": 7.11,
+      "adoptionCount": 8820,
+      "adoptionPct": 7.1,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Maligaro's%20Virtuosity"
     },
     {
       "name": "Cadiro's Gambit",
       "type": "Quiver",
-      "adoptionCount": 8612,
-      "adoptionPct": 6.93,
+      "adoptionCount": 8791,
+      "adoptionPct": 7.07,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Cadiro's%20Gambit"
     },
     {
-      "name": "Tyranny's Grip",
-      "type": "Unknown",
-      "adoptionCount": 7877,
-      "adoptionPct": 6.34,
-      "note": "high roll / corrupt で上振れ候補。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Tyranny's%20Grip"
-    },
-    {
       "name": "The Ordained",
       "type": "Weapon",
-      "adoptionCount": 7851,
-      "adoptionPct": 6.32,
+      "adoptionCount": 8012,
+      "adoptionPct": 6.45,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=The%20Ordained"
     },
     {
       "name": "Normal Vaal Body Part",
       "type": "Vaal Body Part",
-      "adoptionCount": 7493,
-      "adoptionPct": 6.03,
+      "adoptionCount": 7485,
+      "adoptionPct": 6.02,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Normal%20Vaal%20Body%20Part"
     },
     {
       "name": "Olroth's Resolve",
       "type": "Unknown",
-      "adoptionCount": 7197,
-      "adoptionPct": 5.79,
+      "adoptionCount": 7107,
+      "adoptionPct": 5.72,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Olroth's%20Resolve"
     },
     {
       "name": "Skysliver",
       "type": "Weapon",
-      "adoptionCount": 6941,
-      "adoptionPct": 5.59,
+      "adoptionCount": 7030,
+      "adoptionPct": 5.66,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Skysliver"
     },
     {
+      "name": "Tyranny's Grip",
+      "type": "Unknown",
+      "adoptionCount": 6773,
+      "adoptionPct": 5.45,
+      "note": "high roll / corrupt で上振れ候補。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Tyranny's%20Grip"
+    },
+    {
       "name": "Darkness Enthroned",
       "type": "Belt",
-      "adoptionCount": 6496,
-      "adoptionPct": 5.23,
+      "adoptionCount": 6490,
+      "adoptionPct": 5.22,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Darkness%20Enthroned"
     },
     {
       "name": "Ingenuity",
       "type": "Belt",
-      "adoptionCount": 6040,
-      "adoptionPct": 4.86,
+      "adoptionCount": 6004,
+      "adoptionPct": 4.83,
       "note": "high roll / corrupt で上振れ候補。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?items=Ingenuity"
     }
@@ -3126,351 +3126,351 @@
   "gems": [
     {
       "name": "Rakiata's Flow",
-      "adoptionCount": 51287,
-      "adoptionPct": 41.27,
+      "adoptionCount": 51817,
+      "adoptionPct": 41.7,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rakiata's%20Flow"
     },
     {
       "name": "Wind Dancer",
-      "adoptionCount": 40352,
-      "adoptionPct": 32.47,
+      "adoptionCount": 40817,
+      "adoptionPct": 32.85,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wind%20Dancer"
     },
     {
       "name": "Mana Remnants",
-      "adoptionCount": 39506,
-      "adoptionPct": 31.79,
+      "adoptionCount": 39608,
+      "adoptionPct": 31.87,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Mana%20Remnants"
     },
     {
       "name": "Charge Regulation",
-      "adoptionCount": 38336,
-      "adoptionPct": 30.85,
+      "adoptionCount": 38812,
+      "adoptionPct": 31.23,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Charge%20Regulation"
     },
     {
       "name": "Ghost Dance",
-      "adoptionCount": 36927,
-      "adoptionPct": 29.71,
+      "adoptionCount": 37367,
+      "adoptionPct": 30.07,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ghost%20Dance"
     },
     {
       "name": "Blasphemy",
-      "adoptionCount": 31084,
-      "adoptionPct": 25.01,
+      "adoptionCount": 31251,
+      "adoptionPct": 25.15,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Blasphemy"
     },
     {
       "name": "Herald of Ice",
-      "adoptionCount": 29786,
-      "adoptionPct": 23.97,
+      "adoptionCount": 30307,
+      "adoptionPct": 24.39,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Ice"
     },
     {
       "name": "Cast on Critical",
-      "adoptionCount": 27574,
-      "adoptionPct": 22.19,
+      "adoptionCount": 27555,
+      "adoptionPct": 22.17,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cast%20on%20Critical"
     },
     {
       "name": "Vorana's Siege",
-      "adoptionCount": 24564,
-      "adoptionPct": 19.77,
+      "adoptionCount": 24670,
+      "adoptionPct": 19.85,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Vorana's%20Siege"
     },
     {
       "name": "Comet",
-      "adoptionCount": 22586,
-      "adoptionPct": 18.17,
+      "adoptionCount": 22477,
+      "adoptionPct": 18.09,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Comet"
     },
     {
       "name": "Spark",
-      "adoptionCount": 22025,
-      "adoptionPct": 17.72,
+      "adoptionCount": 22026,
+      "adoptionPct": 17.73,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Spark"
     },
     {
       "name": "Barrage",
-      "adoptionCount": 21544,
-      "adoptionPct": 17.34,
+      "adoptionCount": 21946,
+      "adoptionPct": 17.66,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Barrage"
     },
     {
-      "name": "Temporal Chains",
-      "adoptionCount": 20416,
-      "adoptionPct": 16.43,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Temporal%20Chains"
-    },
-    {
       "name": "Herald of Thunder",
-      "adoptionCount": 20382,
-      "adoptionPct": 16.4,
+      "adoptionCount": 20764,
+      "adoptionPct": 16.71,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Thunder"
     },
     {
       "name": "Virtuous Barrier",
-      "adoptionCount": 20200,
-      "adoptionPct": 16.25,
+      "adoptionCount": 20489,
+      "adoptionPct": 16.49,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Virtuous%20Barrier"
     },
     {
+      "name": "Temporal Chains",
+      "adoptionCount": 20473,
+      "adoptionPct": 16.48,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Temporal%20Chains"
+    },
+    {
       "name": "Trinity",
-      "adoptionCount": 19759,
-      "adoptionPct": 15.9,
+      "adoptionCount": 20120,
+      "adoptionPct": 16.19,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Trinity"
     },
     {
-      "name": "Wild Protector",
-      "adoptionCount": 19327,
-      "adoptionPct": 15.55,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wild%20Protector"
-    },
-    {
       "name": "Purity of Fire",
-      "adoptionCount": 19073,
-      "adoptionPct": 15.35,
+      "adoptionCount": 19293,
+      "adoptionPct": 15.53,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Purity%20of%20Fire"
     },
     {
       "name": "Freezing Mark",
-      "adoptionCount": 18903,
-      "adoptionPct": 15.21,
+      "adoptionCount": 18886,
+      "adoptionPct": 15.2,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Freezing%20Mark"
     },
     {
       "name": "Hollow Focus",
-      "adoptionCount": 18291,
-      "adoptionPct": 14.72,
+      "adoptionCount": 18598,
+      "adoptionPct": 14.97,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Hollow%20Focus"
     },
     {
+      "name": "Wild Protector",
+      "adoptionCount": 18435,
+      "adoptionPct": 14.84,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wild%20Protector"
+    },
+    {
       "name": "Spear Throw",
-      "adoptionCount": 17804,
-      "adoptionPct": 14.33,
+      "adoptionCount": 18032,
+      "adoptionPct": 14.51,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Spear%20Throw"
     },
     {
       "name": "Frost Bomb",
-      "adoptionCount": 17643,
+      "adoptionCount": 17650,
       "adoptionPct": 14.2,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Frost%20Bomb"
     },
     {
       "name": "Siphon Elements",
-      "adoptionCount": 17363,
-      "adoptionPct": 13.97,
+      "adoptionCount": 17381,
+      "adoptionPct": 13.99,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Siphon%20Elements"
     },
     {
       "name": "Ailith's Chimes",
-      "adoptionCount": 17017,
-      "adoptionPct": 13.69,
+      "adoptionCount": 17375,
+      "adoptionPct": 13.98,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Ailith's%20Chimes"
     },
     {
       "name": "Elemental Weakness",
-      "adoptionCount": 16791,
-      "adoptionPct": 13.51,
+      "adoptionCount": 16803,
+      "adoptionPct": 13.52,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Elemental%20Weakness"
     },
     {
-      "name": "Sione's Temper",
-      "adoptionCount": 16135,
-      "adoptionPct": 12.98,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sione's%20Temper"
-    },
-    {
       "name": "Dialla's Desire",
-      "adoptionCount": 16078,
-      "adoptionPct": 12.94,
+      "adoptionCount": 16380,
+      "adoptionPct": 13.18,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Dialla's%20Desire"
     },
     {
       "name": "Whirling Assault",
-      "adoptionCount": 15935,
-      "adoptionPct": 12.82,
+      "adoptionCount": 16231,
+      "adoptionPct": 13.06,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Whirling%20Assault"
     },
     {
-      "name": "Archmage",
-      "adoptionCount": 15925,
-      "adoptionPct": 12.81,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Archmage"
-    },
-    {
       "name": "Atziri's Communion",
-      "adoptionCount": 15764,
-      "adoptionPct": 12.68,
+      "adoptionCount": 16155,
+      "adoptionPct": 13,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Atziri's%20Communion"
     },
     {
-      "name": "Wolf Pack",
-      "adoptionCount": 15285,
-      "adoptionPct": 12.3,
+      "name": "Sione's Temper",
+      "adoptionCount": 15895,
+      "adoptionPct": 12.79,
       "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wolf%20Pack"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sione's%20Temper"
+    },
+    {
+      "name": "Archmage",
+      "adoptionCount": 15797,
+      "adoptionPct": 12.71,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Archmage"
     },
     {
       "name": "Sigil of Power",
-      "adoptionCount": 15076,
-      "adoptionPct": 12.13,
+      "adoptionCount": 15035,
+      "adoptionPct": 12.1,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sigil%20of%20Power"
     },
     {
       "name": "Cast on Elemental Ailment",
-      "adoptionCount": 14881,
-      "adoptionPct": 11.97,
+      "adoptionCount": 14889,
+      "adoptionPct": 11.98,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Cast%20on%20Elemental%20Ailment"
     },
     {
       "name": "Pounce",
-      "adoptionCount": 14675,
-      "adoptionPct": 11.81,
+      "adoptionCount": 14840,
+      "adoptionPct": 11.94,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Pounce"
     },
     {
-      "name": "Discipline",
-      "adoptionCount": 14397,
-      "adoptionPct": 11.58,
+      "name": "Wolf Pack",
+      "adoptionCount": 14362,
+      "adoptionPct": 11.56,
       "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Discipline"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Wolf%20Pack"
     },
     {
       "name": "Eternal Rage",
-      "adoptionCount": 14032,
-      "adoptionPct": 11.29,
+      "adoptionCount": 14342,
+      "adoptionPct": 11.54,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Eternal%20Rage"
     },
     {
       "name": "Uhtred's Constellation",
-      "adoptionCount": 13709,
-      "adoptionPct": 11.03,
+      "adoptionCount": 13986,
+      "adoptionPct": 11.26,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Uhtred's%20Constellation"
     },
     {
       "name": "Arc",
-      "adoptionCount": 13614,
-      "adoptionPct": 10.95,
+      "adoptionCount": 13683,
+      "adoptionPct": 11.01,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Arc"
     },
     {
       "name": "Whirling Slash",
-      "adoptionCount": 13423,
-      "adoptionPct": 10.8,
+      "adoptionCount": 13670,
+      "adoptionPct": 11,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Whirling%20Slash"
     },
     {
-      "name": "Sniper's Mark",
-      "adoptionCount": 13308,
-      "adoptionPct": 10.71,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sniper's%20Mark"
-    },
-    {
       "name": "Combat Frenzy",
-      "adoptionCount": 13287,
-      "adoptionPct": 10.69,
+      "adoptionCount": 13547,
+      "adoptionPct": 10.9,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Combat%20Frenzy"
     },
     {
+      "name": "Discipline",
+      "adoptionCount": 13507,
+      "adoptionPct": 10.87,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Discipline"
+    },
+    {
+      "name": "Sniper's Mark",
+      "adoptionCount": 12945,
+      "adoptionPct": 10.42,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Sniper's%20Mark"
+    },
+    {
       "name": "Convalescence",
-      "adoptionCount": 12855,
-      "adoptionPct": 10.34,
+      "adoptionCount": 12897,
+      "adoptionPct": 10.38,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Convalescence"
     },
     {
+      "name": "Garukhan's Resolve",
+      "adoptionCount": 12619,
+      "adoptionPct": 10.16,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Garukhan's%20Resolve"
+    },
+    {
       "name": "Arctic Armour",
-      "adoptionCount": 12583,
-      "adoptionPct": 10.13,
+      "adoptionCount": 12616,
+      "adoptionPct": 10.15,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Arctic%20Armour"
     },
     {
+      "name": "Rigwald's Ferocity",
+      "adoptionCount": 12597,
+      "adoptionPct": 10.14,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rigwald's%20Ferocity"
+    },
+    {
+      "name": "Herald of Ash",
+      "adoptionCount": 12541,
+      "adoptionPct": 10.09,
+      "note": "21/20候補。価格差と供給数を手動確認。",
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Ash"
+    },
+    {
       "name": "Refutation",
-      "adoptionCount": 12496,
-      "adoptionPct": 10.06,
+      "adoptionCount": 12165,
+      "adoptionPct": 9.79,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Refutation"
     },
     {
       "name": "Raise Shield",
-      "adoptionCount": 12433,
-      "adoptionPct": 10,
+      "adoptionCount": 12082,
+      "adoptionPct": 9.72,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Raise%20Shield"
     },
     {
-      "name": "Garukhan's Resolve",
-      "adoptionCount": 12332,
-      "adoptionPct": 9.92,
+      "name": "Twister",
+      "adoptionCount": 12058,
+      "adoptionPct": 9.7,
       "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Garukhan's%20Resolve"
-    },
-    {
-      "name": "Herald of Ash",
-      "adoptionCount": 12320,
-      "adoptionPct": 9.91,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Herald%20of%20Ash"
-    },
-    {
-      "name": "Rigwald's Ferocity",
-      "adoptionCount": 12291,
-      "adoptionPct": 9.89,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rigwald's%20Ferocity"
-    },
-    {
-      "name": "Spirit Vessel",
-      "adoptionCount": 11871,
-      "adoptionPct": 9.55,
-      "note": "21/20候補。価格差と供給数を手動確認。",
-      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Spirit%20Vessel"
+      "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Twister"
     },
     {
       "name": "Rend",
-      "adoptionCount": 11859,
-      "adoptionPct": 9.54,
+      "adoptionCount": 12034,
+      "adoptionPct": 9.68,
       "note": "21/20候補。価格差と供給数を手動確認。",
       "poeNinjaUrl": "https://poe.ninja/poe2/builds/runesofaldur?skills=Rend"
     }
